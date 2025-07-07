@@ -13,12 +13,16 @@ build:
 collections_config:
   pages:
     path: "src/pages"
-    filter: "strict"
+    filter: 
+      - "*.md"
+      - "*.html"
     output: true
     icon: "wysiwyg"
     
   blog:
-    path: "src/blog" 
+    path: "src/blog"
+    filter: 
+      - "*.md"
     output: true
     icon: "event"
     sort_key: "date"
@@ -26,6 +30,8 @@ collections_config:
     
   services:
     path: "src/services"
+    filter: 
+      - "*.md"
     output: true
     icon: "medical_services"
 
