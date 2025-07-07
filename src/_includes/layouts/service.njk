@@ -31,7 +31,7 @@ layout: layouts/base.njk
         <div class="container">
             <div class="service-layout">
                 <div class="service-main">
-                    <!-- CloudCannon Markdown Editor - CORRECT METHOD -->
+                    <!-- CloudCannon Markdown Editor -->
                     <div class="content-editable" data-cms-edit="content">
                         {{ content | safe }}
                     </div>
@@ -102,6 +102,7 @@ layout: layouts/base.njk
     </section>
 </div>
 
+<!-- CloudCannon Editor Styles -->
 <style>
 .service-page { 
     line-height: 1.6; 
@@ -177,6 +178,7 @@ layout: layouts/base.njk
     margin-bottom: 2rem; 
     border-radius: 0.5rem;
     min-height: 200px;
+    position: relative;
 }
 
 .content-editable:hover {
@@ -184,10 +186,21 @@ layout: layouts/base.njk
     background: #f1f8f4;
 }
 
+.content-editable::before {
+    content: "✏️ Click to edit content";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.875rem;
+    color: #6c757d;
+    opacity: 0.7;
+}
+
 /* Visual editing indicators for CloudCannon */
 .editable {
     outline: 2px dashed transparent;
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .editable:hover {
@@ -280,5 +293,18 @@ layout: layouts/base.njk
     .service-title { 
         font-size: 2rem; 
     }
+}
+
+/* CloudCannon specific styles */
+[data-cms-edit="content"] {
+    min-height: 300px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+[data-cms-edit="content"]:hover {
+    border-color: #007bff;
+    background: rgba(0, 123, 255, 0.05);
 }
 </style> 
