@@ -1,17 +1,17 @@
 ---
-# === BASIC INFORMATION ===
+layout: layouts/service.njk
 title: "Dental Crowns in Alexandria VA"
+subtitle: "Same-Day CEREC Crowns for Immediate Restoration"
 description: "Same-day dental crowns in Alexandria with CEREC technology. Dr. Mazhari provides ceramic crowns that restore strength and beauty to damaged teeth in Alexandria VA."
-image: "/images/restorative/Dentist-Senior-Couple-Outside-Smiling-CS1.webp"
-category: "Restorative"
-
-# === SERVICE DETAILS ===
+keywords: "dental crowns Alexandria VA, CEREC crowns, same-day crowns, ceramic crowns"
+heroImage: "/images/restorative/Dentist-Senior-Couple-Outside-Smiling-CS1.webp"
+heroImageAlt: "Senior Couple Smiling After Dental Crown Treatment"
+permalink: "/dental-crowns/"
+ctaText: "View Our Special Offers"
+ctaLink: "/special/"
+tags: ["services", "restorative"]
 technology: "CEREC® CAD/CAM Technology"
 visit_duration: "Single visit (90 minutes)"
-cost_range: "$1,200 - $1,800 per crown"
-lumineers_cost: "Contact for pricing"
-
-# === TREATMENT INFORMATION ===
 conditions_treated:
   - "Cracked or chipped teeth"
   - "Severely decayed teeth"
@@ -19,13 +19,11 @@ conditions_treated:
   - "Teeth weakened after root canal"
   - "Worn down teeth from grinding"
   - "Cosmetic tooth improvements"
-
 materials:
   - "High-quality ceramic"
   - "Composite resin"
   - "Porcelain-fused-to-metal"
   - "Gold alloy (back teeth)"
-
 benefits:
   - "Same-day treatment with CEREC technology"
   - "No messy impression trays required"
@@ -33,8 +31,6 @@ benefits:
   - "Durable protection for 15+ years"
   - "Preserves remaining tooth structure"
   - "Immediate restoration of full function"
-
-# === PROCESS & WORKFLOW ===
 process_steps:
   - title: "Digital Impressions"
     description: "We use advanced CEREC scanning technology to create precise digital impressions of your teeth - no messy putty required."
@@ -44,31 +40,26 @@ process_steps:
     description: "Your crown is milled from high-quality ceramic material using our in-office CEREC machine while you wait."
   - title: "Placement & Refinement"
     description: "The crown is fitted, adjusted for perfect bite and comfort, then permanently bonded to your tooth."
-
-# === MEDIA & CONTENT ===
+investment:
+  primary: "$1,200 - $1,800 per crown"
+  note: "Same-day convenience with long-lasting results"
+  financing: "Flexible payment options available"
 video_url: "https://www.youtube.com/watch?v=lohF6pfK5Qw"
-before_after_gallery:
-  - before: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Case-Study-33-Before.webp"
-    after: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Case-Study-33-After.webp"
-    description: "Complete smile restoration with ceramic crowns"
-  - before: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Case-Study-47-Before.webp"
-    after: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Case-Study-47-After.webp"
-    description: "Single crown replacement for damaged front tooth"
-
-# === RELATED CONTENT ===
+before_after_gallery: []
 related_services:
-  - "root-canal-therapy"
-  - "dental-bridges"
-  - "veneers"
-  - "dental-implants"
-
+  - title: "Root Canal Therapy"
+    url: "/root-canal-therapy/"
+  - title: "Dental Bridges"
+    url: "/dental-bridges/"
+  - title: "Veneers"
+    url: "/veneers/"
+  - title: "Dental Implants"
+    url: "/dental-implants/"
 related_pages:
-  - "dental-crowns-faqs"
-  - "about-dental-implants"
-
-# === CALL TO ACTION ===
-cta_text: "View Our Special Offers"
-cta_link: "/special/"
+  - title: "Dental Crowns FAQs"
+    url: "/dental-crowns-faqs/"
+  - title: "About Dental Implants"
+    url: "/about-dental-implants/"
 ---
 
 Our dental crown treatment plans can deliver the right results for your smile. Crowns are ideal for teeth that have been severely compromised by large fillings and/or wear and tear. One of the most commonly used dental treatments today, a dental crown can have both restorative and cosmetic purposes when addressing a range of dental concerns. 

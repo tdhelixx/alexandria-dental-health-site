@@ -1,21 +1,53 @@
 ---
+layout: layouts/service.njk
 title: "Root Canal Therapy in Alexandria VA"
+subtitle: "Pain-Free Root Canal Treatment to Save Your Natural Teeth"
 description: "Effective and pain-free root canal treatment at Alexandria Dental Health & Smile Studio. Dr. Mazhari preserves natural teeth, removes infection, and prolongs tooth longevity in Alexandria VA."
-image: "/images/restorative/Dentist-Alexandria-VA-Root-Canal-Therapy.webp"
-category: "Restorative"
+keywords: "root canal Alexandria VA, endodontic treatment, tooth pain relief"
+heroImage: "/images/restorative/Dentist-Alexandria-VA-Root-Canal-Therapy.webp"
+heroImageAlt: "Root Canal Therapy Treatment at Alexandria Dental Health"
+permalink: "/root-canal-therapy/"
+ctaText: "Schedule Emergency Appointment"
+ctaLink: "/contact-us/"
+tags: ["services", "restorative"]
 symptoms:
   - "Sudden toothache or pain"
   - "Change in the color of the tooth"
   - "Changes in sensitivity to temperature"
+benefits:
+  - "Save your natural tooth"
+  - "Immediate pain relief"
+  - "Prevent further complications"
+  - "Cost-effective treatment"
+  - "Modern pain-free techniques"
+process_steps:
+  - title: "Examination & Diagnosis"
+    description: "Dr. Mazhari evaluates your tooth pain and determines if root canal therapy is needed."
+  - title: "Anesthesia & Access"
+    description: "Local anesthesia ensures comfort while a small opening is created to access the infected pulp."
+  - title: "Cleaning & Disinfection"
+    description: "Infected tissue is removed and the inner tooth is thoroughly cleaned and disinfected."
+  - title: "Sealing & Restoration"
+    description: "The tooth is sealed with biocompatible material and often topped with a crown for protection."
+investment:
+  primary: "$800 - $1,500 per tooth"
+  note: "Crown may be recommended for additional protection"
+  financing: "Payment plans available to fit your budget"
 video_url: "https://www.youtube.com/watch?v=3pDwBbaGsnw"
 related_services:
-  - dental-crowns
-  - tooth-extractions
-  - dental-implants
-  - sedation-dentistry
+  - title: "Dental Crowns"
+    url: "/dental-crowns/"
+  - title: "Tooth Extractions"
+    url: "/tooth-extractions/"
+  - title: "Dental Implants"
+    url: "/dental-implants/"
+  - title: "Sedation Dentistry"
+    url: "/sedation-dentistry/"
 related_pages:
-  - root-canal-symptoms
-  - root-canal-recovery
+  - title: "Root Canal Symptoms"
+    url: "/root-canal-symptoms/"
+  - title: "Root Canal Recovery"
+    url: "/root-canal-recovery/"
 ---
 
 Our effective and pain-free root canal treatment can preserve your natural teeth, remove infection, & prolong the longevity of teeth. All of these factors can help to avoid the loss of the natural tooth.

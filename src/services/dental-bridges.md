@@ -1,29 +1,28 @@
 ---
-# === BASIC INFORMATION ===
+layout: layouts/service.njk
 title: "Dental Bridges in Alexandria VA"
+subtitle: "Replace Missing Teeth with Permanent Fixed Bridges"
 description: "Replace missing teeth with custom dental bridges at Alexandria Dental Health & Smile Studio. Dr. Mazhari provides traditional, Maryland bonded, and cantilever bridges in Alexandria VA."
-image: "/images/cosmetic/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp"
-category: "Restorative"
-
-# === SERVICE DETAILS ===
+keywords: "dental bridges Alexandria VA, tooth replacement, missing teeth, fixed bridge"
+heroImage: "/images/cosmetic/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp"
+heroImageAlt: "Woman with Beautiful Smile After Dental Bridge Treatment"
+permalink: "/dental-bridges/"
+ctaText: "View Our Special Offers"
+ctaLink: "/special/"
+tags: ["services", "restorative"]
 technology: "Advanced Digital Impressions"
 visit_duration: "2-3 visits over 2-3 weeks"
-cost_range: "$2,000 - $5,000 for 3-unit bridge"
-
-# === TREATMENT INFORMATION ===
 conditions_treated:
   - "Single missing tooth"
   - "Multiple adjacent missing teeth"
   - "Gaps affecting speech or chewing"
   - "Teeth shifting due to missing tooth"
   - "Bite problems from tooth loss"
-
 materials:
   - "High-quality porcelain"
   - "Porcelain-fused-to-metal"
   - "Gold alloy (back teeth)"
   - "Zirconia ceramic"
-
 benefits:
   - "Permanent fixed solution"
   - "Natural appearance and function"
@@ -31,8 +30,6 @@ benefits:
   - "Restores confident smile"
   - "Improved chewing and speaking"
   - "Long-lasting (10-15+ years)"
-
-# === PROCESS & WORKFLOW ===
 process_steps:
   - title: "Initial Consultation"
     description: "Comprehensive examination to evaluate missing teeth and adjacent tooth health for bridge placement."
@@ -44,21 +41,24 @@ process_steps:
     description: "A temporary bridge protects prepared teeth while your permanent bridge is fabricated."
   - title: "Bridge Placement"
     description: "The permanent bridge is fitted, adjusted for comfort and bite, then permanently cemented."
-
-# === RELATED CONTENT ===
+investment:
+  primary: "$2,000 - $5,000 for 3-unit bridge"
+  note: "Cost varies based on materials and complexity"
+  financing: "Payment plans available to fit your budget"
 related_services:
-  - "dental-crowns"
-  - "dental-implants"
-  - "dentures"
-  - "missing-teeth"
-
+  - title: "Dental Crowns"
+    url: "/dental-crowns/"
+  - title: "Dental Implants"
+    url: "/dental-implants/"
+  - title: "Dentures"
+    url: "/dentures/"
+  - title: "Missing Teeth Solutions"
+    url: "/missing-teeth/"
 related_pages:
-  - "dental-crowns-faqs"
-  - "patient-information"
-
-# === CALL TO ACTION ===
-cta_text: "View Our Special Offers"
-cta_link: "/special/"
+  - title: "Dental Crowns FAQs"
+    url: "/dental-crowns-faqs/"
+  - title: "Patient Information"
+    url: "/patient-information/"
 ---
 
 You can lose teeth in many different ways, including dental work, or through accidents and other mishaps. In the past, the loss of a tooth was simply something most people had to learn to accept. Today, there are many alternatives to ensure that a missing tooth doesn't have to become an embarrassment.

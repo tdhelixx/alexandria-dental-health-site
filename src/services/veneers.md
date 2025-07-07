@@ -1,14 +1,59 @@
 ---
+layout: layouts/service.njk
 title: "Porcelain Veneers in Alexandria VA"
+subtitle: "Transform Your Smile with Custom Ceramic Veneers"
 description: "Transform your smile with porcelain veneers at Alexandria Dental Health & Smile Studio. Dr. Mazhari provides custom, natural-looking veneers for gaps, chips, stains, and misaligned teeth."
-image: "/images/cosmetic/Woman-Cosmetic-Dentistry-Smiling-CS1.webp"
-category: "Cosmetic"
-cost_range: "$1,600 - $1,900 per tooth"
-lumineers_cost: "$1,100 - $1,600 per tooth"
+keywords: "porcelain veneers Alexandria VA, cosmetic dentistry, smile makeover"
+heroImage: "/images/cosmetic/Woman-Cosmetic-Dentistry-Smiling-CS1.webp"
+heroImageAlt: "Woman Smiling After Porcelain Veneers Treatment"
+permalink: "/veneers/"
+ctaText: "Schedule Veneers Consultation"
+ctaLink: "/contact-us/"
+tags: ["services", "cosmetic"]
+benefits:
+  - "Highly customizable and natural-looking"
+  - "Durable, stain-resistant construction"
+  - "Long-lasting solution for multiple aesthetic problems"
+  - "Minimal tooth preparation required"
+  - "Can last for years or even decades"
+  - "Instant orthodontics for minor misalignment"
+process_steps:
+  - title: "Consultation"
+    description: "Dr. Mazhari evaluates your aesthetic goals and oral health to create a treatment plan."
+  - title: "Impressions"
+    description: "Custom impressions are taken and tooth surfaces are prepared for optimal veneer placement."
+  - title: "Fabrication"
+    description: "Custom ceramic veneers are created to match your desired shade and aesthetic goals."
+  - title: "Placement"
+    description: "Veneers are tried on, approved, and securely bonded to your teeth for optimal results."
+investment:
+  primary: "$1,600 - $1,900 per tooth"
+  secondary: "Lumineers: $1,100 - $1,600 per tooth"
+  note: "Beautiful, natural-looking investment that can last for decades"
+  financing: "Flexible payment plans and financing available"
+conditions_treated:
+  - "Gaps or spaces between teeth"
+  - "Chipped or broken teeth"
+  - "Crooked or misshapen teeth"
+  - "Asymmetrical or irregularly-sized teeth"
+  - "Stained or discolored teeth"
+  - "Worn or damaged teeth"
 related_services:
-  - dental-crowns
-  - teeth-whitening
-  - cosmetic-dentistry
+  - title: "Dental Crowns"
+    url: "/dental-crowns/"
+  - title: "Teeth Whitening"
+    url: "/teeth-whitening/"
+  - title: "Cosmetic Dentistry"
+    url: "/cosmetic-dentistry/"
+faq:
+  - question: "Are there alternatives to porcelain veneers?"
+    answer: "Depending on your specific concerns, alternatives may include cosmetic dental bonding, teeth whitening, or dental crowns. Dr. Mazhari can recommend the best treatment based on your examination and goals."
+  - question: "Can you whiten porcelain veneers?"
+    answer: "Porcelain veneers are stain-resistant and cannot be whitened. It's recommended to have teeth whitening before veneer placement to ensure the best color match."
+  - question: "Do porcelain veneers hurt?"
+    answer: "The procedure is performed with local anesthetic, so you shouldn't feel discomfort. Some tenderness may occur after treatment but should fade quickly."
+  - question: "Do porcelain veneers look natural?"
+    answer: "Yes, porcelain veneers are precisely designed to appear natural. The tone can be adjusted to best suit your smile aesthetic, and they function like regular teeth."
 ---
 
 Porcelain veneers are one of the most popular cosmetic dentistry procedures available, and for good reason: they are highly customizable, and their durable, stain-resistant construction enables them to be a long-lasting solution to a variety of common aesthetic problems. The veneers themselves are thin layers of tooth-colored ceramic that are bonded to the fronts of the teeth in order to correct chips, gaps, stains, and general wear and tear. They can also be used to correct minor teeth misalignment, a process known as instant orthodontics.

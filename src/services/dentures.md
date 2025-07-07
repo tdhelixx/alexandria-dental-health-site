@@ -1,8 +1,15 @@
 ---
+layout: layouts/service.njk
 title: "Dentures & Partials in Alexandria VA"
+subtitle: "Restore Your Smile with Custom Full & Partial Dentures"
 description: "Custom dentures and partial dentures at Alexandria Dental Health & Smile Studio. Dr. Mazhari provides full, partial, and implant-supported dentures for missing teeth replacement in Alexandria VA."
-image: "/images/restorative/man-older-dentures-smiling-at-dentist.jpg"
-category: "Restorative"
+keywords: "dentures Alexandria VA, partial dentures, implant-supported dentures, All-on-Four"
+heroImage: "/images/restorative/man-older-dentures-smiling-at-dentist.jpg"
+heroImageAlt: "Older Man Smiling at Dentist with New Dentures"
+permalink: "/dentures/"
+ctaText: "Schedule Denture Consultation"
+ctaLink: "/contact-us/"
+tags: ["services", "restorative"]
 denture_types:
   - "Full Dentures"
   - "Partial Dentures"
@@ -13,12 +20,30 @@ benefits:
   - "Improve speech"
   - "Support facial structure"
   - "Natural-looking results"
+process_steps:
+  - title: "Initial Consultation"
+    description: "Comprehensive examination and discussion of denture options to meet your needs."
+  - title: "Impressions & Measurements"
+    description: "Precise impressions and bite registration for proper fit and alignment."
+  - title: "Try-In Appointment"
+    description: "Test fit of your dentures with adjustments for comfort and aesthetics."
+  - title: "Final Delivery"
+    description: "Placement of completed dentures with care instructions and follow-up scheduling."
+investment:
+  primary: "Full dentures: $1,500 - $3,000"
+  secondary: "Partial dentures: $800 - $2,000"
+  note: "Implant-supported options available for enhanced stability"
+  financing: "Flexible payment plans available"
 related_services:
-  - dental-implants
-  - implant-supported-dentures
-  - missing-teeth
+  - title: "Dental Implants"
+    url: "/dental-implants/"
+  - title: "Implant-Supported Dentures"
+    url: "/implant-supported-dentures/"
+  - title: "Missing Teeth Solutions"
+    url: "/missing-teeth/"
 related_pages:
-  - dentures-cleaning-and-care
+  - title: "Dentures Cleaning and Care"
+    url: "/dentures-cleaning-and-care/"
 ---
 
 Do you have missing teeth? Suffer from ill-fitting dentures? [Mojgan Mazhari, DDS](/us/) can help with full & partial dentures.
