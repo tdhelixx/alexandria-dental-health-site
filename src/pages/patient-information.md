@@ -1,7 +1,8 @@
 ---
+layout: layouts/page.njk
 title: "Patient Information"
 description: "Complete patient information for Alexandria Dental Health & Smile Studio. Learn about your first appointment, insurance, payment options, and financing with Dr. Mazhari in Alexandria VA."
-image: "/images/patients/woman-professional-staff-smiling.jpg"
+image: "/images/woman-professional-staff-smiling.jpg"
 appointment_duration: "90 minutes"
 financing_options:
   - "CareCredit"

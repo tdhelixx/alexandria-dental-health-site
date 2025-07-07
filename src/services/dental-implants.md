@@ -6,7 +6,7 @@ description: Restore your smile with dental implants in Alexandria VA. Our exper
   team at Alexandria Dental Health & Smile Studio offers solutions.
 keywords: dental implants Alexandria VA, dental implants, tooth replacement, implant
   dentist, permanent teeth
-heroImage: /images/services/dental-implants-hero.webp
+heroImage: /images/Dentist-Alexandria-VA-Dental-Implants-FC.webp
 heroImageAlt: Dental Implants Treatment at Alexandria Dental Health & Smile Studio
 permalink: /dental-implants/
 ctaText: Schedule Implant Consultation
@@ -18,7 +18,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/services/dental-implants-hero.webp
+social_image: /images/Dentist-Alexandria-VA-Dental-Implants-FC.webp
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true
@@ -120,15 +120,15 @@ Although dental implants typically require a greater commitment of both time and
 
 Single-tooth dental implants, or single implant-supported crowns, are designed to replace individual missing or damaged teeth. This form of restoration is the closest thing to a natural tooth, as it replaces every part of the tooth structure, including the root.
 
-To begin, a titanium post will be inserted into the jawbone, simulating a new “root.” Over a few months, the post and the bone should fuse together, creating a stable, permanent base for the customized dental crown restoration that will be placed on top of the post.
+To begin, a titanium post will be inserted into the jawbone, simulating a new "root." Over a few months, the post and the bone should fuse together, creating a stable, permanent base for the customized dental crown restoration that will be placed on top of the post.
 
-The titanium “root” of the implant has the added benefit of stimulating the jawbone and preventing further decay and damage to surrounding teeth. In most cases, dental implants will look, feel, and function exactly like a natural tooth.
+The titanium "root" of the implant has the added benefit of stimulating the jawbone and preventing further decay and damage to surrounding teeth. In most cases, dental implants will look, feel, and function exactly like a natural tooth.
 
 Implants are also quite durable, capable of lasting for decades with proper care and maintenance—most patients have reported their final crown feeling better than their own teeth.
 
 #### Implant Bridges
 
-In cases where a patient is missing multiple teeth in a row, an alternative form of implant restoration can be employed in which a few implant posts are used to support a series—or “bridge”—of crowns.
+In cases where a patient is missing multiple teeth in a row, an alternative form of implant restoration can be employed in which a few implant posts are used to support a series—or "bridge"—of crowns.
 
 Dr. Mazhari will carefully evaluate your oral health and the structure of your jawbone to best determine how many individual implants will be needed to adequately support the row(s) of custom crowns. Using our advanced imaging technology, she will then strategically place the implants for optimal security, comfort, function, and aesthetics.
 
@@ -156,11 +156,11 @@ During a consultation, Dr. Mazhari will examine your oral health, medical histor
 
 While the precise details of the dental implant treatment process will vary for each patient, the timeline for completing the treatment is generally several months, spread over various stages.
 
-At our practice, we offer iTero and CEREC Primescan technologies for more accurate and convenient treatment. Dr. Mazhari can utilize these state-of-the-art intraoral devices to create digital impressions of the patient’s mouth and generate digital images to preview the expected results.
+At our practice, we offer iTero and CEREC Primescan technologies for more accurate and convenient treatment. Dr. Mazhari can utilize these state-of-the-art intraoral devices to create digital impressions of the patient's mouth and generate digital images to preview the expected results.
 
-Advancements in Dental ImagingThe iTero scanner is an innovative tool that utilizes advanced technology to generate digital dental impressions. This allows our team to accurately map out the treatment plan for each patient’s new smile.
+Advancements in Dental ImagingThe iTero scanner is an innovative tool that utilizes advanced technology to generate digital dental impressions. This allows our team to accurately map out the treatment plan for each patient's new smile.
 
-With CEREC Primescan, our team uses intuitive AI (artificial intelligence) to create detailed scans of our patients’ teeth. Both of these devices eliminate the need for traditional putties and pastes to map out your smile.
+With CEREC Primescan, our team uses intuitive AI (artificial intelligence) to create detailed scans of our patients' teeth. Both of these devices eliminate the need for traditional putties and pastes to map out your smile.
 
 Additionally, using iTero and CEREC Primescan can reduce the amount of time it takes to create a precise impression of your smile, which can speed up the entire process of receiving dental implants.
 
@@ -240,6 +240,6 @@ Dr. Mazhari has been working with dental implants for years, and she can often d
 
 ### Replace Your Missing Teeth Quickly at Alexandria Dental Health & Smile Studio
 
-It’s possible to have a new smile quickly and with high-quality results. We are here to assist you in making a decision that supports your cosmetic goals, your budget, and your oral health.
+It's possible to have a new smile quickly and with high-quality results. We are here to assist you in making a decision that supports your cosmetic goals, your budget, and your oral health.
 
-Dr. Mazhari’s continued education in the field of implants, as well as our office’s cutting-edge technology, allow us to give you implants that are comfortable and efficient. To learn more about implants or to get started on your implant journey, contact us today for a consultation.
+Dr. Mazhari's continued education in the field of implants, as well as our office's cutting-edge technology, allow us to give you implants that are comfortable and efficient. To learn more about implants or to get started on your implant journey, contact us today for a consultation.

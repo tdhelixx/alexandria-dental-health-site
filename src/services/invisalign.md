@@ -6,7 +6,7 @@ description: Are you looking for Invisalign in Alexandria VA? Contact the team a
   Alexandria Dental Health & Smile Studio today.
 keywords: invisalign Alexandria VA, invisalign, clear braces, invisible aligners,
   orthodontics
-heroImage: /images/services/woman-hands-by-face-smiling.webp
+heroImage: /images/woman-hands-by-face-smiling.webp
 heroImageAlt: Invisalign Treatment at Alexandria Dental Health & Smile Studio
 permalink: /invisalign/
 ctaText: Schedule Invisalign Consultation
@@ -18,7 +18,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/services/woman-hands-by-face-smiling.webp
+social_image: /images/woman-hands-by-face-smiling.webp
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true
@@ -80,7 +80,7 @@ Straightening your teeth can support long-term dental health, in addition to pro
 
 ### View Your Potential Invisalign Results
 
-At Alexandria Dental Health & Smile Studio, we know deciding on the right form of treatment for your smile is important. If you’re considering Invisalign for either you or your teenager, you can actually preview your results with our in-office digital iTero® scanning technology. iTero is a digital scanner that receives images from a camera and then rapidly transfers the images onto a computer screen. This enables you to explore simulated images that showcase how Invisalign can impact your smile. Once you see how your teeth can look with our Invisalign outcome simulator through iTero technology, you can better decide if Invisalign is the right treatment option for you.
+At Alexandria Dental Health & Smile Studio, we know deciding on the right form of treatment for your smile is important. If you're considering Invisalign for either you or your teenager, you can actually preview your results with our in-office digital iTero® scanning technology. iTero is a digital scanner that receives images from a camera and then rapidly transfers the images onto a computer screen. This enables you to explore simulated images that showcase how Invisalign can impact your smile. Once you see how your teeth can look with our Invisalign outcome simulator through iTero technology, you can better decide if Invisalign is the right treatment option for you.
 
 ### What Is the Invisalign Treatment Process Like?
 
@@ -92,9 +92,9 @@ These two cases show the progression of the treatment as the patients used Invis
 
 ### How Long Does Invisalign Take?
 
-Every case is different, but for many adults, Invisalign—when used correctly—takes about a year to be effective. You’ll meet with our dentist for occasional follow-up appointments to ensure progress is happening in a timely fashion. For teenagers, the amount of time for Invisalign to take effect can vary, as the teeth are often more susceptible to shifting. A more accurate timeline can be determined after a consultation with our dentist.
+Every case is different, but for many adults, Invisalign—when used correctly—takes about a year to be effective. You'll meet with our dentist for occasional follow-up appointments to ensure progress is happening in a timely fashion. For teenagers, the amount of time for Invisalign to take effect can vary, as the teeth are often more susceptible to shifting. A more accurate timeline can be determined after a consultation with our dentist.
 
-Compliance is an important part of the Invisalign treatment process. In order to ensure both optimal results and the most efficient treatment process, patients should carefully adhere to our dental team’s instructions and wear their appliance as directed.
+Compliance is an important part of the Invisalign treatment process. In order to ensure both optimal results and the most efficient treatment process, patients should carefully adhere to our dental team's instructions and wear their appliance as directed.
 
 ### How Much Does Invisalign Cost?
 
@@ -102,11 +102,11 @@ The precise cost of Invisalign will vary based on factors such as the extent of 
 
 Dr. Mazhari and all of us at Alexandria Dental Health & Smile Studio believe that high-quality dental care should be affordable at any budget, which is why we partner with several trusted healthcare lenders. By setting up a payment plan with one of our financing partners, qualified applicants can often fit Invisalign into just about any budget.
 
-This testimonial is from a patient who’s almost 70 and is no longer experiencing headaches as a result of correcting her bite. Not only do her teeth line up beautifully now, but she is also free of the pain she was experiencing:
+This testimonial is from a patient who's almost 70 and is no longer experiencing headaches as a result of correcting her bite. Not only do her teeth line up beautifully now, but she is also free of the pain she was experiencing:
 
-> “Very happy with aligner progress, which is not only addressing the cosmetic aspect of straightening, but has completely alleviated my headaches from clenching/grinding! It is also a very caring environment, with questions patiently answered.”
+> "Very happy with aligner progress, which is not only addressing the cosmetic aspect of straightening, but has completely alleviated my headaches from clenching/grinding! It is also a very caring environment, with questions patiently answered."
 
-“Very happy with aligner progress, which is not only addressing the cosmetic aspect of straightening, but has completely alleviated my headaches from clenching/grinding! It is also a very caring environment, with questions patiently answered.”
+"Very happy with aligner progress, which is not only addressing the cosmetic aspect of straightening, but has completely alleviated my headaches from clenching/grinding! It is also a very caring environment, with questions patiently answered."
 
 ### Additional Invisalign FAQs
 
@@ -128,13 +128,13 @@ Since Invisalign aligners are custom-fitted for both comfort and discretion, the
 
 #### Why should I get Invisalign?
 
-Most people opt for Invisalign to help improve the look of their smile. Within a year or so, your smile could be straighter, which can give you the confidence you’ve always wanted. If you’ve ever hidden your smile or felt self-conscious about it, this can be an excellent treatment to help you obtain the look you’ve wanted.
+Most people opt for Invisalign to help improve the look of their smile. Within a year or so, your smile could be straighter, which can give you the confidence you've always wanted. If you've ever hidden your smile or felt self-conscious about it, this can be an excellent treatment to help you obtain the look you've wanted.
 
 There can also be some improvements to both the comfort and overall function of your teeth with Invisalign. If misaligned teeth are causing you problems, such as making you have to adjust how you speak or eat, Invisalign could make a huge difference.
 
 As an additional reason for getting Invisalign, proper teeth alignment can alleviate a multitude of other health problems. In some instances, improper teeth alignment can cause headaches and TMJ Disorder—getting braces could potentially address these issues or prevent them from occurring. Talk with our dentist to see if this is a possibility!
 
-In terms of both aesthetic value and health benefits, Invisalign can be a fantastic opportunity to improve your smile in the long-term without compromising your appearance in the short-term. Dr. Mazhari and the team at Alexandria Dental Health & Smile Studio look forward to setting up a free consultation to see if Invisalign is a good treatment option for you. Get the smile you’ve always wanted with Invisalign, and visit Alexandria Dental Health & Smile Studio today!
+In terms of both aesthetic value and health benefits, Invisalign can be a fantastic opportunity to improve your smile in the long-term without compromising your appearance in the short-term. Dr. Mazhari and the team at Alexandria Dental Health & Smile Studio look forward to setting up a free consultation to see if Invisalign is a good treatment option for you. Get the smile you've always wanted with Invisalign, and visit Alexandria Dental Health & Smile Studio today!
 
 #### Will I need to wear a retainer after invisalign treatment?
 
@@ -150,8 +150,8 @@ Patients who receive Invisalign will be prescribed a specialized solution that t
 
 #### Can I eat with Invisalign?
 
-Patients should remove their Invisalign aligners when they eat. Unlike traditional braces, there are no restrictions on one’s diet or limitations on what they can eat. Patients should, however, remove their aligners before eating and then properly clean their teeth before putting their aligners back on to avoid wedging food particles between their teeth and their dental appliance.
+Patients should remove their Invisalign aligners when they eat. Unlike traditional braces, there are no restrictions on one's diet or limitations on what they can eat. Patients should, however, remove their aligners before eating and then properly clean their teeth before putting their aligners back on to avoid wedging food particles between their teeth and their dental appliance.
 
 #### Can you get Invisalign with crowns?
 
-Yes, patients who have previously received dental crowns should still be able to utilize the Invisalign treatment. The physical Invisalign aligners are custom-made to fit each patient’s mouth. If a patient has crowns, the aligners can be designed to cover them, as well, without any issues.
+Yes, patients who have previously received dental crowns should still be able to utilize the Invisalign treatment. The physical Invisalign aligners are custom-made to fit each patient's mouth. If a patient has crowns, the aligners can be designed to cover them, as well, without any issues.

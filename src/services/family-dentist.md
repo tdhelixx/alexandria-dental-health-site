@@ -6,7 +6,7 @@ description: Our child-friendly environment at Alexandria Dental Health & Smile 
   in Alexandria VA is great family dentistry. Contact us today.
 keywords: family dentistry Alexandria VA, family dentistry, pediatric dentist, children's
   dental care, family dental
-heroImage: /images/family/Family-Mom-Dad-Kids-Smiling-CS1.webp
+heroImage: /images/Family-Mom-Dad-Kids-Smiling-CS1.webp
 heroImageAlt: Family Dentistry Treatment at Alexandria Dental Health & Smile Studio
 permalink: /family-dentist/
 ctaText: Schedule Family Appointment
@@ -18,7 +18,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/family/Family-Mom-Dad-Kids-Smiling-CS1.webp
+social_image: /images/Family-Mom-Dad-Kids-Smiling-CS1.webp
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true
@@ -37,7 +37,7 @@ benefits:
 - 'FAQs & Information
 
 
-  Dental Crowns FAQ’s
+  Dental Crowns FAQ's
 
   Dental Implant Benefits
 
@@ -60,7 +60,7 @@ benefits:
   What is Cosmetic Dentistry?
 
   What To Do in a Dental Emergency'
-- Dental Crowns FAQ’s
+- Dental Crowns FAQ's
 - Dental Implant Benefits
 - Dentures Cleaning & Care
 related_services:

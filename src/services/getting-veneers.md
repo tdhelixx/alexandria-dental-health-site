@@ -6,7 +6,7 @@ description: Our practice specializes in advanced ceramic technologies that addr
   structural compromise, color variations, and more.
 keywords: getting veneers Alexandria VA, getting veneers, cosmetic dentistry, smile
   makeover, porcelain veneers
-heroImage: /images/cosmetic/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
+heroImage: /images/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
 heroImageAlt: Getting Veneers Treatment at Alexandria Dental Health & Smile Studio
 permalink: /getting-veneers/
 ctaText: Schedule Veneers Consultation
@@ -18,7 +18,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/cosmetic/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
+social_image: /images/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true
@@ -96,7 +96,7 @@ This appointment is designed to help you feel informed and confident about your 
 
 ### Understanding Custom Dental Veneers
 
-At Alexandria Dental Health & Smile Studio, we provide personalized care to make sure your veneers are custom-designed for you. Here’s how we can help you get your dream smile:
+At Alexandria Dental Health & Smile Studio, we provide personalized care to make sure your veneers are custom-designed for you. Here's how we can help you get your dream smile:
 
 What Are Veneers?
 
@@ -112,7 +112,7 @@ Veneer Process
 
 Why Choose Veneers?
 
-- Achieve a radiant, flawless smile you’ll be proud to share.
+- Achieve a radiant, flawless smile you'll be proud to share.
 - With proper care, veneers can last 10 to 15 years or more.
 - Veneers require minimal alteration of natural teeth.
 

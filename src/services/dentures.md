@@ -6,7 +6,7 @@ description: Looking for Dentures in Alexandria VA? Call Alexandria Dental Healt
   & Smile Studio today for more information.
 keywords: dentures Alexandria VA, dentures, partial dentures, implant-supported dentures,
   tooth replacement
-heroImage: /images/restorative/man-older-dentures-smiling-at-dentist.jpg
+heroImage: /images/man-older-dentures-smiling-at-dentist.jpg
 heroImageAlt: Dentures Treatment at Alexandria Dental Health & Smile Studio
 permalink: /dentures/
 ctaText: Schedule Denture Consultation
@@ -18,7 +18,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/restorative/man-older-dentures-smiling-at-dentist.jpg
+social_image: /images/man-older-dentures-smiling-at-dentist.jpg
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true
@@ -37,7 +37,7 @@ benefits:
 - 'FAQs & Information
 
 
-  Dental Crowns FAQ’s
+  Dental Crowns FAQ's
 
   Dental Implant Benefits
 
@@ -60,7 +60,7 @@ benefits:
   What is Cosmetic Dentistry?
 
   What To Do in a Dental Emergency'
-- Dental Crowns FAQ’s
+- Dental Crowns FAQ's
 - Dental Implant Benefits
 - Dentures Cleaning & Care
 related_services:
@@ -78,7 +78,7 @@ Do you have missing teeth? Suffer from ill-fitting dentures? Mojgan Mazhari, DDS
 
 Dentures in Alexandria VA are dental appliances that replace missing teeth. It can be full or partial, depending on how many of your consecutive teeth are lost. Dentures have been the traditional tooth replacement option for many decades and they have experienced just as many changes through the years, as new materials and technologies have advanced the science and technique behind replacing missing teeth.
 
-Today’s dental patients enjoy a range of tooth replacement options, all of which now offer natural-looking, comfortable results that enable a normal function. Dr. Mazhari works with patients on an individual basis to help them choose the most suitable option for replacing lost teeth while meeting their oral health needs, cosmetic goals, and budget.
+Today's dental patients enjoy a range of tooth replacement options, all of which now offer natural-looking, comfortable results that enable a normal function. Dr. Mazhari works with patients on an individual basis to help them choose the most suitable option for replacing lost teeth while meeting their oral health needs, cosmetic goals, and budget.
 
 ## Types of Dentures in Alexandria VA
 

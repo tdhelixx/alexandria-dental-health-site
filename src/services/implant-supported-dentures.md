@@ -2,11 +2,11 @@
 layout: layouts/service.njk
 title: Implant Supported Dentures
 subtitle: All-on-Four® Fixed Denture Solutions
-description: If you’ve been told that you can’t get dental implants because you don’t
+description: If you've been told that you can't get dental implants because you don't
   have enough jaw bone to support them, Dr. Mojgan Mazhari can help.
 keywords: implant supported dentures Alexandria VA, implant supported dentures, partial
   dentures, implant-supported dentures, tooth replacement
-heroImage: /images/restorative/man-older-dentures-smiling-at-dentist.jpg
+heroImage: /images/man-older-dentures-smiling-at-dentist.jpg
 heroImageAlt: Implant Supported Dentures Treatment at Alexandria Dental Health & Smile
   Studio
 permalink: /implant-supported-dentures/
@@ -19,7 +19,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/restorative/man-older-dentures-smiling-at-dentist.jpg
+social_image: /images/man-older-dentures-smiling-at-dentist.jpg
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true
@@ -38,7 +38,7 @@ benefits:
 - 'FAQs & Information
 
 
-  Dental Crowns FAQ’s
+  Dental Crowns FAQ's
 
   Dental Implant Benefits
 
@@ -61,7 +61,7 @@ benefits:
   What is Cosmetic Dentistry?
 
   What To Do in a Dental Emergency'
-- Dental Crowns FAQ’s
+- Dental Crowns FAQ's
 - Dental Implant Benefits
 - Dentures Cleaning & Care
 process_steps:
@@ -80,9 +80,9 @@ related_services:
 
 # Implant Supported Dentures in Alexandria VA
 
-If you’ve been told that you can’t get dental implants because you don’t have enough jaw bone to support them, Dr. Mojgan Mazhari can propose an effective treatment option with implant supported dentures.
+If you've been told that you can't get dental implants because you don't have enough jaw bone to support them, Dr. Mojgan Mazhari can propose an effective treatment option with implant supported dentures.
 
-Many patients come to our Alexandria VA dental office desiring an alternative to removable dentures, as long-term wearers of dentures are often plagued by ill-fitting, loose dentures, accompanied with a lack of self confidence when smiling. For these patients, Dr. Mazhari can propose implant supported dentures, also known as All-on-Four®, a special type of implant that works for many people who can’t get traditional implants. And just like traditional dental implants, All-on-Four® implant supported dentures are permanent.
+Many patients come to our Alexandria VA dental office desiring an alternative to removable dentures, as long-term wearers of dentures are often plagued by ill-fitting, loose dentures, accompanied with a lack of self confidence when smiling. For these patients, Dr. Mazhari can propose implant supported dentures, also known as All-on-Four®, a special type of implant that works for many people who can't get traditional implants. And just like traditional dental implants, All-on-Four® implant supported dentures are permanent.
 
 ## Why Jaw Bone Matters in Alexandria VA
 
@@ -90,7 +90,7 @@ Natural teeth are supported by the bone in the jaw. When a tooth is lost, that b
 
 ### Why All-on-Four® Implants Are Different
 
-The titanium posts used in All-on-Four® implants are smaller than traditional implants, but still strong enough to support an arch of dentures. They are called All-on-Four® because an entire arch of artificial teeth, like a denture, is supported with only four implants. The implants are designed to fit and fuse to jaw bone even if there is less of it, making All-on-Four® an effective solution for people who want fixed dental implants but aren’t able to get traditional implants.
+The titanium posts used in All-on-Four® implants are smaller than traditional implants, but still strong enough to support an arch of dentures. They are called All-on-Four® because an entire arch of artificial teeth, like a denture, is supported with only four implants. The implants are designed to fit and fuse to jaw bone even if there is less of it, making All-on-Four® an effective solution for people who want fixed dental implants but aren't able to get traditional implants.
 
 ### The All-on-Four® Process
 
@@ -102,4 +102,4 @@ All-on-Four® implants are permanently fixed. You do not remove them for cleanin
 
 ### Contact Dr. Mazhari for Your Dental Implant Evaluation
 
-If you are interested in dental implants or have already been told that you are not a candidate for traditional implants due to jaw bone loss, contact Alexandria Dental Health & Smile Studio now. We can set up a consultation appointment for you with Dr. Mazhari at your convenience to find out if implant-supported All-on-Four® might be the solution you’ve been looking for.
+If you are interested in dental implants or have already been told that you are not a candidate for traditional implants due to jaw bone loss, contact Alexandria Dental Health & Smile Studio now. We can set up a consultation appointment for you with Dr. Mazhari at your convenience to find out if implant-supported All-on-Four® might be the solution you've been looking for.

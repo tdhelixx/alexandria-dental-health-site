@@ -6,7 +6,7 @@ description: Learn more about root canal therapy offered at Alexandria Dental He
   & Smile Studio in Alexandria VA.
 keywords: root canal therapy Alexandria VA, root canal therapy, endodontic treatment,
   tooth pain relief, root canal therapy
-heroImage: /images/restorative/Dentist-Alexandria-VA-Root-Canal-Therapy.webp
+heroImage: /images/Dentist-Alexandria-VA-Root-Canal-Therapy.webp
 heroImageAlt: Root Canal Therapy Treatment at Alexandria Dental Health & Smile Studio
 permalink: /root-canal-therapy/
 ctaText: Schedule Emergency Appointment
@@ -18,7 +18,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/restorative/Dentist-Alexandria-VA-Root-Canal-Therapy.webp
+social_image: /images/Dentist-Alexandria-VA-Root-Canal-Therapy.webp
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true
@@ -37,7 +37,7 @@ benefits:
 - 'FAQs & Information
 
 
-  Dental Crowns FAQ’s
+  Dental Crowns FAQ's
 
   Dental Implant Benefits
 
@@ -60,7 +60,7 @@ benefits:
   What is Cosmetic Dentistry?
 
   What To Do in a Dental Emergency'
-- Dental Crowns FAQ’s
+- Dental Crowns FAQ's
 - Dental Implant Benefits
 - Dentures Cleaning & Care
 related_services:

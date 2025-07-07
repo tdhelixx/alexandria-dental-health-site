@@ -6,7 +6,7 @@ description: Looking for help with Teeth Whitening in Alexandria VA? Contact Ale
   Dental Health & Smile Studio today to find out your options.
 keywords: teeth whitening Alexandria VA, teeth whitening, professional whitening,
   Opalescence, smile brightening
-heroImage: /images/services/couple-younger-smiling.webp
+heroImage: /images/couple-younger-smiling.webp
 heroImageAlt: Teeth Whitening Treatment at Alexandria Dental Health & Smile Studio
 permalink: /teeth-whitening/
 ctaText: Schedule Whitening Consultation
@@ -18,7 +18,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/services/couple-younger-smiling.webp
+social_image: /images/couple-younger-smiling.webp
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true
@@ -37,7 +37,7 @@ benefits:
 - 'FAQs & Information
 
 
-  Dental Crowns FAQ’s
+  Dental Crowns FAQ's
 
   Dental Implant Benefits
 
@@ -60,7 +60,7 @@ benefits:
   What is Cosmetic Dentistry?
 
   What To Do in a Dental Emergency'
-- Dental Crowns FAQ’s
+- Dental Crowns FAQ's
 - Dental Implant Benefits
 - Dentures Cleaning & Care
 related_services:
@@ -76,7 +76,7 @@ Hiding your smile behind darkened, yellow, or stained teeth? Dr. Mojgan Mazhari 
 
 A teeth whitening procedure in our Alexandria VA dentist office can restore a healthier, more youthful appearance in as little as an hour of your time. Dr. Mazhari can whiten and brighten your teeth safely and effectively using the highest quality products to reduce or eliminate sensitivity and other side effects.
 
-Teeth whitening can offer you a quick, economical smile makeover for that special occasion, such as a wedding, or a more general confidence boost that will benefit your social and professional interactions. Feeling good about your smile is important—it is often the most memorable feature when meeting someone for the first time, so why not put your “best smile forward“?
+Teeth whitening can offer you a quick, economical smile makeover for that special occasion, such as a wedding, or a more general confidence boost that will benefit your social and professional interactions. Feeling good about your smile is important—it is often the most memorable feature when meeting someone for the first time, so why not put your "best smile forward"?
 
 Prior to your treatment, Dr. Mazhari will meet with you to evaluate your dental health, ensuring that our professional teeth whitening options are right for you and can meet your cosmetic goals. While most tooth stains and discoloration respond well to this treatment, there a certain types of stains that may not: those caused by certain medications or medical conditions.
 

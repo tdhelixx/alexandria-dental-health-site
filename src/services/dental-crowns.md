@@ -6,7 +6,7 @@ description: Restore your smile with durable, natural-looking dental crowns in A
   VA. Contact Alexandria Dental Health & Smile Studio today!
 keywords: dental crowns Alexandria VA, dental crowns, CEREC crowns, same-day crowns,
   tooth restoration
-heroImage: /images/restorative/Dentist-Senior-Couple-Outside-Smiling-CS1.webp
+heroImage: /images/Dentist-Senior-Couple-Outside-Smiling-CS1.webp
 heroImageAlt: Dental Crowns Treatment at Alexandria Dental Health & Smile Studio
 permalink: /dental-crowns/
 ctaText: Schedule Crown Consultation
@@ -18,7 +18,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/restorative/Dentist-Senior-Couple-Outside-Smiling-CS1.webp
+social_image: /images/Dentist-Senior-Couple-Outside-Smiling-CS1.webp
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true
@@ -37,7 +37,7 @@ benefits:
 - 'FAQs & Information
 
 
-  Dental Crowns FAQ’s
+  Dental Crowns FAQ's
 
   Dental Implant Benefits
 
@@ -60,7 +60,7 @@ benefits:
   What is Cosmetic Dentistry?
 
   What To Do in a Dental Emergency'
-- Dental Crowns FAQ’s
+- Dental Crowns FAQ's
 - Dental Implant Benefits
 - Dentures Cleaning & Care
 process_steps:
@@ -84,7 +84,7 @@ Dental crowns can be made from a variety of materials, depending on the location
 
 ### What is a Dental Crown?
 
-A dental crown is often referred to as a “tooth cap” because it covers the entire tooth surface. When placed effectively, a dental crown will provide additional strength and improved aesthetics.
+A dental crown is often referred to as a "tooth cap" because it covers the entire tooth surface. When placed effectively, a dental crown will provide additional strength and improved aesthetics.
 
 A dental crown may be recommended to address a range of concerns, including:
 
@@ -97,11 +97,11 @@ A dental crown may be recommended to address a range of concerns, including:
 
 Dental crowns can play an important role in the maintenance of your natural teeth, helping to keep them healthy and functional for as long as possible.
 
-You no longer need to schedule multiple visits to the dentist to restore a tooth to its full function and esthetics, but you can have the full crown or partial crown fabricated in less than 90 minutes. While the fabrication time for multiple crowns can take a bit longer, it’s still possible to do those in one visit as well.
+You no longer need to schedule multiple visits to the dentist to restore a tooth to its full function and esthetics, but you can have the full crown or partial crown fabricated in less than 90 minutes. While the fabrication time for multiple crowns can take a bit longer, it's still possible to do those in one visit as well.
 
 ### What is CEREC® Technology?
 
-CEREC is a computer-aided design and manufacturing (CAD/CAM) technology that allows us to design, fabricate, and place a high-quality ceramic crown during a single visit. For today’s busy patients, this makes receiving the dental care you need more convenient and comfortable.
+CEREC is a computer-aided design and manufacturing (CAD/CAM) technology that allows us to design, fabricate, and place a high-quality ceramic crown during a single visit. For today's busy patients, this makes receiving the dental care you need more convenient and comfortable.
 
 Dr. Mazhari is committed to providing patients with optimal care, and she believes that investing in the latest technologies helps streamline both the patient experience and the treatment process. Alexandria Dental Health & Smile Studio is proud to offer the latest in CEREC technology: the Primescan Intraoral Scanner. This state-of-the-art digital imaging technology is faster and more accurate than ever before. Combined with our in-house 3D printing technology, the Primescan enables us to produce sturdy, high-quality, and fully-customized crown restorations that maximize function and aesthetics.
 

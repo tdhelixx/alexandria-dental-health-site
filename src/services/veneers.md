@@ -6,7 +6,7 @@ description: Interested in Porcelain Veneers in Alexandria VA? Call the experien
   team at Alexandria Dental Health & Smile Studio today.
 keywords: veneers Alexandria VA, veneers, cosmetic dentistry, smile makeover, porcelain
   veneers
-heroImage: /images/cosmetic/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
+heroImage: /images/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
 heroImageAlt: Veneers Treatment at Alexandria Dental Health & Smile Studio
 permalink: /veneers/
 ctaText: Schedule Veneers Consultation
@@ -18,7 +18,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/cosmetic/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
+social_image: /images/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true
@@ -83,7 +83,7 @@ Once your custom veneers have been fabricated, you will have the chance to try t
 
 ### How Long Do Porcelain Veneers Last?
 
-With proper care and maintenance, porcelain veneers can last for years or even decades. They are constructed from a high-quality ceramic that is designed to be durable and stain-resistant for long-lasting results. In order to maximize the longevity of your veneers, you should carefully follow Dr. Mazhari’s care instructions and ensure that you are maintaining optimal oral health. You should also avoid actions that put excess strain on your teeth, such as clenching, grinding, or using your teeth to open things.
+With proper care and maintenance, porcelain veneers can last for years or even decades. They are constructed from a high-quality ceramic that is designed to be durable and stain-resistant for long-lasting results. In order to maximize the longevity of your veneers, you should carefully follow Dr. Mazhari's care instructions and ensure that you are maintaining optimal oral health. You should also avoid actions that put excess strain on your teeth, such as clenching, grinding, or using your teeth to open things.
 
 ### What Is the Best Way to Care for My Porcelain Veneers?
 

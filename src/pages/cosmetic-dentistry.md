@@ -3,7 +3,7 @@ layout: layouts/page.njk
 title: "Cosmetic Dentistry at Alexandria Dental Health & Smile Studio"
 description: "Discover sophisticated cosmetic dentistry services in Alexandria VA with Dr. Mazhari. Advanced treatments for beautiful, natural-looking results."
 permalink: "/cosmetic-dentistry/"
-heroImage: "/images/pages/cosmetic-dentistry-hero.webp"
+heroImage: "/images/Dentist-Alexandria-VA-Cosmetic-Dentistry-FC.webp"
 heroImageAlt: "What is Cosmetic Dentistry in Alexandria VA"
 tags: ["pages", "cosmetic"]
 ---

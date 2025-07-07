@@ -6,7 +6,7 @@ description: At Alexandria Dental Health & Smile Studio in Alexandria, VA, we un
   the transformative power of a beautiful, functional smile.
 keywords: dental implants Alexandria VA, dental implants, tooth replacement, implant
   dentist, permanent teeth
-heroImage: /images/services/dental-implants-hero.webp
+heroImage: /images/Dentist-Alexandria-VA-Dental-Implants-FC.webp
 heroImageAlt: Dental Implants Treatment at Alexandria Dental Health & Smile Studio
 permalink: /about-dental-implants/
 ctaText: Schedule Implant Consultation
@@ -18,7 +18,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/services/dental-implants-hero.webp
+social_image: /images/Dentist-Alexandria-VA-Dental-Implants-FC.webp
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true
@@ -47,7 +47,7 @@ process_steps:
     the bone, a custom-made crown, bridge, or denture is placed on top, restoring
     your smile.'
 - title: Schedule Your Consultation Today
-  description: If you’re ready to restore your smile with dental implants, consult
+  description: If you're ready to restore your smile with dental implants, consult
     Dr. Mazhari today. Our team is here to guide you through every step of the process.
     Call us at (703) 212-9622 or use our online book...
 related_services:
@@ -100,7 +100,7 @@ This initial visit will help you feel informed and confident about the dental im
 
 ### Understanding Dental Implants
 
-Dental implants are an advanced treatment option for replacing missing teeth. Here’s a breakdown of the process and benefits of implants:
+Dental implants are an advanced treatment option for replacing missing teeth. Here's a breakdown of the process and benefits of implants:
 
 #### What Are Dental Implants?
 
@@ -138,7 +138,7 @@ For more information, visit our Payment and Insurance page.
 
 ### Why Choose Us?
 
-We pride ourselves on offering an exceptional dental experience at our Smile Studio. Here’s why you should choose us for your dental implants:
+We pride ourselves on offering an exceptional dental experience at our Smile Studio. Here's why you should choose us for your dental implants:
 
 - Expertise and Experience: Dr. Mazhari has over 15 years of experience in advanced dental procedures, including implants, and continues to pursue education at the Las Vegas Institute for Advanced Dental Studies (LVI).
 - Advanced Technology: We utilize the latest digital imaging and 3D scanning technologies to ensure precise implant placement and optimal outcomes.
@@ -148,4 +148,4 @@ We pride ourselves on offering an exceptional dental experience at our Smile Stu
 
 ### Schedule Your Consultation Today
 
-If you’re ready to restore your smile with dental implants, consult Dr. Mazhari today. Our team is here to guide you through every step of the process. Call us at (703) 212-9622 or use our online booking system.
+If you're ready to restore your smile with dental implants, consult Dr. Mazhari today. Our team is here to guide you through every step of the process. Call us at (703) 212-9622 or use our online booking system.
