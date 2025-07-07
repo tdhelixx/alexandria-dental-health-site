@@ -1,65 +1,71 @@
 # CloudCannon Configuration for 11ty
-# Updated to match our actual file structure
+# Updated to work with 11ty collections properly
 
 source: src
 paths:
   uploads: /assets/uploads
 
+# 11ty Collection Configuration - CloudCannon reads from 11ty's collection data
 collections_config:
-  pages:
-    path: src/pages
-    name: Pages
-    icon: wysiwyg
-    description: "General pages like About, Contact, etc."
-    _enabled_editors:
-      - content
-      - data
-  blog:
-    path: src/blog
-    name: Blog
-    icon: post_add
-    description: "Dental health blog articles"
-    _enabled_editors:
-      - content
-      - data
   services:
-    path: src/services
-    name: Services
-    icon: medical_services
+    # Let 11ty handle the collection, CloudCannon reads from built output
+    output: true
+    name: "Services"
     description: "Dental service pages"
+    icon: medical_services
+    filter: "services"
+    sort_key: "title"
     _enabled_editors:
       - content
       - data
+    create:
+      path: "src/services/{slug}.md"
+    schemas:
+      default:
+        path: schemas/service.md
+        name: Service Page
+  
+  blog:
+    output: true 
+    name: "Blog"
+    description: "Dental health blog articles"
+    icon: post_add
+    filter: "blog"
+    sort_key: "date"
+    sort_order: "desc"
+    _enabled_editors:
+      - content
+      - data
+    create:
+      path: "src/blog/{slug}.md"
+    schemas:
+      default:
+        path: schemas/blog.md
+        name: Blog Post
+  
+  pages:
+    output: true
+    name: "Pages" 
+    description: "General pages like About, Contact, etc."
+    icon: wysiwyg
+    filter: "pages"
+    _enabled_editors:
+      - content
+      - data
+    create:
+      path: "src/pages/{slug}.md"
+    schemas:
+      default:
+        path: schemas/page.md
+        name: Page
 
+# Collection groups for organization
 collection_groups:
   - heading: Content
     collections:
-      - pages
       - services
+      - pages
       - blog
-
-_enabled_editors:
-  - data
-  - content
-  - visual
-
-_inputs:
-  blog_tags:
-    type: multiselect
-    options:
-      values: _select_data.blog_topics
-
-_select_data:
-  blog_topics:
-    - Opinion
-    - Feature
-    - Resource
-
-_editables:
-  content:
-    bold: true
-    italics: true
-    underline: true
 
 # Build settings for 11ty
 build:
@@ -69,9 +75,40 @@ build:
   environment_variables:
     NODE_ENV: "production"
 
+# Editor configuration
+_enabled_editors:
+  - content
+  - data
+  - visual
+
+_editables:
+  content:
+    bold: true
+    italics: true
+    underline: true
+    link: true
+    bulletedlist: true
+    numberedlist: true
+
+# Schema templates for new content
+_structures:
+  process_steps:
+    values:
+      - value:
+          title: ""
+          description: ""
+  benefits_list:
+    values:
+      - value: ""
+  faq_items:
+    values:
+      - value:
+          question: ""
+          answer: ""
+
+# Global configuration
 base_url: /
 timezone: Etc/UTC
-
 markdown:
   engine: commonmark
 
