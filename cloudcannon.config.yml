@@ -1,173 +1,40 @@
-# CloudCannon Configuration
+# Simple CloudCannon Configuration
 source: src
 
-# Metadata
-_metadata:
-  _comments:
-    eleventyNavigation: "Configure navigation for this page"
-  _array_structures:
-    content_blocks:
-      values:
-        - label: "Content Block"
-          icon: "notes"
-          value:
-            _bookshop_name: "content"
-
-# Collections Configuration
+# Collections - Keep it simple
 collections_config:
   services:
     path: services
-    name: "Services"
-    description: "Dental service pages"
+    name: "Services" 
     icon: medical_services
-    _enabled_editors:
-      - visual
-      - content
-      - data
-    _inputs:
-      title:
-        type: text
-        label: "Service Title"
-        comment: "e.g., 'Dental Implants in Alexandria VA'"
-      subtitle:
-        type: text
-        label: "Subtitle"
-        comment: "Brief subtitle that appears under the main title"
-      description:
-        type: textarea
-        label: "Meta Description"
-        comment: "Brief description for search engines (under 160 characters)"
-        character_limit: 160
-      category:
-        type: select
-        label: "Service Category"
-        options:
-          - Cosmetic
-          - Restorative
-          - Preventive
-          - Family
-          - Emergency
-          - Orthodontic
-      heroImage:
-        type: image
-        label: "Hero Image"
-        comment: "Main service image (1200x630px recommended)"
-      ctaText:
-        type: text
-        label: "Call-to-Action Text"
-        comment: "e.g., 'Schedule Consultation'"
-      ctaLink:
-        type: url
-        label: "Call-to-Action Link"
-        comment: "Usually /contact-us/"
-      benefits:
-        type: array
-        label: "Key Benefits"
-        comment: "List the main benefits of this service"
-        options:
-          empty_type: string
-      related_services:
-        type: array
-        label: "Related Services"
-        comment: "Link to related service pages"
-        options:
-          structures:
-            service_link:
-              values:
-                - label: Service Link
-                  value:
-                    title: 
-                    url: 
-          empty_type: service_link
-          preview:
-            text: [key: title]
-            subtext: [key: url]
-        
   pages:
     path: pages
     name: "Pages"
-    description: "General website pages"
     icon: article
-    _enabled_editors:
-      - visual
-      - content
-      - data
-      
   blog:
     path: blog
     name: "Blog"
-    description: "Blog posts and articles"
     icon: edit
-    _enabled_editors:
-      - visual
-      - content
-      - data
-    sort_key: date
 
-# Visual Editor Configuration
-_editors:
-  visual:
-    preview_text: "Open Visual Editor"
-    _comments:
-      content: "Edit the main content of this page"
-  content:
-    bold: true
-    italic: true
-    link: true
-    bullet_list: true
-    numbered_list: true
-    image: true
-    table: true
-    _comments:
-      content: "Main page content in Markdown format"
+# Essential inputs only
+_inputs:
+  title:
+    type: text
+    label: "Page Title"
+  subtitle:
+    type: text
+    label: "Subtitle"
+  description:
+    type: textarea
+    label: "Description"
 
-# Build Configuration  
+# Build settings
 build:
   install_command: "npm install"
-  build_command: "npm run build" 
+  build_command: "npm run build"
   output_dir: "_site"
-  environment_variables:
-    NODE_VERSION: 18
-    ELEVENTY_ENV: "production"
 
-# Site Generator Configuration
+# Generator
 generator:
   metadata:
-    markdown: "markdown-it"
-    markdown-it:
-      html: true
-      linkify: true
-    eleventy: true
-
-# Global Input Configuration
-_inputs:
-  tags:
-    type: array
-    label: "Tags"
-    comment: "Categories for organizing content"
-    options:
-      allow_create: true
-      values:
-        - services
-        - cosmetic  
-        - restorative
-        - family
-        - emergency
-        - preventative
-        - general
-
-# Asset Configuration
-paths:
-  uploads: "src/images"
-  
-# Site Settings
-timezone: "America/New_York"
-locale: "en-US"
-
-# Ignore Files
-ignore:
-  - "node_modules"
-  - ".git"
-  - ".eleventy.js"
-  - "package.json"
-  - "package-lock.json" 
+    eleventy: true 
