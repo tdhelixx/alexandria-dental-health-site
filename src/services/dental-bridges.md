@@ -5,6 +5,7 @@ subtitle: Replace Missing Teeth with Permanent Fixed Bridges
 description: Discover dental bridges in Alexandria VA to restore your smile and improve
   oral health. Contact Alexandria Dental Health & Smile Studio.
 keywords: dental bridge Alexandria VA, dental bridge, tooth replacement, missing teeth, fixed bridge
+category: Restorative
 heroImage: /images/restorative/Dentist-Senior-Couple-Outside-Smiling-CS1.webp
 heroImageAlt: Dental Bridge Treatment at Alexandria Dental Health & Smile Studio
 permalink: /dental-bridges/
@@ -42,6 +43,8 @@ related_services:
   url: /dental-implants/
 - title: Dental Crowns
   url: /dental-crowns/
+- title: Dentures
+  url: /dentures/
 ---
 
 # Dental Bridges in Alexandria VA

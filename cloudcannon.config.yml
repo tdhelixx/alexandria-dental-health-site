@@ -1,5 +1,7 @@
 # CloudCannon Configuration
 source: src
+
+# Collections Configuration
 collections_config:
   services:
     path: services
@@ -10,32 +12,20 @@ collections_config:
       - visual
       - content
       - data
-    add_options:
-      - name: "New Service Page"
-        icon: add
-        href: "cloudcannon:explore/services/"
-    schemas:
-      default:
-        path: schemas/service.md
     _inputs:
       title:
         type: text
         label: "Service Title"
         comment: "e.g., 'Dental Implants in Alexandria VA'"
+      subtitle:
+        type: text
+        label: "Subtitle"
+        comment: "Brief subtitle that appears under the main title"
       description:
         type: textarea
         label: "Meta Description"
         comment: "Brief description for search engines (under 160 characters)"
         character_limit: 160
-      image:
-        type: image
-        label: "Hero Image"
-        comment: "Main service image (1200x630px recommended)"
-        options:
-          width: 1200
-          height: 630
-          resize_style: "crop"
-          mime_type: "image/webp"
       category:
         type: select
         label: "Service Category"
@@ -46,73 +36,40 @@ collections_config:
           - Family
           - Emergency
           - Orthodontic
-      technology:
+      heroImage:
+        type: image
+        label: "Hero Image"
+        comment: "Main service image (1200x630px recommended)"
+      ctaText:
         type: text
-        label: "Technology/Brand"
-        comment: "e.g., 'CEREC®', 'Invisalign®', 'Advanced Digital Impressions'"
-      visit_duration:
-        type: text
-        label: "Treatment Duration" 
-        comment: "e.g., 'Single visit (90 minutes)', '2-3 visits over 2 weeks'"
-      cost_range:
-        type: text
-        label: "Investment Range"
-        comment: "e.g., '$1,200 - $1,800 per crown'"
-      conditions_treated:
-        type: array
-        label: "Conditions We Treat"
-        comment: "List conditions this service addresses"
-        _inputs:
-          $:
-            type: text
-      materials:
-        type: array
-        label: "Materials Used"
-        _inputs:
-          $:
-            type: text
+        label: "Call-to-Action Text"
+        comment: "e.g., 'Schedule Consultation'"
+      ctaLink:
+        type: url
+        label: "Call-to-Action Link"
+        comment: "Usually /contact-us/"
       benefits:
         type: array
-        label: "Treatment Benefits"
-        _inputs:
-          $:
-            type: text
-      process_steps:
-        type: array
-        label: "Treatment Process"
-        _inputs:
-          title:
-            type: text
-            label: "Step Title"
-          description:
-            type: textarea
-            label: "Step Description"
-      video_url:
-        type: url
-        label: "Educational Video"
-        comment: "YouTube or Vimeo URL (optional)"
+        label: "Key Benefits"
+        comment: "List the main benefits of this service"
+        options:
+          empty_type: string
       related_services:
         type: array
         label: "Related Services"
-        comment: "Slug names (e.g., 'dental-crowns')"
-        _inputs:
-          $:
-            type: text
-      related_pages:
-        type: array
-        label: "Additional Information"
-        comment: "FAQ or info page slugs (e.g., 'dental-crowns-faqs')"
-        _inputs:
-          $:
-            type: text
-      cta_text:
-        type: text
-        label: "Special Offer Text"
-        comment: "Optional button text"
-      cta_link:
-        type: url
-        label: "Special Offer Link"
-        comment: "Optional button URL"
+        comment: "Link to related service pages"
+        options:
+          structures:
+            service_link:
+              values:
+                - label: Service Link
+                  value:
+                    title: 
+                    url: 
+          empty_type: service_link
+          preview:
+            text: [key: title]
+            subtext: [key: url]
         
   pages:
     path: pages
@@ -134,45 +91,12 @@ collections_config:
       - content
       - data
     sort_key: date
-    sort_options:
-      - key: date
-        order: desc
-        label: "Date (newest first)"
 
-# Global data inputs
-_inputs:
-  title:
-    type: text
-    label: "Page Title"
-  description:
-    type: textarea
-    label: "Meta Description" 
-    character_limit: 160
-  image:
-    type: image
-    label: "Featured Image"
-  hero_title:
-    type: text
-    label: "Hero Title"
-  hero_subtitle:
-    type: textarea
-    label: "Hero Subtitle"
-  cta_text:
-    type: text
-    label: "Call-to-Action Text"
-  cta_link:
-    type: url
-    label: "Call-to-Action Link"
-
-# Data configuration
-data_config:
-  navigation:
-    path: src/_data/navigation.json
-  site_settings:
-    path: src/_data/site_settings.json
-
-# Editor configuration
+# Visual Editor Configuration
 _editors:
+  visual:
+    preview_url: "/"
+    preview_text: "Open Visual Editor"
   content:
     bold: true
     italic: true
@@ -181,13 +105,8 @@ _editors:
     numbered_list: true
     image: true
     table: true
-    code_block: true
-    snippet: true
-  visual:
-    preview_url: "/"
-    preview_text: "Open Visual Editor"
 
-# Build configuration  
+# Build Configuration  
 build:
   install_command: "npm install"
   build_command: "npm run build" 
@@ -195,222 +114,13 @@ build:
   environment_variables:
     NODE_VERSION: 18
 
-# Visual editing configuration
-_structures:
-  hero_buttons:
-    values:
-      - label: "Primary Button"
-        value:
-          text: "Schedule Consultation"
-          url: "/contact-us/"
-          style: "primary"
-      - label: "Secondary Button"  
-        value:
-          text: "Call Now"
-          url: "tel:703-746-0077"
-          style: "secondary"
-          
-  testimonials:
-    values:
-      - label: "Patient Testimonial"
-        value:
-          content: "Quote from patient"
-          author: "Patient Name"
-          treatment: "Type of treatment"
-
-# Timezone and locale
-timezone: America/New_York
-locale: en-US
-
-# CloudCannon-specific settings
-_comments:
-  title: "This will appear as the page title and in search results"
-  description: "Keep this under 160 characters for optimal SEO"
-  image: "Choose high-quality images in WebP format when possible"
-  
-_options:
-  image:
-    width: 1200
-    height: 630
-    resize_style: "crop"
-    mime_type: "image/webp"
-
-# 11ty specific settings
-generator:
-  metadata:
-    markdown: "markdown-it"
-    
-# Enable live editing
-source_editor:
-  enabled: true
-
-# Data files for 11ty
-data_config:
-  navigation:
-    path: "src/_data/navigation.yml"
-  site:
-    path: "src/_data/site.yml"
-    
-# Editor settings
-_editors:
-  content:
-    bold: true
-    italic: true
-    link: true
-    bulletedlist: true
-    numberedlist: true
-    image: true
-    table: true
-    code: true
-    horizontalrule: true
-    removeformat: true
-    
+# Global Input Configuration
 _inputs:
-  title:
-    type: text
-    label: "Page Title"
-    comment: "The title that appears in the browser tab and search results"
-  description:
-    type: textarea
-    label: "Meta Description"
-    comment: "Brief description for search engines (150-160 characters)"
-  layout:
-    type: select
-    label: "Layout"
-    options:
-      values:
-        - "layouts/base.njk"
-        - "layouts/page.njk"
-        - "layouts/service.njk"
-        - "layouts/blog.njk"
-  permalink:
-    type: text
-    label: "URL Path"
-    comment: "The URL path for this page (e.g., /about/)"
-  date:
-    type: date
-    label: "Date"
-    comment: "Publication date"
   tags:
     type: array
     label: "Tags"
     comment: "Categories for organizing content"
-        
-# Asset paths
-paths:
-  uploads: "src/assets/images"
-  
-# Site settings
-timezone: "America/New_York"
-
-# CloudCannon 11ty integration
-_11ty:
-  enabled: true
-  
-# Collection schemas for better editing
-_schema:
-  default:
-    path: "schemas/default.md"
-  
-# Metadata
-_metadata:
-  title: "Alexandria Dental Health"
-  description: "Comprehensive dental care in Alexandria, VA"
-
-# Define which files CloudCannon should ignore
-ignore:
-  - "node_modules"
-  - ".git"
-  - ".eleventy.js"
-  - "package.json"
-  - "package-lock.json"
-
-# Input configuration for arrays and objects
-_inputs:
-  # Related Services Array Configuration
-  related_services:
-    type: array
-    label: Related Services
-    comment: Add related service pages to display in the sidebar
     options:
-      structures:
-        service_link:
-          values:
-            - label: Service Link
-              icon: link
-              value:
-                title: 
-                url: 
-      empty_type: service_link
-      preview:
-        text:
-          - key: title
-        subtext:
-          - key: url
-        icon: link
-  
-  # Benefits Array Configuration  
-  benefits:
-    type: array
-    label: Benefits & Features
-    comment: Key benefits and features of this service
-    options:
-      empty_type: string
-      preview:
-        text: 
-          - key: value
-  
-  # Process Steps Array Configuration
-  process_steps:
-    type: array 
-    label: Treatment Process
-    comment: Step-by-step treatment process
-    options:
-      structures:
-        process_step:
-          values:
-            - label: Process Step
-              icon: playlist_add_check
-              value:
-                title:
-                description:
-      empty_type: process_step
-      preview:
-        text:
-          - key: title
-        subtext:
-          - key: description
-        icon: playlist_add_check
-  
-  # FAQ Array Configuration
-  faq:
-    type: array
-    label: Frequently Asked Questions
-    comment: Common questions and answers about this service
-    options:
-      structures:
-        faq_item:
-          values:
-            - label: FAQ Item
-              icon: help
-              value:
-                question:
-                answer:
-      empty_type: faq_item
-      preview:
-        text:
-          - key: question
-        subtext:
-          - key: answer
-        icon: help
-  
-  # Tags Array Configuration
-  tags:
-    type: array
-    label: Tags
-    comment: Service tags for categorization
-    options:
-      empty_type: string
       allow_create: true
       values:
         - services
@@ -420,49 +130,19 @@ _inputs:
         - emergency
         - preventative
         - general
-  
-  # Content Sections Array Configuration
-  content_sections:
-    type: array
-    label: Content Sections
-    comment: Sections to display on this page
-    options:
-      empty_type: string
-      allow_create: true
-      values:
-        - benefits
-        - process
-        - investment
-        - faq
-        - testimonials
-        - gallery
-  
-  # Editable Regions Array Configuration
-  editable_regions:
-    type: array
-    label: Editable Regions
-    comment: Regions that can be edited in the visual editor
-    options:
-      empty_type: string
-      allow_create: true
-      values:
-        - hero
-        - content
-        - sidebar
-        - footer
 
-# Visual editor configuration
-visual:
-  preview_url: http://localhost:8080
+# Asset Configuration
+paths:
+  uploads: "src/images"
   
-# Editor configuration
-_editor:
-  default_path: /services/
-  
-# Generator configuration
-generator:
-  metadata:
-    markdown: markdown-it
-    markdown-it:
-      html: true
-      linkify: true 
+# Site Settings
+timezone: "America/New_York"
+locale: "en-US"
+
+# Ignore Files
+ignore:
+  - "node_modules"
+  - ".git"
+  - ".eleventy.js"
+  - "package.json"
+  - "package-lock.json" 
