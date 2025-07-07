@@ -95,7 +95,6 @@ collections_config:
 # Visual Editor Configuration
 _editors:
   visual:
-    preview_url: "/"
     preview_text: "Open Visual Editor"
   content:
     bold: true
@@ -113,6 +112,14 @@ build:
   output_dir: "_site"
   environment_variables:
     NODE_VERSION: 18
+
+# Site Generator Configuration
+generator:
+  metadata:
+    markdown: "markdown-it"
+    markdown-it:
+      html: true
+      linkify: true
 
 # Global Input Configuration
 _inputs:
