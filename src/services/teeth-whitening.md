@@ -6,7 +6,7 @@ description: "Professional teeth whitening in Alexandria VA with Dr. Mazhari. In
 keywords: "teeth whitening Alexandria VA, professional whitening, Opalescence"
 permalink: "/teeth-whitening/"
 heroImage: "/images/services/couple-younger-smiling.webp"
-heroImageAlt: "Couple Younger Head On Shoulder Smiling"
+heroImageAlt: "Woman Smiling After Professional Teeth Whitening"
 ctaText: "View Our Special Offers"
 ctaLink: "/special/"
 tags: ["services", "cosmetic"]
@@ -16,7 +16,7 @@ benefits:
   - "Reduced sensitivity compared to over-the-counter options"
   - "Custom-fit trays for even distribution"
   - "Long-lasting results with proper care"
-process:
+process_steps:
   - title: "Consultation"
     description: "Dr. Mazhari evaluates your dental health to ensure whitening is right for you."
   - title: "Preparation"
@@ -79,10 +79,6 @@ This application will be repeated several times over the course of your hour lon
 ---
 
 ## Opalescence® Take-Home Whitening
-
-<div class="opalescence-logo">
-  <img src="/images/services/opalescence-logo.webp" alt="Opalescence Logo" width="300" height="85">
-</div>
 
 **About the Take-Home Process**  
 Dr. Mazhari also offers the convenience of professional teeth whitening in the comfort of your own home.
