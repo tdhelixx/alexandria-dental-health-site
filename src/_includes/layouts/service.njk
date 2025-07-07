@@ -9,9 +9,9 @@ layout: layouts/base.njk
         <div class="hero-background" {% if heroImage %}style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{ heroImage }}')"{% endif %}>
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="service-title" data-cms-editable="title">{{ title }}</h1>
+                    <h1 class="service-title editable" data-cms-editable="title">{{ title }}</h1>
                     {% if subtitle %}
-                        <p class="service-subtitle" data-cms-editable="subtitle">{{ subtitle }}</p>
+                        <p class="service-subtitle editable" data-cms-editable="subtitle">{{ subtitle }}</p>
                     {% endif %}
                     {% if category %}
                         <span class="service-category-badge">{{ category }}</span>
@@ -32,7 +32,7 @@ layout: layouts/base.njk
             <div class="service-layout">
                 <div class="service-main">
                     <!-- Editable Content Area -->
-                    <div class="content-editable" data-cms-editable="content">
+                    <div class="content-editable editable">
                         {{ content | safe }}
                     </div>
                     
@@ -181,6 +181,24 @@ layout: layouts/base.njk
 .content-editable:hover {
     border-color: #28a745;
     background: #f1f8f4;
+}
+
+/* Visual editing indicators for CloudCannon */
+.editable {
+    outline: 2px dashed transparent;
+    transition: all 0.3s ease;
+}
+
+.editable:hover {
+    outline-color: #ffc107;
+    outline-offset: 2px;
+}
+
+.editable:focus,
+.editable.cms-selected {
+    outline-color: #28a745;
+    outline-offset: 2px;
+    background: rgba(40, 167, 69, 0.1);
 }
 
 .benefits-section h2 { 
