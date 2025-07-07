@@ -48,32 +48,11 @@ layout: layouts/base.njk
                     {% endif %}
                     
                     <div class="post-navigation">
-                        {% if collections.blog %}
-                            {% set previousPost = collections.blog | getPreviousCollectionItem(page) %}
-                            {% set nextPost = collections.blog | getNextCollectionItem(page) %}
-                            
-                            {% if previousPost or nextPost %}
-                                <nav class="post-nav">
-                                    {% if previousPost %}
-                                        <div class="nav-previous">
-                                            <a href="{{ previousPost.url }}">
-                                                <span class="nav-label">Previous Post</span>
-                                                <span class="nav-title">{{ previousPost.data.title }}</span>
-                                            </a>
-                                        </div>
-                                    {% endif %}
-                                    
-                                    {% if nextPost %}
-                                        <div class="nav-next">
-                                            <a href="{{ nextPost.url }}">
-                                                <span class="nav-label">Next Post</span>
-                                                <span class="nav-title">{{ nextPost.data.title }}</span>
-                                            </a>
-                                        </div>
-                                    {% endif %}
-                                </nav>
-                            {% endif %}
-                        {% endif %}
+                        <nav class="post-nav">
+                            <div class="nav-center">
+                                <a href="/blog/" class="btn btn-outline">← Back to Blog</a>
+                            </div>
+                        </nav>
                     </div>
                 </div>
                 
@@ -87,8 +66,8 @@ layout: layouts/base.njk
                     <div class="sidebar-widget">
                         <h3>Recent Posts</h3>
                         <ul class="recent-posts">
-                            {% for post in collections.blog | head(5) %}
-                                {% if post.url != page.url %}
+                            {% for post in collections.blog %}
+                                {% if loop.index <= 5 and post.url != page.url %}
                                     <li>
                                         <a href="{{ post.url }}">
                                             <span class="post-date">{{ post.date }}</span>
@@ -132,8 +111,8 @@ layout: layouts/base.njk
     <div class="container">
         <h2>Related Articles</h2>
         <div class="related-posts-grid">
-            {% set relatedPosts = collections.blog | excludeItem(page) | head(3) %}
-            {% for post in relatedPosts %}
+            {% for post in collections.blog %}
+                {% if loop.index <= 3 and post.url != page.url %}
                 <article class="related-post">
                     {% if post.data.featured_image %}
                         <div class="post-image">
@@ -153,6 +132,7 @@ layout: layouts/base.njk
                         <a href="{{ post.url }}" class="read-more">Read More</a>
                     </div>
                 </article>
+                {% endif %}
             {% endfor %}
         </div>
     </div>
