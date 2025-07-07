@@ -64,76 +64,14 @@ layout: layouts/base.njk
                     </div>
                     
                     <div class="sidebar-widget">
-                        <h3>Recent Posts</h3>
-                        <ul class="recent-posts">
-                            {% for post in collections.blog %}
-                                {% if loop.index <= 5 and post.url != page.url %}
-                                    <li>
-                                        <a href="{{ post.url }}">
-                                            <span class="post-date">{{ post.date }}</span>
-                                            <span class="post-title">{{ post.data.title }}</span>
-                                        </a>
-                                    </li>
-                                {% endif %}
-                            {% endfor %}
-                        </ul>
-                        <a href="/blog/" class="view-all-link">View All Posts</a>
-                    </div>
-                    
-                    <div class="sidebar-widget">
-                        <h3>Categories</h3>
-                        <ul class="categories">
-                            <li><a href="/blog/category/cosmetic-dentistry/">Cosmetic Dentistry</a></li>
-                            <li><a href="/blog/category/dental-implants/">Dental Implants</a></li>
-                            <li><a href="/blog/category/oral-health/">Oral Health</a></li>
-                            <li><a href="/blog/category/preventive-care/">Preventive Care</a></li>
-                            <li><a href="/blog/category/dental-technology/">Dental Technology</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="sidebar-widget">
                         <h3>Connect With Us</h3>
                         <div class="contact-info">
                             <p><strong>Phone:</strong> <a href="tel:703-746-0077">703-746-0077</a></p>
                             <p><strong>Email:</strong> <a href="mailto:info@alexandriadentalhealth.com">info@alexandriadentalhealth.com</a></p>
-                        </div>
-                        <div class="social-links">
-                            <!-- Add social media links here -->
                         </div>
                     </div>
                 </aside>
             </div>
         </div>
     </div>
-</article>
-
-<section class="related-posts">
-    <div class="container">
-        <h2>Related Articles</h2>
-        <div class="related-posts-grid">
-            {% for post in collections.blog %}
-                {% if loop.index <= 3 and post.url != page.url %}
-                <article class="related-post">
-                    {% if post.data.featured_image %}
-                        <div class="post-image">
-                            <a href="{{ post.url }}">
-                                <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" loading="lazy">
-                            </a>
-                        </div>
-                    {% endif %}
-                    <div class="post-content">
-                        <time class="post-date">{{ post.date }}</time>
-                        <h3 class="post-title">
-                            <a href="{{ post.url }}">{{ post.data.title }}</a>
-                        </h3>
-                        {% if post.data.excerpt %}
-                            <p class="post-excerpt">{{ post.data.excerpt }}</p>
-                        {% endif %}
-                        <a href="{{ post.url }}" class="read-more">Read More</a>
-                    </div>
-                </article>
-                {% endif %}
-            {% endfor %}
-        </div>
-    </div>
-</section> 
+</article> 
