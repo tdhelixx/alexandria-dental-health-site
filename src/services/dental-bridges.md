@@ -1,6 +1,6 @@
 ---
 layout: layouts/service.njk
-title: Dental Bridges
+title: Dental Bridge
 subtitle: Replace Missing Teeth with Permanent Fixed Bridges
 description: >-
   Discover dental bridges in Alexandria VA to restore your smile and improve
