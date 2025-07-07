@@ -1,0 +1,54 @@
+{
+  "practice_name": "Alexandria Dental Health & Smile Studio",
+  "doctor_name": "Dr. Mojgan Mazhari",
+  "tagline": "Transform Your Smile with Expert Dental Care",
+  "phone": "703-746-0077",
+  "email": "info@alexandriadentalhealth.com",
+  "address": {
+    "street": "2847 Duke St",
+    "city": "Alexandria",
+    "state": "VA",
+    "zip": "22314"
+  },
+  "hours": {
+    "monday": "10:00am - 6:00pm",
+    "tuesday": "10:00am - 6:00pm", 
+    "wednesday": "10:00am - 6:00pm",
+    "thursday": "9:00am - 4:00pm",
+    "friday": "8:00am - 1:00pm",
+    "saturday": "Closed",
+    "sunday": "Closed"
+  },
+  "social_media": {
+    "facebook": "https://www.facebook.com/Alexandriasmilestudio/",
+    "instagram": "https://www.instagram.com/alexandriadentalhealth/",
+    "twitter": "https://twitter.com/MMazhariDDS/"
+  },
+  "hero_section": {
+    "enabled": true,
+    "background_video": false,
+    "call_to_actions": [
+      {
+        "text": "Schedule Consultation",
+        "url": "/contact-us/",
+        "style": "primary"
+      },
+      {
+        "text": "Call Now",
+        "url": "tel:703-746-0077",
+        "style": "secondary"
+      }
+    ]
+  },
+  "features": {
+    "show_testimonials": true,
+    "show_before_after": true,
+    "show_services_grid": true,
+    "show_about_section": true
+  },
+  "seo": {
+    "meta_title": "Dentist in Alexandria VA | Alexandria Dental Health",
+    "meta_description": "Comprehensive dental care in Alexandria, VA. Dr. Mojgan Mazhari provides expert dental services including cosmetic dentistry, dental implants, Invisalign, and more.",
+    "keywords": "dentist Alexandria VA, dental implants, Invisalign, cosmetic dentistry, teeth whitening, dental care"
+  }
+} 

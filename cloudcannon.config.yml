@@ -1,82 +1,206 @@
-# CloudCannon Configuration for 11ty
-# Fixed path configuration
-
+# CloudCannon Configuration
 source: src
-
 collections_config:
   services:
     path: services
     name: "Services"
-    icon: medical_services
-    description: "Dental service pages"
+    description: "Dental service pages with visual editing"
+    icon: medical
     _enabled_editors:
+      - visual
       - content
       - data
     add_options:
-      - name: "Service Page"
-        icon: medical_services
-        schema: default
-  
+      - name: "New Service Page"
+        icon: add
+        href: "cloudcannon:explore/services/"
+    schemas:
+      default:
+        path: schemas/service.md
+    _inputs:
+      title:
+        type: text
+        label: "Service Title"
+        comment: "The main title for this service page"
+      description:
+        type: textarea
+        label: "Meta Description"
+        comment: "SEO description for search engines"
+      image:
+        type: image
+        label: "Hero Image"
+        comment: "Main image for the service page"
+      category:
+        type: select
+        options:
+          - Cosmetic
+          - Restorative
+          - Preventive
+          - Family
+          - Emergency
+      technology:
+        type: text
+        label: "Technology Used"
+        comment: "e.g., CEREC®, Invisalign®"
+      visit_duration:
+        type: text
+        label: "Visit Duration"
+        comment: "e.g., Single visit (90 minutes)"
+      conditions_treated:
+        type: array
+        label: "Conditions Treated"
+        comment: "List of dental conditions this service addresses"
+      materials:
+        type: array
+        label: "Materials Used"
+        comment: "Types of materials used in treatment"
+      related_services:
+        type: array
+        label: "Related Services"
+        comment: "Links to related service pages"
+        
   pages:
     path: pages
     name: "Pages"
-    icon: wysiwyg  
-    description: "General pages"
+    description: "General website pages"
+    icon: article
     _enabled_editors:
+      - visual
       - content
       - data
-    add_options:
-      - name: "Page"
-        icon: wysiwyg
-        schema: default
-
+      
   blog:
     path: blog
     name: "Blog"
-    icon: post_add
-    description: "Blog posts"
-    sort_key: date
-    sort_order: desc
+    description: "Blog posts and articles"
+    icon: edit
     _enabled_editors:
+      - visual
       - content
       - data
-    add_options:
-      - name: "Blog Post"
-        icon: post_add
-        schema: default
+    sort_key: date
+    sort_options:
+      - key: date
+        order: desc
+        label: "Date (newest first)"
 
-# Build settings
+# Global data inputs
+_inputs:
+  title:
+    type: text
+    label: "Page Title"
+    comment: "The main title for this page"
+  description:
+    type: textarea
+    label: "Meta Description" 
+    comment: "Description for search engines and social media"
+  image:
+    type: image
+    label: "Featured Image"
+    comment: "Main image for this page"
+  hero_title:
+    type: text
+    label: "Hero Title"
+    comment: "Large title displayed in hero section"
+  hero_subtitle:
+    type: textarea
+    label: "Hero Subtitle"
+    comment: "Subtitle text under the main hero title"
+  cta_text:
+    type: text
+    label: "Call-to-Action Text"
+    comment: "Text for buttons and call-to-action elements"
+  cta_link:
+    type: url
+    label: "Call-to-Action Link"
+    comment: "URL for call-to-action buttons"
+
+# Data configuration
+data_config:
+  navigation:
+    path: src/_data/navigation.json
+    _inputs:
+      text:
+        type: text
+        label: "Menu Text"
+      url:
+        type: url
+        label: "Link URL"
+      children:
+        type: array
+        label: "Submenu Items"
+
+# Editor configuration
+_editors:
+  content:
+    bold: true
+    italic: true
+    link: true
+    bullet_list: true
+    numbered_list: true
+    image: true
+    table: true
+    code_block: true
+    snippet: true
+  visual:
+    preview_url: "/"
+    preview_text: "Open Visual Editor"
+
+# Build configuration  
 build:
   install_command: "npm install"
   build_command: "npm run build" 
-  output_directory: "_site"
+  output_dir: "_site"
+  environment_variables:
+    NODE_VERSION: 18
 
-# Editor settings
-_enabled_editors:
-  - content
-  - data
+# Visual editing configuration
+_structures:
+  hero_buttons:
+    values:
+      - label: "Primary Button"
+        value:
+          text: "Schedule Consultation"
+          url: "/contact-us/"
+          style: "primary"
+      - label: "Secondary Button"  
+        value:
+          text: "Call Now"
+          url: "tel:703-746-0077"
+          style: "secondary"
+          
+  testimonials:
+    values:
+      - label: "Patient Testimonial"
+        value:
+          content: "Quote from patient"
+          author: "Patient Name"
+          treatment: "Type of treatment"
+          
+  service_highlights:
+    values:
+      - label: "Service Highlight"
+        value:
+          title: "Highlight Title"
+          description: "Brief description"
+          icon: "/path/to/icon.webp"
 
-_editables:
-  content:
-    bold: true
-    italics: true
-    link: true
+# Timezone and locale
+timezone: America/New_York
+locale: en-US
 
-# Basic configuration
-markdown:
-  engine: commonmark
-
-# Global configuration
-base_url: /
-timezone: Etc/UTC
-
-source_editor:
-  tab_size: 2
-  show_gutter: false
-  theme: pastel_on_dark
-
-commit_templates:
-  - template_string: '{message}'
+# CloudCannon-specific settings
+_comments:
+  title: "This will appear as the page title and in search results"
+  description: "Keep this under 160 characters for optimal SEO"
+  image: "Choose high-quality images in WebP format when possible"
+  
+_options:
+  image:
+    width: 1200
+    height: 630
+    resize_style: "crop"
+    mime_type: "image/webp"
 
 # 11ty specific settings
 generator:

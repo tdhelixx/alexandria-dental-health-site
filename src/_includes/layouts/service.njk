@@ -3,20 +3,28 @@ layout: layouts/base.njk
 ---
 
 <div class="service-page">
-    {% if hero_image or title %}
-    <section class="service-hero">
-        <div class="hero-background" {% if hero_image %}style="background-image: url('{{ hero_image }}')"{% endif %}>
+    {% if image or title %}
+    <section class="service-hero" data-cms-bind="#">
+        <div class="hero-background" {% if image %}style="background-image: url('{{ image }}')"{% endif %}>
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="service-title">{{ title }}</h1>
+                    <h1 class="service-title" data-cms-bind="#title">{{ title }}</h1>
                     {% if subtitle %}
-                        <p class="service-subtitle">{{ subtitle }}</p>
+                        <p class="service-subtitle" data-cms-bind="#subtitle">{{ subtitle }}</p>
                     {% endif %}
                     <div class="hero-cta">
                         <a href="/contact-us/" class="btn btn-primary">Schedule Consultation</a>
                         <a href="tel:703-746-0077" class="btn btn-secondary">Call Now</a>
                     </div>
                 </div>
+                {% if image %}
+                <div class="hero-image">
+                    <img src="{{ image }}" 
+                         alt="{{ title }}" 
+                         loading="eager"
+                         data-cms-bind="#image">
+                </div>
+                {% endif %}
             </div>
         </div>
     </section>
@@ -26,32 +34,80 @@ layout: layouts/base.njk
         <div class="container">
             <div class="service-layout">
                 <div class="service-main">
-                    {{ content | safe }}
+                    <div class="service-description" data-cms-bind="#content">
+                        {{ content | safe }}
+                    </div>
+                    
+                    {% if conditions_treated %}
+                    <div class="service-conditions" data-cms-bind="#conditions_treated">
+                        <h2>Conditions We Treat</h2>
+                        <ul class="conditions-list">
+                            {% for condition in conditions_treated %}
+                                <li data-cms-bind="#conditions_treated[{{ loop.index0 }}]">{{ condition }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                    
+                    {% if technology %}
+                    <div class="service-technology" data-cms-bind="#technology">
+                        <h2>Advanced Technology</h2>
+                        <div class="technology-info">
+                            <h3 data-cms-bind="#technology">{{ technology }}</h3>
+                            {% if visit_duration %}
+                                <p class="visit-duration" data-cms-bind="#visit_duration"><strong>Treatment Time:</strong> {{ visit_duration }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    {% if materials %}
+                    <div class="service-materials" data-cms-bind="#materials">
+                        <h2>Materials Used</h2>
+                        <ul class="materials-list">
+                            {% for material in materials %}
+                                <li data-cms-bind="#materials[{{ loop.index0 }}]">{{ material }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
                     
                     {% if benefits %}
-                    <div class="service-benefits">
+                    <div class="service-benefits" data-cms-bind="#benefits">
                         <h2>Benefits of {{ title }}</h2>
                         <ul class="benefits-list">
                             {% for benefit in benefits %}
-                                <li>{{ benefit }}</li>
+                                <li data-cms-bind="#benefits[{{ loop.index0 }}]">{{ benefit }}</li>
                             {% endfor %}
                         </ul>
                     </div>
                     {% endif %}
                     
                     {% if process_steps %}
-                    <div class="treatment-process">
+                    <div class="treatment-process" data-cms-bind="#process_steps">
                         <h2>Treatment Process</h2>
                         <div class="process-steps">
                             {% for step in process_steps %}
-                                <div class="step">
+                                <div class="step" data-cms-bind="#process_steps[{{ loop.index0 }}]">
                                     <div class="step-number">{{ loop.index }}</div>
                                     <div class="step-content">
-                                        <h3>{{ step.title }}</h3>
-                                        <p>{{ step.description }}</p>
+                                        <h3 data-cms-bind="#process_steps[{{ loop.index0 }}].title">{{ step.title }}</h3>
+                                        <p data-cms-bind="#process_steps[{{ loop.index0 }}].description">{{ step.description }}</p>
                                     </div>
                                 </div>
                             {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    {% if video_url %}
+                    <div class="service-video" data-cms-bind="#video_url">
+                        <h2>Learn More</h2>
+                        <div class="video-container">
+                            <iframe src="{{ video_url }}" 
+                                    frameborder="0" 
+                                    allowfullscreen
+                                    data-cms-bind="#video_url"></iframe>
                         </div>
                     </div>
                     {% endif %}
@@ -70,12 +126,29 @@ layout: layouts/base.njk
                         </div>
                     </div>
                     
+                    {% if category %}
+                    <div class="sidebar-widget">
+                        <h3>Service Category</h3>
+                        <p class="service-category" data-cms-bind="#category">{{ category }}</p>
+                    </div>
+                    {% endif %}
+                    
+                    {% if cost_range %}
+                    <div class="sidebar-widget">
+                        <h3>Investment</h3>
+                        <p class="cost-info" data-cms-bind="#cost_range">{{ cost_range }}</p>
+                        {% if lumineers_cost %}
+                            <p class="alternative-cost" data-cms-bind="#lumineers_cost">Lumineers: {{ lumineers_cost }}</p>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                    
                     <div class="sidebar-widget">
                         <h3>Related Services</h3>
                         <ul class="related-services">
                             {% if related_services %}
                                 {% for service in related_services %}
-                                    <li><a href="{{ service.url }}">{{ service.title }}</a></li>
+                                    <li><a href="/{{ service }}/">{{ service }}</a></li>
                                 {% endfor %}
                             {% else %}
                                 <li><a href="/dental-implants/">Dental Implants</a></li>
@@ -86,6 +159,17 @@ layout: layouts/base.njk
                             {% endif %}
                         </ul>
                     </div>
+                    
+                    {% if related_pages %}
+                    <div class="sidebar-widget">
+                        <h3>Additional Information</h3>
+                        <ul class="related-pages">
+                            {% for page in related_pages %}
+                                <li><a href="/{{ page }}/">{{ page }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
                     
                     {% if credentials %}
                     <div class="sidebar-widget">
@@ -103,24 +187,24 @@ layout: layouts/base.njk
     </section>
     
     {% if before_after_gallery %}
-    <section class="before-after-section">
+    <section class="before-after-section" data-cms-bind="#before_after_gallery">
         <div class="container">
             <h2>Before & After Gallery</h2>
             <div class="gallery-grid">
                 {% for case in before_after_gallery %}
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-cms-bind="#before_after_gallery[{{ loop.index0 }}]">
                         <div class="before-after">
                             <div class="before">
-                                <img src="{{ case.before }}" alt="Before {{ title }} treatment">
+                                <img src="{{ case.before }}" alt="Before {{ title }} treatment" data-cms-bind="#before_after_gallery[{{ loop.index0 }}].before">
                                 <span class="label">Before</span>
                             </div>
                             <div class="after">
-                                <img src="{{ case.after }}" alt="After {{ title }} treatment">
+                                <img src="{{ case.after }}" alt="After {{ title }} treatment" data-cms-bind="#before_after_gallery[{{ loop.index0 }}].after">
                                 <span class="label">After</span>
                             </div>
                         </div>
                         {% if case.description %}
-                            <p class="case-description">{{ case.description }}</p>
+                            <p class="case-description" data-cms-bind="#before_after_gallery[{{ loop.index0 }}].description">{{ case.description }}</p>
                         {% endif %}
                     </div>
                 {% endfor %}
@@ -132,7 +216,7 @@ layout: layouts/base.njk
     </section>
     {% endif %}
     
-    <section class="service-cta">
+    <section class="service-cta" data-cms-bind="#cta_text,#cta_link">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to Transform Your Smile?</h2>
@@ -140,6 +224,9 @@ layout: layouts/base.njk
                 <div class="cta-buttons">
                     <a href="/contact-us/" class="btn btn-primary">Schedule Consultation</a>
                     <a href="tel:703-746-0077" class="btn btn-secondary">Call 703-746-0077</a>
+                    {% if cta_text and cta_link %}
+                        <a href="{{ cta_link }}" class="btn btn-outline" data-cms-bind="#cta_text,#cta_link">{{ cta_text }}</a>
+                    {% endif %}
                 </div>
             </div>
         </div>

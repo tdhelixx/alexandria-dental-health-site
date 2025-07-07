@@ -4,136 +4,157 @@ title: "Alexandria Dental Health"
 description: "Comprehensive dental care in Alexandria, VA. Dr. Mojgan Mazhari provides expert dental services including cosmetic dentistry, dental implants, Invisalign, and more."
 keywords: "dentist Alexandria VA, dental implants, Invisalign, cosmetic dentistry, teeth whitening, dental care"
 permalink: /
-hero_section: |
+hero:
+  title: "Transform Your Smile with Expert Dental Care"
+  subtitle: "Dr. Mojgan Mazhari provides comprehensive dental services in Alexandria, VA using the latest technology and techniques"
+  image: "/images/team/Dentist-Alexandria-VA-Mojgan-Mazhari-HP-Phone-Graphics-v2.webp"
+  buttons:
+    - text: "Schedule Consultation"
+      url: "/contact-us/"
+      style: "primary"
+    - text: "Call 703-746-0077"
+      url: "tel:703-746-0077"
+      style: "secondary"
+about:
+  title: "Welcome to Alexandria Dental Health"
+  lead: "Dr. Mojgan Mazhari and our experienced team are committed to providing exceptional dental care in a comfortable, modern environment. We use state-of-the-art technology and proven techniques to help you achieve optimal oral health and the smile you've always wanted."
+  image: "/images/team/Dentist-Alexandria-VA-Mojgan-Mazhari-HP-About.webp"
+  highlights:
+    - title: "Expert Care"
+      description: "Over 20 years of experience in comprehensive dental care"
+    - title: "Advanced Technology" 
+      description: "CEREC, digital imaging, and modern treatment methods"
+    - title: "Personalized Treatment"
+      description: "Customized treatment plans tailored to your unique needs"
+services:
+  title: "Our Dental Services"
+  subtitle: "Comprehensive dental care using the latest technology and techniques"
+  featured_services:
+    - title: "Dental Implants"
+      description: "Permanent tooth replacement solution that looks and feels natural."
+      image: "/images/restorative/Dentist-Alexandria-VA-Dental-Implants-FC.webp"
+      url: "/dental-implants/"
+    - title: "Invisalign"
+      description: "Clear aligners that straighten teeth discreetly and comfortably."
+      image: "/wp-content/uploads/2025/01/Invisalign-Logo.webp"
+      url: "/invisalign/"
+    - title: "Cosmetic Dentistry"
+      description: "Enhance your smile with veneers, whitening, and bonding."
+      image: "/images/cosmetic/Dentist-Alexandria-VA-Cosmetic-Dentistry-FC.webp"
+      url: "/cosmetic-dentistry/"
+    - title: "Veneers"
+      description: "Thin porcelain shells that create beautiful, natural-looking smiles."
+      image: "/images/cosmetic/Dentist-Alexandria-VA-Veneers-FC.webp"
+      url: "/veneers/"
+    - title: "Root Canal Therapy"
+      description: "Pain-free treatment to save damaged or infected teeth."
+      image: "/images/restorative/Dentist-Alexandria-VA-Root-Canal-Therapy.webp"
+      url: "/root-canal-therapy/"
+    - title: "Emergency Dentistry"
+      description: "Prompt care when you need it most, including same-day appointments."
+      image: "/images/restorative/Dentist-Alexandria-VA-Emergency-Dental-Tools-FC.webp"
+      url: "/emergency-dentistry/"
+testimonials:
+  title: "What Our Patients Say"
+  subtitle: "Read testimonials from our satisfied patients"
+  reviews:
+    - content: "Dr. Mazhari and her team are absolutely wonderful. The office is modern, clean, and the staff is incredibly friendly. My dental implants look and feel completely natural!"
+      author: "Sarah M."
+      treatment: "Dental Implant Patient"
+    - content: "I was so nervous about getting Invisalign, but Dr. Mazhari made the whole process easy and comfortable. My smile is completely transformed and I couldn't be happier!"
+      author: "Michael T."
+      treatment: "Invisalign Patient"
+    - content: "The veneers I received exceeded all my expectations. Dr. Mazhari is truly an artist. I finally have the confident smile I've always wanted."
+      author: "Jennifer L."
+      treatment: "Cosmetic Dentistry Patient"
+final_cta:
+  title: "Ready to Transform Your Smile?"
+  subtitle: "Schedule your consultation today and discover how we can help you achieve the smile of your dreams."
+  buttons:
+    - text: "Schedule Consultation"
+      url: "/contact-us/"
+      style: "primary"
+    - text: "Call 703-746-0077"
+      url: "tel:703-746-0077"
+      style: "secondary"
+---
+
+<!-- Hero Section -->
+<section class="hero-section" data-cms-bind="#hero">
   <div class="hero-banner">
     <div class="hero-content">
-      <h1>Transform Your Smile with Expert Dental Care</h1>
-      <p class="hero-subtitle">Dr. Mojgan Mazhari provides comprehensive dental services in Alexandria, VA using the latest technology and techniques</p>
+      <h1 data-cms-bind="#hero.title">{{ hero.title }}</h1>
+      <p class="hero-subtitle" data-cms-bind="#hero.subtitle">{{ hero.subtitle }}</p>
       <div class="hero-buttons">
-        <a href="/contact-us/" class="btn btn-primary">Schedule Consultation</a>
-        <a href="tel:703-746-0077" class="btn btn-secondary">Call 703-746-0077</a>
+        {% for button in hero.buttons %}
+          <a href="{{ button.url }}" class="btn btn-{{ button.style }}" data-cms-bind="#hero.buttons[{{ loop.index0 }}]">{{ button.text }}</a>
+        {% endfor %}
       </div>
     </div>
     <div class="hero-image">
-      <img src="/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Mojgan-Mazhari-HP-Phone-Graphics-v2.webp" 
+      <img src="{{ hero.image }}" 
            alt="Dr. Mojgan Mazhari - Alexandria Dental Health" 
            loading="eager"
            width="600" 
-           height="500">
+           height="500"
+           data-cms-bind="#hero.image">
     </div>
   </div>
----
+</section>
 
 <!-- About Section -->
-<section class="about-section">
+<section class="about-section" data-cms-bind="#about">
   <div class="container">
     <div class="about-content">
       <div class="about-text">
-        <h2>Welcome to Alexandria Dental Health</h2>
-        <p class="lead">Dr. Mojgan Mazhari and our experienced team are committed to providing exceptional dental care in a comfortable, modern environment. We use state-of-the-art technology and proven techniques to help you achieve optimal oral health and the smile you've always wanted.</p>
+        <h2 data-cms-bind="#about.title">{{ about.title }}</h2>
+        <p class="lead" data-cms-bind="#about.lead">{{ about.lead }}</p>
         
-        <div class="about-highlights">
-          <div class="highlight">
-            <h3>Expert Care</h3>
-            <p>Over 20 years of experience in comprehensive dental care</p>
+        <div class="about-highlights" data-cms-bind="#about.highlights">
+          {% for highlight in about.highlights %}
+          <div class="highlight" data-cms-bind="#about.highlights[{{ loop.index0 }}]">
+            <h3 data-cms-bind="#about.highlights[{{ loop.index0 }}].title">{{ highlight.title }}</h3>
+            <p data-cms-bind="#about.highlights[{{ loop.index0 }}].description">{{ highlight.description }}</p>
           </div>
-          <div class="highlight">
-            <h3>Advanced Technology</h3>
-            <p>CEREC, digital imaging, and modern treatment methods</p>
-          </div>
-          <div class="highlight">
-            <h3>Personalized Treatment</h3>
-            <p>Customized treatment plans tailored to your unique needs</p>
-          </div>
+          {% endfor %}
         </div>
         
         <a href="/about/" class="btn btn-outline">Learn More About Us</a>
       </div>
       <div class="about-image">
-        <img src="/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Mojgan-Mazhari-HP-About.webp" 
+        <img src="{{ about.image }}" 
              alt="Dr. Mojgan Mazhari" 
              loading="lazy"
              width="500" 
-             height="400">
+             height="400"
+             data-cms-bind="#about.image">
       </div>
     </div>
   </div>
 </section>
 
 <!-- Services Section -->
-<section class="services-section">
+<section class="services-section" data-cms-bind="#services">
   <div class="container">
     <div class="section-header">
-      <h2>Our Dental Services</h2>
-      <p>Comprehensive dental care using the latest technology and techniques</p>
+      <h2 data-cms-bind="#services.title">{{ services.title }}</h2>
+      <p data-cms-bind="#services.subtitle">{{ services.subtitle }}</p>
     </div>
     
-    <div class="services-grid">
-      <div class="service-card">
+    <div class="services-grid" data-cms-bind="#services.featured_services">
+      {% for service in services.featured_services %}
+      <div class="service-card" data-cms-bind="#services.featured_services[{{ loop.index0 }}]">
         <div class="service-icon">
-          <img src="/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Dental-Implants-FC.webp" 
-               alt="Dental Implants" 
-               loading="lazy">
+          <img src="{{ service.image }}" 
+               alt="{{ service.title }}" 
+               loading="lazy"
+               data-cms-bind="#services.featured_services[{{ loop.index0 }}].image">
         </div>
-        <h3>Dental Implants</h3>
-        <p>Permanent tooth replacement solution that looks and feels natural.</p>
-        <a href="/dental-implants/" class="service-link">Learn More</a>
+        <h3 data-cms-bind="#services.featured_services[{{ loop.index0 }}].title">{{ service.title }}</h3>
+        <p data-cms-bind="#services.featured_services[{{ loop.index0 }}].description">{{ service.description }}</p>
+        <a href="{{ service.url }}" class="service-link" data-cms-bind="#services.featured_services[{{ loop.index0 }}].url">Learn More</a>
       </div>
-      
-      <div class="service-card">
-        <div class="service-icon">
-          <img src="/wp-content/uploads/2025/01/Invisalign-Logo.webp" 
-               alt="Invisalign" 
-               loading="lazy">
-        </div>
-        <h3>Invisalign</h3>
-        <p>Clear aligners that straighten teeth discreetly and comfortably.</p>
-        <a href="/invisalign/" class="service-link">Learn More</a>
-      </div>
-      
-      <div class="service-card">
-        <div class="service-icon">
-          <img src="/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Cosmetic-Dentistry-FC.webp" 
-               alt="Cosmetic Dentistry" 
-               loading="lazy">
-        </div>
-        <h3>Cosmetic Dentistry</h3>
-        <p>Enhance your smile with veneers, whitening, and bonding.</p>
-        <a href="/cosmetic-dentistry/" class="service-link">Learn More</a>
-      </div>
-      
-      <div class="service-card">
-        <div class="service-icon">
-          <img src="/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Veneers-FC.webp" 
-               alt="Veneers" 
-               loading="lazy">
-        </div>
-        <h3>Veneers</h3>
-        <p>Thin porcelain shells that create beautiful, natural-looking smiles.</p>
-        <a href="/veneers/" class="service-link">Learn More</a>
-      </div>
-      
-      <div class="service-card">
-        <div class="service-icon">
-          <img src="/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Root-Canal-Therapy.webp" 
-               alt="Root Canal Therapy" 
-               loading="lazy">
-        </div>
-        <h3>Root Canal Therapy</h3>
-        <p>Pain-free treatment to save damaged or infected teeth.</p>
-        <a href="/root-canal-therapy/" class="service-link">Learn More</a>
-      </div>
-      
-      <div class="service-card">
-        <div class="service-icon">
-          <img src="/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Emergency-Dental-Tools-FC.webp" 
-               alt="Emergency Dentistry" 
-               loading="lazy">
-        </div>
-        <h3>Emergency Dentistry</h3>
-        <p>Prompt care when you need it most, including same-day appointments.</p>
-        <a href="/emergency-dentistry/" class="service-link">Learn More</a>
-      </div>
+      {% endfor %}
     </div>
     
     <div class="services-cta">
@@ -210,43 +231,25 @@ hero_section: |
 </section>
 
 <!-- Testimonials Section -->
-<section class="testimonials-section">
+<section class="testimonials-section" data-cms-bind="#testimonials">
   <div class="container">
     <div class="section-header">
-      <h2>What Our Patients Say</h2>
-      <p>Read testimonials from our satisfied patients</p>
+      <h2 data-cms-bind="#testimonials.title">{{ testimonials.title }}</h2>
+      <p data-cms-bind="#testimonials.subtitle">{{ testimonials.subtitle }}</p>
     </div>
     
-    <div class="testimonials-grid">
-      <div class="testimonial">
+    <div class="testimonials-grid" data-cms-bind="#testimonials.reviews">
+      {% for testimonial in testimonials.reviews %}
+      <div class="testimonial" data-cms-bind="#testimonials.reviews[{{ loop.index0 }}]">
         <div class="testimonial-content">
-          <p>"Dr. Mazhari and her team are absolutely wonderful. The office is modern, clean, and the staff is incredibly friendly. My dental implants look and feel completely natural!"</p>
+          <p data-cms-bind="#testimonials.reviews[{{ loop.index0 }}].content">"{{ testimonial.content }}"</p>
         </div>
         <div class="testimonial-author">
-          <strong>Sarah M.</strong>
-          <span>Dental Implant Patient</span>
+          <strong data-cms-bind="#testimonials.reviews[{{ loop.index0 }}].author">{{ testimonial.author }}</strong>
+          <span data-cms-bind="#testimonials.reviews[{{ loop.index0 }}].treatment">{{ testimonial.treatment }}</span>
         </div>
       </div>
-      
-      <div class="testimonial">
-        <div class="testimonial-content">
-          <p>"I was so nervous about getting Invisalign, but Dr. Mazhari made the whole process easy and comfortable. My smile is completely transformed and I couldn't be happier!"</p>
-        </div>
-        <div class="testimonial-author">
-          <strong>Michael T.</strong>
-          <span>Invisalign Patient</span>
-        </div>
-      </div>
-      
-      <div class="testimonial">
-        <div class="testimonial-content">
-          <p>"The veneers I received exceeded all my expectations. Dr. Mazhari is truly an artist. I finally have the confident smile I've always wanted."</p>
-        </div>
-        <div class="testimonial-author">
-          <strong>Jennifer L.</strong>
-          <span>Cosmetic Dentistry Patient</span>
-        </div>
-      </div>
+      {% endfor %}
     </div>
     
     <div class="testimonials-cta">
@@ -256,14 +259,15 @@ hero_section: |
 </section>
 
 <!-- CTA Section -->
-<section class="cta-section">
+<section class="cta-section" data-cms-bind="#final_cta">
   <div class="container">
     <div class="cta-content">
-      <h2>Ready to Transform Your Smile?</h2>
-      <p>Schedule your consultation today and discover how we can help you achieve the smile of your dreams.</p>
+      <h2 data-cms-bind="#final_cta.title">{{ final_cta.title }}</h2>
+      <p data-cms-bind="#final_cta.subtitle">{{ final_cta.subtitle }}</p>
       <div class="cta-buttons">
-        <a href="/contact-us/" class="btn btn-primary">Schedule Consultation</a>
-        <a href="tel:703-746-0077" class="btn btn-secondary">Call 703-746-0077</a>
+        {% for button in final_cta.buttons %}
+          <a href="{{ button.url }}" class="btn btn-{{ button.style }}" data-cms-bind="#final_cta.buttons[{{ loop.index0 }}]">{{ button.text }}</a>
+        {% endfor %}
       </div>
     </div>
   </div>
