@@ -6,11 +6,11 @@ description: "Learn the differences between dental implants and dentures, includ
 keywords: "dental implants vs dentures, tooth replacement options, Alexandria VA dentist"
 date: 2025-01-15
 tags: ["dental implants", "dentures", "tooth replacement", "oral health"]
-featured_image: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Dental-Implants-FC.webp"
+featured_image: "/images/restorative/Dentist-Alexandria-VA-Dental-Implants-FC.webp"
 permalink: "/blog/dental-implants-vs-dentures/"
 author:
   name: "Dr. Mojgan Mazhari"
-  image: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Mojgan-Mazhari-HP-About.webp"
+  image: "/images/team/Dentist-Alexandria-VA-Mojgan-Mazhari-HP-About.webp"
   bio: "Dr. Mojgan Mazhari is a skilled dentist with over 20 years of experience in comprehensive dental care, specializing in dental implants and restorative dentistry."
 ---
 

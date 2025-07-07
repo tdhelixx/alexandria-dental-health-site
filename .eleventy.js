@@ -1,8 +1,8 @@
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
-  // Copy static assets - SIMPLIFIED single images directory
-  eleventyConfig.addPassthroughCopy("images");
+  // Copy static assets - organized structure from src/images
+  eleventyConfig.addPassthroughCopy({"src/images": "images"});
   
   // Collections for CloudCannon dashboard
   eleventyConfig.addCollection("services", function(collectionApi) {
