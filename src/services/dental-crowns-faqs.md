@@ -30,7 +30,7 @@ content_sections:
 - investment
 - faq
 in_nav: true
-nav_order: 4
+nav_order: 5
 page_type: service
 benefits:
 - Answers to common dental crown questions
