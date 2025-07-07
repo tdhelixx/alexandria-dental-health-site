@@ -31,8 +31,8 @@ layout: layouts/base.njk
         <div class="container">
             <div class="service-layout">
                 <div class="service-main">
-                    <!-- Editable Content Area -->
-                    <div class="content-editable editable">
+                    <!-- CloudCannon Markdown Editor - CORRECT METHOD -->
+                    <div class="content-editable" data-cms-edit="content">
                         {{ content | safe }}
                     </div>
                     
@@ -176,6 +176,7 @@ layout: layouts/base.njk
     padding: 2rem; 
     margin-bottom: 2rem; 
     border-radius: 0.5rem;
+    min-height: 200px;
 }
 
 .content-editable:hover {
