@@ -110,6 +110,52 @@
             color: #a27295;
         }
         
+        /* Dropdown Navigation */
+        .nav-dropdown {
+            position: relative;
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #1a0e18;
+            min-width: 220px;
+            list-style: none;
+            padding: 10px 0;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .nav-dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-menu li {
+            margin: 0;
+        }
+        
+        .dropdown-menu a {
+            display: block;
+            padding: 12px 20px;
+            color: #ededed;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .dropdown-menu a:hover {
+            background: #a27295;
+            color: white;
+        }
+        
         /* Main layout */
         .site-content {
             max-width: 1200px;
@@ -221,8 +267,24 @@
             }
             
             .nav-menu {
-                flex-wrap: wrap;
-                gap: 15px;
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .nav-dropdown .dropdown-menu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                background: #2a1628;
+                margin-left: 20px;
+                margin-top: 5px;
+                border-radius: 4px;
+            }
+            
+            .nav-dropdown:hover .dropdown-menu {
+                display: block;
             }
         }
     </style>
@@ -250,8 +312,36 @@
             <div class="nav-container">
                 <ul class="nav-menu">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                    <li class="nav-dropdown">
+                        <a href="/services/">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/cosmetic-dentistry/">Cosmetic Dentistry</a></li>
+                            <li><a href="/restorative/">Restorative</a></li>
+                            <li><a href="/preventative/">Preventative</a></li>
+                            <li><a href="/sedation-dentistry/">Sedation Dentistry</a></li>
+                            <li><a href="/emergency-dentistry/">Emergency Dentistry</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="/patients/">Patients</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/patient-information/">Patient Information</a></li>
+                            <li><a href="/dental-insurance-accepted/">Insurance</a></li>
+                            <li><a href="/good-faith-estimate/">Good Faith Estimate</a></li>
+                            <li><a href="/office-tour/">Office Tour</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="/concerns/">Conditions</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/missing-teeth/">Missing Teeth</a></li>
+                            <li><a href="/crooked-teeth/">Crooked Teeth</a></li>
+                            <li><a href="/tooth-pain/">Tooth Pain</a></li>
+                            <li><a href="/jaw-pain/">Jaw Pain</a></li>
+                            <li><a href="/dental-anxiety/">Dental Anxiety</a></li>
+                        </ul>
+                    </li>
                     <li><a href="/smile-gallery/">Smile Gallery</a></li>
                     <li><a href="/blog/">Blog</a></li>
                     <li><a href="/contact-us/">Contact</a></li>
