@@ -1,116 +1,74 @@
 # CloudCannon Configuration for 11ty
-# Updated to work with 11ty collections properly
+# Simplified path-based approach
 
 source: src
-paths:
-  uploads: /assets/uploads
 
-# 11ty Collection Configuration - CloudCannon reads from 11ty's collection data
 collections_config:
   services:
-    # Let 11ty handle the collection, CloudCannon reads from built output
-    output: true
+    path: src/services
     name: "Services"
-    description: "Dental service pages"
     icon: medical_services
-    filter: "services"
-    sort_key: "title"
+    description: "Dental service pages"
     _enabled_editors:
       - content
       - data
-    create:
-      path: "src/services/{slug}.md"
-    schemas:
-      default:
-        path: schemas/service.md
-        name: Service Page
-  
-  blog:
-    output: true 
-    name: "Blog"
-    description: "Dental health blog articles"
-    icon: post_add
-    filter: "blog"
-    sort_key: "date"
-    sort_order: "desc"
-    _enabled_editors:
-      - content
-      - data
-    create:
-      path: "src/blog/{slug}.md"
-    schemas:
-      default:
-        path: schemas/blog.md
-        name: Blog Post
+    add_options:
+      - name: "Service Page"
+        icon: medical_services
+        schema: default
   
   pages:
-    output: true
-    name: "Pages" 
-    description: "General pages like About, Contact, etc."
-    icon: wysiwyg
-    filter: "pages"
+    path: src/pages
+    name: "Pages"
+    icon: wysiwyg  
+    description: "General pages"
     _enabled_editors:
       - content
       - data
-    create:
-      path: "src/pages/{slug}.md"
-    schemas:
-      default:
-        path: schemas/page.md
-        name: Page
+    add_options:
+      - name: "Page"
+        icon: wysiwyg
+        schema: default
 
-# Collection groups for organization
-collection_groups:
-  - heading: Content
-    collections:
-      - services
-      - pages
-      - blog
+  blog:
+    path: src/blog
+    name: "Blog"
+    icon: post_add
+    description: "Blog posts"
+    sort_key: date
+    sort_order: desc
+    _enabled_editors:
+      - content
+      - data
+    add_options:
+      - name: "Blog Post"
+        icon: post_add
+        schema: default
 
-# Build settings for 11ty
+# Build settings
 build:
   install_command: "npm install"
-  build_command: "npm run build"
+  build_command: "npm run build" 
   output_directory: "_site"
-  environment_variables:
-    NODE_ENV: "production"
 
-# Editor configuration
+# Editor settings
 _enabled_editors:
   - content
   - data
-  - visual
 
 _editables:
   content:
     bold: true
     italics: true
-    underline: true
     link: true
-    bulletedlist: true
-    numberedlist: true
 
-# Schema templates for new content
-_structures:
-  process_steps:
-    values:
-      - value:
-          title: ""
-          description: ""
-  benefits_list:
-    values:
-      - value: ""
-  faq_items:
-    values:
-      - value:
-          question: ""
-          answer: ""
+# Basic configuration
+markdown:
+  engine: commonmark
 
 # Global configuration
 base_url: /
 timezone: Etc/UTC
-markdown:
-  engine: commonmark
 
 source_editor:
   tab_size: 2
