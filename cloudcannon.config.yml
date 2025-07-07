@@ -1,11 +1,11 @@
 # CloudCannon Configuration for 11ty
-# Simplified path-based approach
+# Fixed path configuration
 
 source: src
 
 collections_config:
   services:
-    path: src/services
+    path: services
     name: "Services"
     icon: medical_services
     description: "Dental service pages"
@@ -18,7 +18,7 @@ collections_config:
         schema: default
   
   pages:
-    path: src/pages
+    path: pages
     name: "Pages"
     icon: wysiwyg  
     description: "General pages"
@@ -31,7 +31,7 @@ collections_config:
         schema: default
 
   blog:
-    path: src/blog
+    path: blog
     name: "Blog"
     icon: post_add
     description: "Blog posts"
