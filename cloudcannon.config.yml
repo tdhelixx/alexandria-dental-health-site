@@ -10,19 +10,19 @@ build:
   environment_variables:
     NODE_ENV: "production"
 
+# Collections for content management
 collections_config:
   pages:
     path: "src/pages"
-    filter: 
-      - "*.md"
-      - "*.html"
+    name: "Pages"
+    description: "General pages like About, Contact, etc."
     output: true
-    icon: "wysiwyg"
+    icon: "notes"
     
   blog:
     path: "src/blog"
-    filter: 
-      - "*.md"
+    name: "Blog Posts"  
+    description: "Dental health blog articles"
     output: true
     icon: "event"
     sort_key: "date"
@@ -30,10 +30,14 @@ collections_config:
     
   services:
     path: "src/services"
-    filter: 
-      - "*.md"
+    name: "Services"
+    description: "Dental service pages"
     output: true
     icon: "medical_services"
+
+# Enable live editing
+source_editor:
+  enabled: true
 
 # Data files
 data_config:
