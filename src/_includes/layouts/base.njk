@@ -6,106 +6,47 @@
     <title>{% if title %}{{ title }} | {% endif %}Alexandria Dental Health & Smile Studio</title>
     <meta name="description" content="{{ description or 'Expert dental care in Alexandria VA with Dr. Mojgan Mazhari. Comprehensive dental services including implants, cosmetic dentistry, and family care.' }}">
     
-    <!-- Professional dental practice styling -->
+    <!-- Simplified reliable styling -->
     <style>
-        /* WordPress-inspired design */
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
         body {
-            font-family: 'Raleway', 'Nunito', Arial, sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: #424242;
-            background: #ffffff;
+            color: #333;
+            background: #fff;
         }
         
-        /* Header matching WordPress design - WHITE BACKGROUND */
         .site-header {
             background: white;
-            color: #333;
-            padding: 15px 0;
-            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
         }
         
-        .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .header-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
-        }
-        
-        .practice-branding {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 15px;
-        }
-        
-        .practice-logo {
-            font-size: 48px;
-            font-weight: 700;
-            color: #a27295;
-            font-family: 'Times New Roman', serif;
         }
         
         .practice-branding h1 {
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: 1px;
+            color: #a27295;
+            font-size: 24px;
             margin: 0;
-            color: #333;
         }
         
-        .practice-subtitle {
-            font-size: 14px;
-            color: #666;
-            margin: 0;
-            font-style: italic;
-        }
-        
-        .header-contact {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
-        
-        .phone-number {
-            font-size: 20px;
-            font-weight: 700;
+        .header-contact a {
             color: #333;
             text-decoration: none;
+            font-weight: bold;
         }
         
-        .header-buttons {
-            display: flex;
-            gap: 10px;
-        }
-        
-        .btn {
-            padding: 12px 24px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-primary {
-            background: #ffae00;
-            color: #0a0a0a;
-        }
-        
-        .btn-secondary {
-            background: #a27295;
-            color: white;
-        }
-        
-        /* Navigation */
         .main-nav {
             background: #f8f9fa;
-            border-top: 1px solid #e0e0e0;
+            padding: 15px 0;
         }
         
         .nav-container {
@@ -115,73 +56,21 @@
         }
         
         .nav-menu {
-            display: flex;
             list-style: none;
-            gap: 40px;
-            padding: 15px 0;
+            display: flex;
+            gap: 30px;
             justify-content: center;
         }
         
         .nav-menu a {
             color: #666;
             text-decoration: none;
-            font-weight: 500;
-            font-size: 16px;
-            transition: color 0.3s ease;
         }
         
         .nav-menu a:hover {
             color: #a27295;
         }
         
-        /* Dropdown Navigation */
-        .nav-dropdown {
-            position: relative;
-        }
-        
-        .dropdown-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: white;
-            min-width: 220px;
-            list-style: none;
-            padding: 10px 0;
-            border-radius: 0 0 8px 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-            border: 1px solid #e0e0e0;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-10px);
-            transition: all 0.3s ease;
-            z-index: 1000;
-        }
-        
-        .nav-dropdown:hover .dropdown-menu {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        
-        .dropdown-menu li {
-            margin: 0;
-        }
-        
-        .dropdown-menu a {
-            display: block;
-            padding: 12px 20px;
-            color: #666;
-            text-decoration: none;
-            font-size: 14px;
-            transition: all 0.3s ease;
-        }
-        
-        .dropdown-menu a:hover {
-            background: #f8f9fa;
-            color: #a27295;
-        }
-        
-        /* Main layout */
         .site-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -194,89 +83,15 @@
         .main-content {
             background: white;
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        /* Professional sidebar matching WordPress */
         .sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-        
-        .sidebar-widget {
-            background: white;
+            background: #f8f9fa;
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            text-align: center;
         }
         
-        .practice-info h3 {
-            color: #32192f;
-            font-size: 20px;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-        
-        .practice-details {
-            margin-bottom: 20px;
-        }
-        
-        .practice-details strong {
-            color: #32192f;
-            display: block;
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-        
-        .office-hours h4 {
-            color: #a27295;
-            font-size: 20px;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-        
-        .hours-schedule {
-            text-align: left;
-            max-width: 250px;
-            margin: 0 auto;
-        }
-        
-        .hours-day {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 8px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .hours-day strong {
-            color: #32192f;
-        }
-        
-        .special-offer {
-            background: linear-gradient(135deg, #a27295 0%, #32192f 100%);
-            color: white;
-            text-align: center;
-        }
-        
-        .special-offer img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-        
-        /* Responsive design */
         @media (max-width: 768px) {
-            .header-top {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .header-contact {
+            .header-container {
                 flex-direction: column;
                 gap: 15px;
             }
@@ -284,56 +99,25 @@
             .site-content {
                 grid-template-columns: 1fr;
                 gap: 30px;
-                padding: 20px;
-            }
-            
-            .main-content {
-                padding: 20px;
             }
             
             .nav-menu {
                 flex-direction: column;
-                gap: 0;
-            }
-            
-                         .nav-dropdown .dropdown-menu {
-                 position: static;
-                 opacity: 1;
-                 visibility: visible;
-                 transform: none;
-                 box-shadow: none;
-                 background: #f8f9fa;
-                 margin-left: 20px;
-                 margin-top: 5px;
-                 border-radius: 4px;
-                 border: 1px solid #e0e0e0;
-             }
-            
-            .nav-dropdown:hover .dropdown-menu {
-                display: block;
+                gap: 15px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Professional Header -->
     <header class="site-header">
-        <div class="header-top">
+        <div class="header-container">
             <div class="practice-branding">
-                <div class="practice-logo">MD</div>
-                <div class="practice-info">
-                    <h1>MOJGAN MAZHARI DDS</h1>
-                    <p class="practice-subtitle">Alexandria Dental Health & Smile Studio</p>
-                </div>
+                <h1>MOJGAN MAZHARI DDS</h1>
+                <p>Alexandria Dental Health & Smile Studio</p>
             </div>
             
             <div class="header-contact">
-                <a href="tel:703-212-9622" class="phone-number">(703) 212-9622</a>
-                
-                <div class="header-buttons">
-                    <a href="/special/" class="btn btn-primary">Special Offers</a>
-                    <a href="/contact-us/" class="btn btn-secondary">Schedule Online</a>
-                </div>
+                <a href="tel:703-212-9622">(703) 212-9622</a>
             </div>
         </div>
         
@@ -341,123 +125,24 @@
             <div class="nav-container">
                 <ul class="nav-menu">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/about/">About Us</a></li>
-                    <li class="nav-dropdown">
-                        <a href="/services/">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/cosmetic-dentistry/">Cosmetic Dentistry</a></li>
-                            <li><a href="/restorative/">Restorative</a></li>
-                            <li><a href="/preventative/">Preventative</a></li>
-                            <li><a href="/sedation-dentistry/">Sedation Dentistry</a></li>
-                            <li><a href="/emergency-dentistry/">Emergency Dentistry</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-dropdown">
-                        <a href="/patients/">Patients</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/patient-information/">Patient Information</a></li>
-                            <li><a href="/dental-insurance-accepted/">Insurance</a></li>
-                            <li><a href="/good-faith-estimate/">Good Faith Estimate</a></li>
-                            <li><a href="/office-tour/">Office Tour</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-dropdown">
-                        <a href="/concerns/">Conditions</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/missing-teeth/">Missing Teeth</a></li>
-                            <li><a href="/crooked-teeth/">Crooked Teeth</a></li>
-                            <li><a href="/tooth-pain/">Tooth Pain</a></li>
-                            <li><a href="/jaw-pain/">Jaw Pain</a></li>
-                            <li><a href="/dental-anxiety/">Dental Anxiety</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/smile-gallery/">Smile Gallery</a></li>
-                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/services/">Services</a></li>
                     <li><a href="/contact-us/">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Main Content -->
     <div class="site-content">
         <main class="main-content">
             {{ content | safe }}
         </main>
         
-        <!-- Professional Sidebar -->
         <aside class="sidebar">
-            <!-- Practice Information -->
-            <div class="sidebar-widget practice-info">
-                <h3>Alexandria Dental Health & Smile Studio</h3>
-                
-                <div class="practice-details">
-                    <strong>2847 Duke St</strong>
-                    <span>Alexandria VA 22314</span>
-                </div>
-                
-                <div class="practice-details">
-                    <strong><a href="tel:703-212-9622" style="color: #32192f;">(703) 212-9622</a></strong>
-                </div>
-                
-                <div class="office-hours">
-                    <h4>OFFICE HOURS</h4>
-                    <div class="hours-schedule">
-                        <div class="hours-day">
-                            <strong>Monday</strong>
-                            <span>10:00am - 6:00pm</span>
-                        </div>
-                        <div class="hours-day">
-                            <strong>Tuesday</strong>
-                            <span>10:00am - 6:00pm</span>
-                        </div>
-                        <div class="hours-day">
-                            <strong>Wednesday</strong>
-                            <span>10:00am - 6:00pm</span>
-                        </div>
-                        <div class="hours-day">
-                            <strong>Thursday</strong>
-                            <span>9:00am - 4:00pm</span>
-                        </div>
-                        <div class="hours-day">
-                            <strong>Friday</strong>
-                            <span>8:00am - 1:00pm</span>
-                        </div>
-                        <div class="hours-day">
-                            <strong>Weekends</strong>
-                            <span>Closed</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Special Offers -->
-            <div class="sidebar-widget special-offer">
-                <a href="/special/">
-                    <img src="/images/special-offers-badge.webp" alt="View Our Special Offers" />
-                </a>
-            </div>
-            
-            <!-- Quick Contact -->
-            <div class="sidebar-widget">
-                <h3>Schedule Your Appointment</h3>
-                <p>Ready to get started? Contact us today to schedule your consultation.</p>
-                <div style="margin-top: 20px;">
-                    <a href="/contact-us/" class="btn btn-primary">Request Appointment</a>
-                </div>
-            </div>
+            <h3>Alexandria Dental Health & Smile Studio</h3>
+            <p><strong>2847 Duke St</strong><br>Alexandria VA 22314</p>
+            <p><strong><a href="tel:703-212-9622">(703) 212-9622</a></strong></p>
         </aside>
     </div>
-    
-    <!-- Footer -->
-    <footer style="background: #32192f; color: white; text-align: center; padding: 40px 20px;">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <p>&copy; 2025 Alexandria Dental Health & Smile Studio. All rights reserved.</p>
-            <p style="margin-top: 10px;">
-                <a href="/privacy-policy/" style="color: #a27295;">Privacy Policy</a> | 
-                <a href="/accessibility/" style="color: #a27295;">Accessibility</a>
-            </p>
-        </div>
-    </footer>
 </body>
 </html> 
