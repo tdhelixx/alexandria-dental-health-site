@@ -10,7 +10,7 @@ build:
   environment_variables:
     NODE_ENV: "production"
 
-# Collections for content management
+# Collections for content management - 11ty style
 collections_config:
   pages:
     path: "src/pages"
@@ -18,6 +18,13 @@ collections_config:
     description: "General pages like About, Contact, etc."
     output: true
     icon: "notes"
+    parser: "front-matter"
+    filter:
+      - "*.md"
+      - "*.njk"
+    create:
+      path: "src/pages/[slug].md"
+      publish_to: "src/pages"
     
   blog:
     path: "src/blog"
@@ -27,6 +34,15 @@ collections_config:
     icon: "event"
     sort_key: "date"
     sort_order: "desc"
+    parser: "front-matter"
+    filter:
+      - "*.md"
+      - "*.njk"
+    create:
+      path: "src/blog/[slug].md"
+      publish_to: "src/blog"
+      schema:
+        path: "schemas/blog.md"
     
   services:
     path: "src/services"
@@ -34,17 +50,29 @@ collections_config:
     description: "Dental service pages"
     output: true
     icon: "medical_services"
+    parser: "front-matter"
+    filter:
+      - "*.md"
+      - "*.njk"
+    create:
+      path: "src/services/[slug].md"
+      publish_to: "src/services"
 
+# 11ty specific settings
+generator:
+  metadata:
+    markdown: "markdown-it"
+    
 # Enable live editing
 source_editor:
   enabled: true
 
-# Data files
+# Data files for 11ty
 data_config:
-  nav:
-    path: "_data/navigation.yml"
-  footer:
-    path: "_data/footer.yml"
+  navigation:
+    path: "src/_data/navigation.yml"
+  site:
+    path: "src/_data/site.yml"
     
 # Editor settings
 _editors:
@@ -64,29 +92,58 @@ _inputs:
   title:
     type: text
     label: "Page Title"
+    comment: "The title that appears in the browser tab and search results"
   description:
     type: textarea
     label: "Meta Description"
-  keywords:
-    type: text
-    label: "Keywords"
+    comment: "Brief description for search engines (150-160 characters)"
   layout:
     type: select
+    label: "Layout"
     options:
       values:
-        - default
-        - page
-        - service
-        - blog-post
+        - "layouts/base.njk"
+        - "layouts/page.njk"
+        - "layouts/service.njk"
+        - "layouts/blog.njk"
+  permalink:
+    type: text
+    label: "URL Path"
+    comment: "The URL path for this page (e.g., /about/)"
+  date:
+    type: date
+    label: "Date"
+    comment: "Publication date"
+  tags:
+    type: array
+    label: "Tags"
+    comment: "Categories for organizing content"
         
 # Asset paths
 paths:
-  uploads: "assets/images"
+  uploads: "src/assets/images"
   
 # Site settings
 timezone: "America/New_York"
 
+# CloudCannon 11ty integration
+_11ty:
+  enabled: true
+  
+# Collection schemas for better editing
+_schema:
+  default:
+    path: "schemas/default.md"
+  
 # Metadata
 _metadata:
   title: "Alexandria Dental Health"
-  description: "Comprehensive dental care in Alexandria, VA" 
+  description: "Comprehensive dental care in Alexandria, VA"
+
+# Define which files CloudCannon should ignore
+ignore:
+  - "node_modules"
+  - ".git"
+  - ".eleventy.js"
+  - "package.json"
+  - "package-lock.json" 
