@@ -38,7 +38,8 @@
     "last 2 versions"
   ],
   "_buildInfo": {
-    "lastSync": "2025-01-31T15:45:00Z",
-    "note": "Sync rebuild with all images and service pages"
+    "lastSync": "2025-01-31T16:30:00Z",
+    "note": "Force sync - service editing improvements deployed",
+    "commit": "94642d3"
   }
 } 
