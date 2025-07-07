@@ -33,36 +33,12 @@ in_nav: true
 nav_order: 4
 page_type: service
 benefits:
-- Patient Information
-- 'FAQs & Information
-
-
-  Dental Crowns FAQ's
-
-  Dental Implant Benefits
-
-  Dentures Cleaning & Care
-
-  How to Brush Your Teeth
-
-  How to Brush Your Teeth with Braces
-
-  How to Floss Your Teeth
-
-  Importance of Baby Teeth
-
-  Root Canal Symptoms
-
-  Root Canal Recovery
-
-  Symptoms of Gum Disease
-
-  What is Cosmetic Dentistry?
-
-  What To Do in a Dental Emergency'
-- Dental Crowns FAQ's
-- Dental Implant Benefits
-- Dentures Cleaning & Care
+- Answers to common dental crown questions
+- Same-day CEREC crown technology information
+- Understanding crown vs bridge options
+- Crown material and durability details
+- Post-treatment care instructions
+- Cost and insurance coverage guidance
 related_services:
 - title: Dental Implants
   url: /dental-implants/
