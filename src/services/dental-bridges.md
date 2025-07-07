@@ -1,10 +1,13 @@
 ---
 layout: layouts/service.njk
-title: Dental Bridge
+title: Dental Bridges
 subtitle: Replace Missing Teeth with Permanent Fixed Bridges
-description: Discover dental bridges in Alexandria VA to restore your smile and improve
+description: >-
+  Discover dental bridges in Alexandria VA to restore your smile and improve
   oral health. Contact Alexandria Dental Health & Smile Studio.
-keywords: dental bridge Alexandria VA, dental bridge, tooth replacement, missing teeth, fixed bridge
+keywords: >-
+  dental bridge Alexandria VA, dental bridge, tooth replacement, missing teeth,
+  fixed bridge
 category: Restorative
 heroImage: /images/restorative/Dentist-Senior-Couple-Outside-Smiling-CS1.webp
 heroImageAlt: Dental Bridge Treatment at Alexandria Dental Health & Smile Studio
@@ -12,41 +15,41 @@ permalink: /dental-bridges/
 ctaText: Schedule Bridge Consultation
 ctaLink: /contact-us/
 tags:
-- services
-- restorative
+  - services
+  - restorative
 editable_regions:
-- hero
-- content
-- sidebar
+  - hero
+  - content
+  - sidebar
 social_image: /images/cosmetic/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
-og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
-  Dr. Mazhari provides comprehensive care in Alexandria VA.
+og_description: >-
+  Expert dental services at Alexandria Dental Health & Smile Studio. Dr. Mazhari
+  provides comprehensive care in Alexandria VA.
 show_hero: true
 show_sidebar: true
 show_cta: true
 content_sections:
-- benefits
-- process
-- investment
-- faq
+  - benefits
+  - process
+  - investment
+  - faq
 in_nav: true
 nav_order: 5
 page_type: service
 benefits:
-- "Bridge gaps between teeth to restore function and appearance"
-- "Prevent adjacent teeth from shifting or becoming misaligned" 
-- "Restore ability to chew and speak properly"
-- "Durable solution lasting 10-15 years with proper care"
-- "Custom-colored to match your natural teeth"
+  - Bridge gaps between teeth to restore function and appearance
+  - Prevent adjacent teeth from shifting or becoming misaligned
+  - Restore ability to chew and speak properly
+  - Durable solution lasting 10-15 years with proper care
+  - Custom-colored to match your natural teeth
 related_services:
-- title: Dental Implants
-  url: /dental-implants/
-- title: Dental Crowns
-  url: /dental-crowns/
-- title: Dentures
-  url: /dentures/
+  - title: Dental Implants
+    url: /dental-implants/
+  - title: Dental Crowns
+    url: /dental-crowns/
+  - title: Dentures
+    url: /dentures/
 ---
-
 # Dental Bridges in Alexandria VA
 
 You can lose teeth in many different ways, including dental work, or through accidents and other mishaps. In the past, the loss of a tooth was simply something most people had to learn to accept. Today, there are many alternatives to ensure that a missing tooth doesn't have to become an embarrassment. One technique called a Dental Bridge in Alexandria VA is a unique solution to the problem.
