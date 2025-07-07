@@ -262,7 +262,7 @@ class ServicePageGenerator:
         return 'general'
 
     def generate_related_services(self, post_name):
-        """Generate related services based on category"""
+        """Generate related services based on category - always non-empty"""
         
         category = self.determine_category_from_name(post_name)
         
@@ -288,7 +288,28 @@ class ServicePageGenerator:
         
         # Remove self from related services
         current_url = f'/{post_name}/'
-        return [service for service in related_services if service['url'] != current_url]
+        filtered_services = [service for service in related_services if service['url'] != current_url]
+        
+        # Ensure we always have at least 2 related services for CloudCannon
+        if len(filtered_services) < 2:
+            # Add fallback services from other categories
+            fallback_services = [
+                {'title': 'Cosmetic Dentistry', 'url': '/cosmetic-dentistry/'},
+                {'title': 'Restorative Dentistry', 'url': '/restorative/'},
+                {'title': 'Family Dentistry', 'url': '/family-dentist/'},
+                {'title': 'Emergency Dentistry', 'url': '/emergency-dental-information/'},
+                {'title': 'Preventative Care', 'url': '/preventative/'}
+            ]
+            
+            # Add fallback services until we have at least 2
+            for service in fallback_services:
+                if service['url'] != current_url and service not in filtered_services:
+                    filtered_services.append(service)
+                    if len(filtered_services) >= 2:
+                        break
+        
+        # Limit to maximum 3 related services for clean UI
+        return filtered_services[:3]
 
     def extract_main_content(self, soup):
         """Extract main content from HTML, starting from fl-content-full container"""

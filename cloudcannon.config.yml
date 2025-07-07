@@ -323,4 +323,146 @@ ignore:
   - ".git"
   - ".eleventy.js"
   - "package.json"
-  - "package-lock.json" 
+  - "package-lock.json"
+
+# Input configuration for arrays and objects
+_inputs:
+  # Related Services Array Configuration
+  related_services:
+    type: array
+    label: Related Services
+    comment: Add related service pages to display in the sidebar
+    options:
+      structures:
+        service_link:
+          values:
+            - label: Service Link
+              icon: link
+              value:
+                title: 
+                url: 
+      empty_type: service_link
+      preview:
+        text:
+          - key: title
+        subtext:
+          - key: url
+        icon: link
+  
+  # Benefits Array Configuration  
+  benefits:
+    type: array
+    label: Benefits & Features
+    comment: Key benefits and features of this service
+    options:
+      empty_type: string
+      preview:
+        text: 
+          - key: value
+  
+  # Process Steps Array Configuration
+  process_steps:
+    type: array 
+    label: Treatment Process
+    comment: Step-by-step treatment process
+    options:
+      structures:
+        process_step:
+          values:
+            - label: Process Step
+              icon: playlist_add_check
+              value:
+                title:
+                description:
+      empty_type: process_step
+      preview:
+        text:
+          - key: title
+        subtext:
+          - key: description
+        icon: playlist_add_check
+  
+  # FAQ Array Configuration
+  faq:
+    type: array
+    label: Frequently Asked Questions
+    comment: Common questions and answers about this service
+    options:
+      structures:
+        faq_item:
+          values:
+            - label: FAQ Item
+              icon: help
+              value:
+                question:
+                answer:
+      empty_type: faq_item
+      preview:
+        text:
+          - key: question
+        subtext:
+          - key: answer
+        icon: help
+  
+  # Tags Array Configuration
+  tags:
+    type: array
+    label: Tags
+    comment: Service tags for categorization
+    options:
+      empty_type: string
+      allow_create: true
+      values:
+        - services
+        - cosmetic  
+        - restorative
+        - family
+        - emergency
+        - preventative
+        - general
+  
+  # Content Sections Array Configuration
+  content_sections:
+    type: array
+    label: Content Sections
+    comment: Sections to display on this page
+    options:
+      empty_type: string
+      allow_create: true
+      values:
+        - benefits
+        - process
+        - investment
+        - faq
+        - testimonials
+        - gallery
+  
+  # Editable Regions Array Configuration
+  editable_regions:
+    type: array
+    label: Editable Regions
+    comment: Regions that can be edited in the visual editor
+    options:
+      empty_type: string
+      allow_create: true
+      values:
+        - hero
+        - content
+        - sidebar
+        - footer
+
+# Visual editor configuration
+visual:
+  preview_url: http://localhost:8080
+  
+# Editor configuration
+_editor:
+  default_path: /services/
+  
+# Generator configuration
+generator:
+  metadata:
+    markdown: markdown-it
+    markdown-it:
+      html: true
+      linkify: true 
