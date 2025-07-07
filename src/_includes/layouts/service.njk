@@ -3,226 +3,83 @@ layout: layouts/base.njk
 ---
 
 <div class="service-page">
-    {% if image or title %}
-    <section class="service-hero" data-cms-bind="#title,#image">
-        <div class="hero-background" {% if image %}style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{ image }}')"{% endif %}>
+    <!-- Hero Section -->
+    {% if heroImage or title %}
+    <section class="service-hero">
+        <div class="hero-background" {% if heroImage %}style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{ heroImage }}')"{% endif %}>
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="service-title" data-cms-bind="#title">{{ title }}</h1>
+                    <h1 class="service-title" data-cms-editable="title">{{ title }}</h1>
                     {% if subtitle %}
-                        <p class="service-subtitle" data-cms-bind="#subtitle">{{ subtitle }}</p>
+                        <p class="service-subtitle" data-cms-editable="subtitle">{{ subtitle }}</p>
                     {% endif %}
                     {% if category %}
-                        <span class="service-category-badge" data-cms-bind="#category">{{ category }}</span>
+                        <span class="service-category-badge">{{ category }}</span>
                     {% endif %}
                     <div class="hero-cta">
-                        <a href="/contact-us/" class="btn btn-primary">Schedule Consultation</a>
+                        <a href="{{ ctaLink or '/contact-us/' }}" class="btn btn-primary">{{ ctaText or 'Schedule Consultation' }}</a>
                         <a href="tel:703-746-0077" class="btn btn-secondary">Call Now</a>
                     </div>
                 </div>
-                {% if image %}
-                <div class="hero-image">
-                    <img src="{{ image }}" 
-                         alt="{{ title }}" 
-                         loading="eager"
-                         data-cms-bind="#image">
-                </div>
-                {% endif %}
             </div>
         </div>
     </section>
     {% endif %}
     
+    <!-- Main Content Section -->
     <section class="service-content">
         <div class="container">
             <div class="service-layout">
                 <div class="service-main">
-                    <!-- Main Content -->
-                    <div class="service-description" data-cms-bind="#content">
+                    <!-- Editable Content Area -->
+                    <div class="content-editable" data-cms-editable="content">
                         {{ content | safe }}
                     </div>
                     
-                    <!-- Treatment Information Grid -->
-                    {% if conditions_treated or materials or benefits %}
-                    <div class="treatment-info-grid">
-                        {% if conditions_treated %}
-                        <div class="info-section" data-cms-bind="#conditions_treated">
-                            <h2><i class="icon-medical"></i>Conditions We Treat</h2>
-                            <ul class="conditions-list">
-                                {% for condition in conditions_treated %}
-                                    <li data-cms-bind="#conditions_treated[{{ loop.index0 }}]">{{ condition }}</li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                        {% endif %}
-                        
-                        {% if materials %}
-                        <div class="info-section" data-cms-bind="#materials">
-                            <h2><i class="icon-science"></i>Materials Used</h2>
-                            <ul class="materials-list">
-                                {% for material in materials %}
-                                    <li data-cms-bind="#materials[{{ loop.index0 }}]">{{ material }}</li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                        {% endif %}
-                        
-                        {% if benefits %}
-                        <div class="info-section" data-cms-bind="#benefits">
-                            <h2><i class="icon-star"></i>Treatment Benefits</h2>
-                            <ul class="benefits-list">
-                                {% for benefit in benefits %}
-                                    <li data-cms-bind="#benefits[{{ loop.index0 }}]">{{ benefit }}</li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                        {% endif %}
-                    </div>
-                    {% endif %}
-                    
-                    <!-- Technology Highlight -->
-                    {% if technology %}
-                    <div class="technology-section" data-cms-bind="#technology">
-                        <div class="technology-card">
-                            <h2><i class="icon-tech"></i>Advanced Technology</h2>
-                            <h3 class="technology-name" data-cms-bind="#technology">{{ technology }}</h3>
-                            {% if visit_duration %}
-                                <p class="visit-duration" data-cms-bind="#visit_duration">
-                                    <strong>Treatment Time:</strong> {{ visit_duration }}
-                                </p>
-                            {% endif %}
-                        </div>
-                    </div>
-                    {% endif %}
-                    
-                    <!-- Treatment Process -->
-                    {% if process_steps %}
-                    <div class="treatment-process" data-cms-bind="#process_steps">
-                        <h2><i class="icon-process"></i>Treatment Process</h2>
-                        <div class="process-steps">
-                            {% for step in process_steps %}
-                                <div class="step" data-cms-bind="#process_steps[{{ loop.index0 }}]">
-                                    <div class="step-number">{{ loop.index }}</div>
-                                    <div class="step-content">
-                                        <h3 data-cms-bind="#process_steps[{{ loop.index0 }}].title">{{ step.title }}</h3>
-                                        <p data-cms-bind="#process_steps[{{ loop.index0 }}].description">{{ step.description }}</p>
-                                    </div>
-                                </div>
+                    <!-- Treatment Benefits -->
+                    {% if benefits %}
+                    <div class="benefits-section">
+                        <h2>Treatment Benefits</h2>
+                        <ul class="benefits-list">
+                            {% for benefit in benefits %}
+                                <li>{{ benefit }}</li>
                             {% endfor %}
-                        </div>
-                    </div>
-                    {% endif %}
-                    
-                    <!-- Educational Video -->
-                    {% if video_url %}
-                    <div class="service-video" data-cms-bind="#video_url">
-                        <h2><i class="icon-play"></i>Learn More</h2>
-                        <div class="video-container">
-                            <div class="video-wrapper">
-                                <iframe src="{{ video_url }}" 
-                                        frameborder="0" 
-                                        allowfullscreen
-                                        data-cms-bind="#video_url"></iframe>
-                            </div>
-                        </div>
+                        </ul>
                     </div>
                     {% endif %}
                 </div>
                 
-                <!-- Enhanced Sidebar -->
+                <!-- Sidebar -->
                 <aside class="service-sidebar">
                     <!-- Quick Contact -->
                     <div class="sidebar-widget contact-widget">
-                        <h3><i class="icon-phone"></i>Schedule Your Appointment</h3>
+                        <h3>Schedule Your Appointment</h3>
                         <p>Ready to get started? Contact us today to schedule your consultation.</p>
                         <div class="contact-options">
-                            <a href="tel:703-746-0077" class="contact-phone">
-                                <span class="icon">📞</span>
-                                703-746-0077
-                            </a>
-                            <a href="/contact-us/" class="btn btn-primary btn-block">Request Appointment</a>
+                            <a href="tel:703-746-0077" class="contact-phone">📞 703-746-0077</a>
+                            <a href="/contact-us/" class="btn btn-primary">Request Appointment</a>
                         </div>
                     </div>
                     
                     <!-- Service Details -->
                     <div class="sidebar-widget details-widget">
-                        <h3><i class="icon-info"></i>Service Details</h3>
+                        <h3>Service Details</h3>
                         {% if category %}
                             <div class="detail-item">
-                                <strong>Category:</strong>
-                                <span class="service-category" data-cms-bind="#category">{{ category }}</span>
-                            </div>
-                        {% endif %}
-                        {% if visit_duration %}
-                            <div class="detail-item">
-                                <strong>Duration:</strong>
-                                <span data-cms-bind="#visit_duration">{{ visit_duration }}</span>
-                            </div>
-                        {% endif %}
-                        {% if technology %}
-                            <div class="detail-item">
-                                <strong>Technology:</strong>
-                                <span data-cms-bind="#technology">{{ technology }}</span>
+                                <strong>Category:</strong> {{ category }}
                             </div>
                         {% endif %}
                     </div>
-                    
-                    <!-- Investment Information -->
-                    {% if cost_range %}
-                    <div class="sidebar-widget investment-widget" data-cms-bind="#cost_range">
-                        <h3><i class="icon-dollar"></i>Investment</h3>
-                        <div class="cost-info">
-                            <p class="primary-cost" data-cms-bind="#cost_range">{{ cost_range }}</p>
-                            {% if lumineers_cost %}
-                                <p class="alternative-cost" data-cms-bind="#lumineers_cost">
-                                    <strong>Alternative Option:</strong><br>
-                                    {{ lumineers_cost }}
-                                </p>
-                            {% endif %}
-                        </div>
-                        <p class="cost-note">Final cost determined during consultation based on individual needs.</p>
-                    </div>
-                    {% endif %}
                     
                     <!-- Related Services -->
+                    {% if related_services %}
                     <div class="sidebar-widget related-widget">
-                        <h3><i class="icon-link"></i>Related Services</h3>
+                        <h3>Related Services</h3>
                         <ul class="related-services">
-                            {% if related_services %}
-                                {% for service in related_services %}
-                                    <li><a href="/{{ service }}/">{{ service }}</a></li>
-                                {% endfor %}
-                            {% else %}
-                                <li><a href="/dental-implants/">Dental Implants</a></li>
-                                <li><a href="/invisalign/">Invisalign</a></li>
-                                <li><a href="/cosmetic-dentistry/">Cosmetic Dentistry</a></li>
-                                <li><a href="/teeth-whitening/">Teeth Whitening</a></li>
-                                <li><a href="/veneers/">Veneers</a></li>
-                            {% endif %}
-                        </ul>
-                    </div>
-                    
-                    <!-- Additional Information -->
-                    {% if related_pages %}
-                    <div class="sidebar-widget info-widget">
-                        <h3><i class="icon-document"></i>Additional Information</h3>
-                        <ul class="related-pages">
-                            {% for page in related_pages %}
-                                <li><a href="/{{ page }}/">{{ page }}</a></li>
+                            {% for service in related_services %}
+                                <li><a href="{{ service.url }}">{{ service.title }}</a></li>
                             {% endfor %}
                         </ul>
-                    </div>
-                    {% endif %}
-                    
-                    <!-- Credentials -->
-                    {% if credentials %}
-                    <div class="sidebar-widget credentials-widget">
-                        <h3><i class="icon-badge"></i>Our Credentials</h3>
-                        <div class="credentials">
-                            {% for credential in credentials %}
-                                <img src="{{ credential.image }}" alt="{{ credential.name }}" class="credential-logo">
-                            {% endfor %}
-                        </div>
                     </div>
                     {% endif %}
                 </aside>
@@ -230,40 +87,8 @@ layout: layouts/base.njk
         </div>
     </section>
     
-    <!-- Before & After Gallery -->
-    {% if before_after_gallery %}
-    <section class="before-after-section" data-cms-bind="#before_after_gallery">
-        <div class="container">
-            <h2><i class="icon-gallery"></i>Before & After Gallery</h2>
-            <p class="gallery-intro">See the amazing results we've achieved for our patients</p>
-            <div class="gallery-grid">
-                {% for case in before_after_gallery %}
-                    <div class="gallery-item" data-cms-bind="#before_after_gallery[{{ loop.index0 }}]">
-                        <div class="before-after">
-                            <div class="before">
-                                <img src="{{ case.before }}" alt="Before {{ title }} treatment" data-cms-bind="#before_after_gallery[{{ loop.index0 }}].before">
-                                <span class="label">Before</span>
-                            </div>
-                            <div class="after">
-                                <img src="{{ case.after }}" alt="After {{ title }} treatment" data-cms-bind="#before_after_gallery[{{ loop.index0 }}].after">
-                                <span class="label">After</span>
-                            </div>
-                        </div>
-                        {% if case.description %}
-                            <p class="case-description" data-cms-bind="#before_after_gallery[{{ loop.index0 }}].description">{{ case.description }}</p>
-                        {% endif %}
-                    </div>
-                {% endfor %}
-            </div>
-            <div class="gallery-cta">
-                <a href="/smile-gallery/" class="btn btn-outline">View Complete Gallery</a>
-            </div>
-        </div>
-    </section>
-    {% endif %}
-    
-    <!-- Final Call-to-Action -->
-    <section class="service-cta" data-cms-bind="#cta_text,#cta_link">
+    <!-- Call-to-Action -->
+    <section class="service-cta">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to Transform Your Smile?</h2>
@@ -271,11 +96,170 @@ layout: layouts/base.njk
                 <div class="cta-buttons">
                     <a href="/contact-us/" class="btn btn-primary">Schedule Consultation</a>
                     <a href="tel:703-746-0077" class="btn btn-secondary">Call 703-746-0077</a>
-                    {% if cta_text and cta_link %}
-                        <a href="{{ cta_link }}" class="btn btn-outline" data-cms-bind="#cta_text,#cta_link">{{ cta_text }}</a>
-                    {% endif %}
                 </div>
             </div>
         </div>
     </section>
-</div> 
+</div>
+
+<style>
+.service-page { 
+    line-height: 1.6; 
+}
+
+.service-hero { 
+    background: #f8f9fa; 
+    padding: 60px 0; 
+    text-align: center; 
+}
+
+.hero-background { 
+    background-size: cover; 
+    background-position: center; 
+    color: white; 
+}
+
+.service-title { 
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+}
+
+.service-subtitle { 
+    font-size: 1.2rem; 
+    margin-bottom: 2rem; 
+    opacity: 0.9; 
+}
+
+.service-category-badge { 
+    background: #6c757d; 
+    color: white; 
+    padding: 0.25rem 0.75rem; 
+    border-radius: 0.25rem; 
+    font-size: 0.875rem; 
+}
+
+.hero-cta { 
+    margin-top: 2rem; 
+}
+
+.btn { 
+    padding: 0.75rem 1.5rem; 
+    margin: 0.5rem; 
+    text-decoration: none; 
+    border-radius: 0.25rem; 
+    display: inline-block; 
+}
+
+.btn-primary { 
+    background: #007bff; 
+    color: white; 
+}
+
+.btn-secondary { 
+    background: #6c757d; 
+    color: white; 
+}
+
+.service-content { 
+    padding: 60px 0; 
+}
+
+.service-layout { 
+    display: grid; 
+    grid-template-columns: 2fr 1fr; 
+    gap: 3rem; 
+}
+
+.content-editable { 
+    background: #f8f9fa; 
+    border: 2px dashed #dee2e6; 
+    padding: 2rem; 
+    margin-bottom: 2rem; 
+    border-radius: 0.5rem;
+}
+
+.content-editable:hover {
+    border-color: #28a745;
+    background: #f1f8f4;
+}
+
+.benefits-section h2 { 
+    color: #007bff; 
+    margin-bottom: 1rem; 
+}
+
+.benefits-list { 
+    list-style: none; 
+    padding: 0; 
+}
+
+.benefits-list li { 
+    background: #e9f5ff; 
+    padding: 0.75rem 1rem; 
+    margin-bottom: 0.5rem; 
+    border-radius: 0.25rem; 
+    border-left: 4px solid #007bff; 
+}
+
+.service-sidebar { 
+    background: #f8f9fa; 
+    padding: 2rem; 
+    border-radius: 0.5rem; 
+    height: fit-content; 
+}
+
+.sidebar-widget { 
+    margin-bottom: 2rem; 
+}
+
+.sidebar-widget h3 { 
+    color: #343a40; 
+    margin-bottom: 1rem; 
+    font-size: 1.1rem; 
+}
+
+.contact-phone { 
+    display: block; 
+    color: #007bff; 
+    text-decoration: none; 
+    font-weight: bold; 
+    margin-bottom: 1rem; 
+}
+
+.related-services { 
+    list-style: none; 
+    padding: 0; 
+}
+
+.related-services li { 
+    margin-bottom: 0.5rem; 
+}
+
+.related-services a { 
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+.service-cta { 
+    background: #007bff; 
+    color: white; 
+    padding: 60px 0; 
+    text-align: center; 
+}
+
+.container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 1rem; 
+}
+
+@media (max-width: 768px) {
+    .service-layout { 
+        grid-template-columns: 1fr; 
+    }
+    
+    .service-title { 
+        font-size: 2rem; 
+    }
+}
+</style> 
