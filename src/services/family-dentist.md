@@ -1,8 +1,15 @@
 ---
+layout: layouts/service.njk
 title: "Family Dentistry in Alexandria VA"
+subtitle: "Comprehensive Dental Care for the Whole Family"
 description: "Comprehensive family dentistry at Alexandria Dental Health & Smile Studio. Dr. Mazhari provides gentle dental care for children and families in Alexandria VA, building a foundation for lifelong oral health."
-image: "/wp-content/uploads/2024/11/Family-Mom-Dad-Kids-Smiling-CS1.webp"
-category: "Family"
+keywords: "family dentistry Alexandria VA, pediatric dentist, children's dental care"
+heroImage: "/images/family/family-smiling-together.webp"
+heroImageAlt: "Happy Family Smiling Together"
+permalink: "/family-dentist/"
+ctaText: "Schedule Family Appointment"
+ctaLink: "/contact-us/"
+tags: ["services", "family"]
 age_groups:
   - "Children"
   - "Teens"
@@ -14,13 +21,34 @@ focus_areas:
   - "Education"
   - "Gentle treatment"
   - "Family comfort"
+benefits:
+  - "Convenient care for all family members"
+  - "Consistent dental team relationship"
+  - "Age-appropriate treatment approaches"
+  - "Family-friendly environment"
+  - "Comprehensive preventive focus"
+  - "Dental education for all ages"
+process_steps:
+  - title: "Family Consultation"
+    description: "Meet with Dr. Mazhari to discuss each family member's dental needs"
+  - title: "Individual Assessments"
+    description: "Comprehensive exams tailored to each age group and dental history"
+  - title: "Treatment Planning"
+    description: "Coordinated care plans that work with your family's schedule"
+  - title: "Ongoing Care"
+    description: "Regular checkups and preventive treatments to maintain family health"
 related_services:
-  - dental-cleanings
-  - dental-exams
-  - preventative
+  - title: "Dental Cleanings"
+    url: "/dental-cleanings/"
+  - title: "Dental Exams"
+    url: "/dental-exams/"
+  - title: "Preventative Care"
+    url: "/preventative/"
 related_pages:
-  - importance-of-baby-teeth
-  - patient-information
+  - title: "Importance of Baby Teeth"
+    url: "/importance-of-baby-teeth/"
+  - title: "Patient Information"
+    url: "/patient-information/"
 ---
 
 For many people, their first trip to the dentist can be intimidating. This can be especially true for children, and yet the right [dental care for kids in Alexandria VA](/) sets the foundation for a lifetime of good oral health.

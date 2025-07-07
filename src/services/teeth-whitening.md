@@ -1,7 +1,9 @@
 ---
 layout: layouts/service.njk
 title: "Teeth Whitening in Alexandria VA"
+subtitle: "Professional Whitening for a Brighter, Confident Smile"
 description: "Professional teeth whitening in Alexandria VA with Dr. Mazhari. In-office and take-home options available. Safe, effective results in just one hour."
+keywords: "teeth whitening Alexandria VA, professional whitening, Opalescence"
 permalink: "/teeth-whitening/"
 heroImage: "/images/services/couple-younger-smiling.webp"
 heroImageAlt: "Couple Younger Head On Shoulder Smiling"
@@ -23,6 +25,11 @@ process:
     description: "Bleaching agent is applied and activated with special light (in-office) or custom trays are created (take-home)."
   - title: "Results"
     description: "Enjoy your brighter, whiter smile and maintain with good oral hygiene."
+investment:
+  primary: "In-office whitening: $450"
+  secondary: "Take-home trays: $350"
+  note: "Professional results that last up to 2 years"
+  financing: "Payment plans available"
 options:
   - name: "In-Office Whitening"
     description: "Professional treatment completed in about one hour with immediate results up to 8 shades whiter."
@@ -87,5 +94,4 @@ The custom trays will ensure that the professional quality bleaching agent is di
 Your results will be revealed gradually over a couple of weeks, but will last for a year or more with good oral hygiene and routine dental care. Periodic touch-ups can help to prolong the appearance of your fresh, white smile.
 
 <div class="cta-section">
-  <a href="/contact-us/" class="btn btn-primary">Schedule Your Whitening Consultation</a>
-</div> 
+  <a href="/contact-us/" class="btn btn-primary">Schedule Your Whitening Consultation</a> 

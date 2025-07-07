@@ -4,8 +4,12 @@ title: "Dental Implants"
 subtitle: "Permanent, Natural-Looking Tooth Replacement"
 description: "Dental implants in Alexandria, VA. Dr. Mojgan Mazhari provides permanent tooth replacement solutions that look and feel natural."
 keywords: "dental implants Alexandria VA, tooth replacement, implant dentist"
-hero_image: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Dental-Implants-FC.webp"
+heroImage: "/images/services/dental-implants-hero.webp"
+heroImageAlt: "Dental Implant Model Showing Natural Tooth Replacement"
 permalink: "/dental-implants/"
+ctaText: "Schedule Implant Consultation"
+ctaLink: "/contact-us/"
+tags: ["services", "restorative"]
 benefits:
   - "Permanent solution for missing teeth"
   - "Natural look and feel"
@@ -22,6 +26,10 @@ process_steps:
     description: "3-6 months for implant to integrate with bone (osseointegration)"
   - title: "Crown Placement"
     description: "Custom crown is attached to complete your new tooth"
+investment:
+  primary: "Starting at $3,500 per implant"
+  note: "Includes implant, abutment, and crown"
+  financing: "Flexible payment plans available"
 related_services:
   - title: "Dental Crowns"
     url: "/dental-crowns/"
@@ -29,13 +37,7 @@ related_services:
     url: "/dental-bridges/"
   - title: "Full Mouth Reconstruction"
     url: "/full-mouth-reconstruction/"
-before_after_gallery:
-  - before: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Case-Study-5-Before.webp"
-    after: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Case-Study-5.webp"
-    description: "Single tooth implant replacement"
-  - before: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Case-Study-29-Before.webp"
-    after: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Case-Study-29-After.webp"
-    description: "Multiple implant restoration"
+before_after_gallery: []
 ---
 
 ## What Are Dental Implants?
