@@ -6,21 +6,26 @@
     <title>{% if title %}{{ title }} | {% endif %}Alexandria Dental Health & Smile Studio</title>
     <meta name="description" content="{{ description or 'Expert dental care in Alexandria VA with Dr. Mojgan Mazhari. Comprehensive dental services including implants, cosmetic dentistry, and family care.' }}">
     
-    <!-- Simplified reliable styling -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Professional header styling to match WordPress -->
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Raleway', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             background: #fff;
         }
         
+        /* Header matching WordPress design exactly */
         .site-header {
             background: white;
             padding: 20px 0;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #e5e5e5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         
         .header-container {
@@ -32,21 +37,72 @@
             align-items: center;
         }
         
-        .practice-branding h1 {
-            color: #a27295;
-            font-size: 24px;
-            margin: 0;
+        /* Logo Section */
+        .practice-branding {
+            display: flex;
+            align-items: center;
         }
         
-        .header-contact a {
+        .practice-logo-img {
+            height: 80px;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        /* Contact & Buttons */
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .phone-number {
             color: #333;
             text-decoration: none;
-            font-weight: bold;
+            font-size: 20px;
+            font-weight: 600;
         }
         
+        .header-buttons {
+            display: flex;
+            gap: 12px;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .btn-special {
+            background: #ffae00;
+            color: #000;
+        }
+        
+        .btn-special:hover {
+            background: #e69900;
+        }
+        
+        .btn-schedule {
+            background: #a27295;
+            color: white;
+        }
+        
+        .btn-schedule:hover {
+            background: #8a5f7c;
+        }
+        
+        /* Navigation */
         .main-nav {
             background: #f8f9fa;
             padding: 15px 0;
+            border-top: 1px solid #e5e5e5;
         }
         
         .nav-container {
@@ -58,19 +114,96 @@
         .nav-menu {
             list-style: none;
             display: flex;
-            gap: 30px;
+            gap: 40px;
             justify-content: center;
+            margin: 0;
+        }
+        
+        .nav-menu > li {
+            position: relative;
         }
         
         .nav-menu a {
             color: #666;
             text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 10px 15px;
         }
         
         .nav-menu a:hover {
             color: #a27295;
         }
         
+        /* Dropdown Menus */
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 250px;
+            list-style: none;
+            padding: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border: 1px solid #e5e5e5;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .nav-menu > li:hover > .dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown li {
+            position: relative;
+        }
+        
+        .dropdown a {
+            padding: 12px 20px;
+            color: #666;
+            font-size: 15px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .dropdown a:hover {
+            background: #f8f9fa;
+            color: #a27295;
+        }
+        
+        /* Third Level Dropdowns */
+        .dropdown .dropdown {
+            top: 0;
+            left: 100%;
+            margin-left: 5px;
+        }
+        
+        .dropdown li:hover > .dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        /* Dropdown Indicators */
+        .has-dropdown > a::after {
+            content: " ▼";
+            font-size: 10px;
+            margin-left: 5px;
+        }
+        
+        .dropdown .has-dropdown > a::after {
+            content: " ▶";
+            float: right;
+        }
+        
+        /* Content Layout */
         .site-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -90,10 +223,30 @@
             padding: 30px;
         }
         
+        /* Responsive Design */
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            
+            .practice-logo-img {
+                height: 60px;
+            }
+            
+            .header-contact {
+                flex-direction: column;
                 gap: 15px;
+            }
+            
+            .header-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .btn {
+                width: 100%;
             }
             
             .site-content {
@@ -103,36 +256,96 @@
             
             .nav-menu {
                 flex-direction: column;
-                gap: 15px;
+                gap: 0;
+                text-align: center;
+            }
+            
+            .dropdown {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                background: #f0f0f0;
+                margin: 5px 20px;
+                border-radius: 4px;
+            }
+            
+            .dropdown .dropdown {
+                margin: 5px 40px;
+                background: #e8e8e8;
+            }
+            
+            .has-dropdown > a::after {
+                content: "";
             }
         }
     </style>
 </head>
 <body>
+    <!-- Professional Header matching WordPress design -->
     <header class="site-header">
         <div class="header-container">
+            <!-- Logo Section -->
             <div class="practice-branding">
-                <h1>MOJGAN MAZHARI DDS</h1>
-                <p>Alexandria Dental Health & Smile Studio</p>
+                <img src="/wp-content/uploads/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp" 
+                     alt="MOJGAN MAZHARI DDS - Alexandria Dental Health & Smile Studio" 
+                     class="practice-logo-img">
             </div>
             
+            <!-- Contact & Buttons -->
             <div class="header-contact">
-                <a href="tel:703-212-9622">(703) 212-9622</a>
+                <a href="tel:703-212-9622" class="phone-number">(703) 212-9622</a>
+                
+                <div class="header-buttons">
+                    <a href="/special/" class="btn btn-special">Special Offers</a>
+                    <a href="/contact-us/" class="btn btn-schedule">Schedule Online</a>
+                </div>
             </div>
         </div>
         
+        <!-- Navigation -->
         <nav class="main-nav">
             <div class="nav-container">
                 <ul class="nav-menu">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="/services/">Services</a></li>
-                    <li><a href="/contact-us/">Contact</a></li>
+                    {% for item in navigation.main %}
+                    <li{% if item.children %} class="has-dropdown"{% endif %}>
+                        <a href="{{ item.url or '#' }}">{{ item.text }}</a>
+                        {% if item.children %}
+                        <ul class="dropdown">
+                            {% for child in item.children %}
+                            <li{% if child.children %} class="has-dropdown"{% endif %}>
+                                <a href="{{ child.url or '#' }}">{{ child.text }}</a>
+                                {% if child.children %}
+                                <ul class="dropdown">
+                                    {% for grandchild in child.children %}
+                                    <li{% if grandchild.children %} class="has-dropdown"{% endif %}>
+                                        <a href="{{ grandchild.url or '#' }}">{{ grandchild.text }}</a>
+                                        {% if grandchild.children %}
+                                        <ul class="dropdown">
+                                            {% for greatgrandchild in grandchild.children %}
+                                            <li>
+                                                <a href="{{ greatgrandchild.url }}">{{ greatgrandchild.text }}</a>
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                        {% endif %}
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
                 </ul>
             </div>
         </nav>
     </header>
 
+    <!-- Content Area -->
     <div class="site-content">
         <main class="main-content">
             {{ content | safe }}
