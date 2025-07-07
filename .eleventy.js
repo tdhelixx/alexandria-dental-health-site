@@ -4,6 +4,9 @@ module.exports = function(eleventyConfig) {
   // Copy static assets - flat structure from src/images to output images
   eleventyConfig.addPassthroughCopy({"src/images": "images"});
   
+  // Also copy from main images directory where CloudCannon stores files
+  eleventyConfig.addPassthroughCopy({"images": "images"});
+  
   // Collections for CloudCannon dashboard
   eleventyConfig.addCollection("services", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/services/**/*.md");
