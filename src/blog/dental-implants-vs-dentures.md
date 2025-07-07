@@ -7,6 +7,7 @@ keywords: "dental implants vs dentures, tooth replacement options, Alexandria VA
 date: 2025-01-15
 tags: ["dental implants", "dentures", "tooth replacement", "oral health"]
 featured_image: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Dental-Implants-FC.webp"
+permalink: "/blog/dental-implants-vs-dentures/"
 author:
   name: "Dr. Mojgan Mazhari"
   image: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Mojgan-Mazhari-HP-About.webp"

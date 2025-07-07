@@ -5,6 +5,7 @@ subtitle: "Permanent, Natural-Looking Tooth Replacement"
 description: "Dental implants in Alexandria, VA. Dr. Mojgan Mazhari provides permanent tooth replacement solutions that look and feel natural."
 keywords: "dental implants Alexandria VA, tooth replacement, implant dentist"
 hero_image: "/wp-content/uploads/2025/02/Dentist-Alexandria-VA-Dental-Implants-FC.webp"
+permalink: "/dental-implants/"
 benefits:
   - "Permanent solution for missing teeth"
   - "Natural look and feel"

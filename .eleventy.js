@@ -33,7 +33,9 @@ module.exports = function(eleventyConfig) {
   
   // Collections
   eleventyConfig.addCollection("blog", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/blog/**/*.md");
+    return collectionApi.getFilteredByGlob("src/blog/**/*.md").sort((a, b) => {
+      return b.date - a.date; // Sort by date, newest first
+    });
   });
   
   eleventyConfig.addCollection("services", function(collectionApi) {
@@ -42,6 +44,20 @@ module.exports = function(eleventyConfig) {
   
   eleventyConfig.addCollection("pages", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/pages/**/*.md");
+  });
+  
+  // Set default permalinks for collections
+  eleventyConfig.addGlobalData("permalink", function() {
+    return function(data) {
+      // Default permalink structure
+      if (data.page.inputPath.includes("/blog/")) {
+        return `/blog/${data.page.fileSlug}/`;
+      }
+      if (data.page.inputPath.includes("/services/")) {
+        return `/${data.page.fileSlug}/`;
+      }
+      return false; // Use 11ty default
+    };
   });
   
   // Custom filters
