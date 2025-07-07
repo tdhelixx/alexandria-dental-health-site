@@ -15,14 +15,15 @@
             font-family: 'Raleway', 'Nunito', Arial, sans-serif;
             line-height: 1.6;
             color: #424242;
-            background: #f2f2f2;
+            background: #ffffff;
         }
         
-        /* Header matching WordPress design */
+        /* Header matching WordPress design - WHITE BACKGROUND */
         .site-header {
-            background: #32192f;
-            color: white;
-            padding: 10px 0;
+            background: white;
+            color: #333;
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e0e0;
         }
         
         .header-top {
@@ -34,11 +35,32 @@
             padding: 0 20px;
         }
         
+        .practice-branding {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .practice-logo {
+            font-size: 48px;
+            font-weight: 700;
+            color: #a27295;
+            font-family: 'Times New Roman', serif;
+        }
+        
         .practice-branding h1 {
-            font-size: 24px;
-            font-weight: 300;
+            font-size: 28px;
+            font-weight: 700;
             letter-spacing: 1px;
             margin: 0;
+            color: #333;
+        }
+        
+        .practice-subtitle {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+            font-style: italic;
         }
         
         .header-contact {
@@ -48,9 +70,9 @@
         }
         
         .phone-number {
-            font-size: 18px;
-            font-weight: 600;
-            color: #ffae00;
+            font-size: 20px;
+            font-weight: 700;
+            color: #333;
             text-decoration: none;
         }
         
@@ -82,8 +104,8 @@
         
         /* Navigation */
         .main-nav {
-            background: #32192f;
-            border-top: 1px solid rgba(255,255,255,0.1);
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
         }
         
         .nav-container {
@@ -95,14 +117,16 @@
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 40px;
             padding: 15px 0;
+            justify-content: center;
         }
         
         .nav-menu a {
-            color: #ededed;
+            color: #666;
             text-decoration: none;
             font-weight: 500;
+            font-size: 16px;
             transition: color 0.3s ease;
         }
         
@@ -119,12 +143,13 @@
             position: absolute;
             top: 100%;
             left: 0;
-            background: #1a0e18;
+            background: white;
             min-width: 220px;
             list-style: none;
             padding: 10px 0;
             border-radius: 0 0 8px 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            border: 1px solid #e0e0e0;
             opacity: 0;
             visibility: hidden;
             transform: translateY(-10px);
@@ -145,15 +170,15 @@
         .dropdown-menu a {
             display: block;
             padding: 12px 20px;
-            color: #ededed;
+            color: #666;
             text-decoration: none;
             font-size: 14px;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
         }
         
         .dropdown-menu a:hover {
-            background: #a27295;
-            color: white;
+            background: #f8f9fa;
+            color: #a27295;
         }
         
         /* Main layout */
@@ -271,17 +296,18 @@
                 gap: 0;
             }
             
-            .nav-dropdown .dropdown-menu {
-                position: static;
-                opacity: 1;
-                visibility: visible;
-                transform: none;
-                box-shadow: none;
-                background: #2a1628;
-                margin-left: 20px;
-                margin-top: 5px;
-                border-radius: 4px;
-            }
+                         .nav-dropdown .dropdown-menu {
+                 position: static;
+                 opacity: 1;
+                 visibility: visible;
+                 transform: none;
+                 box-shadow: none;
+                 background: #f8f9fa;
+                 margin-left: 20px;
+                 margin-top: 5px;
+                 border-radius: 4px;
+                 border: 1px solid #e0e0e0;
+             }
             
             .nav-dropdown:hover .dropdown-menu {
                 display: block;
@@ -294,8 +320,11 @@
     <header class="site-header">
         <div class="header-top">
             <div class="practice-branding">
-                <h1>MOJGAN MAZHARI DDS</h1>
-                <p>Alexandria Dental Health & Smile Studio</p>
+                <div class="practice-logo">MD</div>
+                <div class="practice-info">
+                    <h1>MOJGAN MAZHARI DDS</h1>
+                    <p class="practice-subtitle">Alexandria Dental Health & Smile Studio</p>
+                </div>
             </div>
             
             <div class="header-contact">
