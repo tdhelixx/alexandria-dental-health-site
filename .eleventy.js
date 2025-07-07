@@ -2,15 +2,14 @@ const { EleventyI18nPlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
   // Copy static assets
-  eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("src/css");
-  eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/images");
-  eleventyConfig.addPassthroughCopy("*.css");
-  eleventyConfig.addPassthroughCopy("api");
-  eleventyConfig.addPassthroughCopy("s");
+  eleventyConfig.addPassthroughCopy("src/js");
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/_data");
+  
+  // Copy WordPress content directories for compatibility
   eleventyConfig.addPassthroughCopy("wp-content");
-  eleventyConfig.addPassthroughCopy("wp-includes");
+  eleventyConfig.addPassthroughCopy("images");
   
   // Watch CSS files for changes
   eleventyConfig.addWatchTarget("./src/css/");
@@ -105,15 +104,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("service", "layouts/service.njk");
   
   return {
-    templateFormats: ["md", "njk", "html", "liquid"],
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
     dir: {
       input: "src",
+      output: "_site",
       includes: "_includes",
-      data: "_data",
-      output: "_site"
-    }
+      data: "_data"
+    },
+    templateFormats: ["md", "njk", "html"],
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk"
   };
 }; 

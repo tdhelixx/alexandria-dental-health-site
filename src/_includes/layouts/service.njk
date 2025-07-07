@@ -2,221 +2,138 @@
 layout: layouts/base.njk
 ---
 
-<div class="service-page">
-    <!-- Hero Section -->
-    <section class="service-hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 data-cms-editable="title">{{ title }}</h1>
-                <p data-cms-editable="subtitle">{{ subtitle or "Expert dental care in Alexandria, VA" }}</p>
-                <div class="hero-buttons">
-                    <a href="/contact-us/" class="btn btn-primary">Schedule Consultation</a>
-                    <a href="tel:703-746-0077" class="btn btn-outline">Call Now</a>
-                </div>
-            </div>
+<!-- Service Hero Section -->
+{% if heroImage or title %}
+<section class="service-hero" style="background: linear-gradient(rgba(50, 25, 47, 0.7), rgba(50, 25, 47, 0.7)){% if heroImage %}, url('{{ heroImage }}'){% endif %}; background-size: cover; background-position: center; padding: 60px 0; color: white; text-align: center; margin-bottom: 40px;">
+    <div style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem; font-weight: 300;">{{ title }}</h1>
+        {% if subtitle %}
+            <p style="font-size: 1.3rem; margin-bottom: 2rem; opacity: 0.9;">{{ subtitle }}</p>
+        {% endif %}
+        {% if category %}
+            <span style="background: #a27295; color: white; padding: 0.5rem 1rem; border-radius: 25px; font-size: 0.9rem; display: inline-block; margin-bottom: 1.5rem;">{{ category }} Dentistry</span>
+        {% endif %}
+        <div style="margin-top: 2rem;">
+            <a href="{{ ctaLink or '/contact-us/' }}" style="background: #ffae00; color: #0a0a0a; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; margin-right: 15px;">{{ ctaText or 'Schedule Consultation' }}</a>
+            <a href="tel:703-212-9622" style="background: transparent; color: white; border: 2px solid white; padding: 13px 30px; border-radius: 50px; text-decoration: none; font-weight: 600;">Call Now</a>
         </div>
-    </section>
+    </div>
+</section>
+{% endif %}
+
+<!-- Main Service Content -->
+<div style="margin-bottom: 40px;">
+    <!-- Content from markdown -->
+    {{ content | safe }}
     
-    <!-- Main Content -->
-    <section class="service-content">
-        <div class="container">
-            <div class="content-grid">
-                <!-- Main Content Area -->
-                <div class="main-content">
-                    <div data-cms-edit="content">
-                        {{ content | safe }}
+    <!-- Treatment Benefits -->
+    {% if benefits %}
+    <section style="background: #f8f9fa; padding: 40px; border-radius: 12px; margin: 40px 0;">
+        <h2 style="color: #32192f; text-align: center; margin-bottom: 30px; font-size: 2.2rem;">Treatment Benefits</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+            {% for benefit in benefits %}
+                <div style="background: white; padding: 25px; border-radius: 8px; border-left: 4px solid #a27295; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <span style="background: #a27295; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 12px; font-weight: bold;">✓</span>
+                        <p style="margin: 0; color: #424242; line-height: 1.6;">{{ benefit }}</p>
                     </div>
                 </div>
-                
-                <!-- Simple Sidebar -->
-                <aside class="sidebar">
-                    <div class="contact-card">
-                        <h3>Schedule Appointment</h3>
-                        <p>Call us today to get started</p>
-                        <a href="tel:703-746-0077" class="phone-link">📞 703-746-0077</a>
-                        <a href="/contact-us/" class="btn btn-primary btn-small">Book Online</a>
-                    </div>
-                </aside>
-            </div>
+            {% endfor %}
         </div>
     </section>
+    {% endif %}
+    
+    <!-- Process Steps -->
+    {% if process_steps %}
+    <section style="margin: 40px 0;">
+        <h2 style="color: #32192f; text-align: center; margin-bottom: 30px; font-size: 2.2rem;">Treatment Process</h2>
+        <div style="display: grid; gap: 30px;">
+            {% for step in process_steps %}
+                <div style="display: flex; align-items: flex-start; gap: 20px; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <div style="background: linear-gradient(135deg, #a27295 0%, #32192f 100%); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px; flex-shrink: 0;">{{ loop.index }}</div>
+                    <div>
+                        <h3 style="color: #32192f; margin-bottom: 10px; font-size: 1.3rem;">{{ step.title }}</h3>
+                        <p style="color: #666; line-height: 1.6; margin: 0;">{{ step.description }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+    
+    <!-- Investment Information -->
+    {% if investment %}
+    <section style="background: linear-gradient(135deg, #a27295 0%, #32192f 100%); color: white; padding: 40px; border-radius: 12px; margin: 40px 0; text-align: center;">
+        <h2 style="margin-bottom: 20px; font-size: 2.2rem;">Investment Information</h2>
+        {% if investment.primary %}
+            <div style="font-size: 1.5rem; margin-bottom: 15px;">
+                <strong>{{ investment.primary }}</strong>
+                {% if investment.secondary %} - {{ investment.secondary }}{% endif %}
+            </div>
+        {% endif %}
+        {% if investment.financing %}
+            <p style="font-size: 1.1rem; margin-bottom: 10px;">{{ investment.financing }}</p>
+        {% endif %}
+        {% if investment.note %}
+            <p style="font-size: 0.9rem; opacity: 0.9;">{{ investment.note }}</p>
+        {% endif %}
+        <div style="margin-top: 30px;">
+            <a href="/contact-us/" style="background: #ffae00; color: #0a0a0a; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: 600;">Get Pricing Information</a>
+        </div>
+    </section>
+    {% endif %}
+    
+    <!-- FAQ Section -->
+    {% if faq %}
+    <section style="margin: 40px 0;">
+        <h2 style="color: #32192f; text-align: center; margin-bottom: 30px; font-size: 2.2rem;">Frequently Asked Questions</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            {% for item in faq %}
+                <div style="background: white; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
+                    <div style="background: #f8f9fa; padding: 20px; border-left: 4px solid #a27295;">
+                        <h3 style="color: #32192f; margin: 0; font-size: 1.1rem;">{{ item.question }}</h3>
+                    </div>
+                    <div style="padding: 20px;">
+                        <p style="margin: 0; color: #666; line-height: 1.6;">{{ item.answer }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
 </div>
 
+<!-- Final Call-to-Action -->
+<section style="background: #f8f9fa; padding: 60px 0; text-align: center; border-radius: 12px; margin-top: 60px;">
+    <div style="max-width: 600px; margin: 0 auto; padding: 0 20px;">
+        <h2 style="color: #32192f; font-size: 2.5rem; margin-bottom: 20px;">Ready to Transform Your Smile?</h2>
+        <p style="color: #666; font-size: 1.2rem; margin-bottom: 30px; line-height: 1.6;">Schedule a consultation with Dr. Mojgan Mazhari to learn more about {{ title }} and how it can benefit you.</p>
+        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+            <a href="/contact-us/" style="background: #ffae00; color: #0a0a0a; padding: 18px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Schedule Consultation</a>
+            <a href="tel:703-212-9622" style="background: #a27295; color: white; padding: 18px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Call 703-212-9622</a>
+        </div>
+    </div>
+</section>
+
+<!-- Responsive Styles -->
 <style>
-/* Clean, simple styles */
-.service-page {
-    font-family: system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
-}
-
-.service-hero {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    padding: 80px 0;
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: 2.5rem;
-    color: #212529;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.hero-content p {
-    font-size: 1.1rem;
-    color: #6c757d;
-    margin-bottom: 2rem;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.btn {
-    padding: 12px 24px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.btn-primary {
-    background: #007bff;
-    color: white;
-}
-
-.btn-primary:hover {
-    background: #0056b3;
-    transform: translateY(-1px);
-}
-
-.btn-outline {
-    background: transparent;
-    color: #007bff;
-    border-color: #007bff;
-}
-
-.btn-outline:hover {
-    background: #007bff;
-    color: white;
-}
-
-.btn-small {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-}
-
-.service-content {
-    padding: 60px 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.content-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-}
-
-.main-content [data-cms-edit="content"] {
-    background: #fdfdfd;
-    border: 2px dashed #dee2e6;
-    border-radius: 8px;
-    padding: 2rem;
-    min-height: 300px;
-    position: relative;
-}
-
-.main-content [data-cms-edit="content"]:hover {
-    border-color: #007bff;
-    background: #f8f9ff;
-}
-
-.main-content [data-cms-edit="content"]::before {
-    content: "✏️ Edit Content";
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background: #007bff;
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    opacity: 0.8;
-}
-
-.sidebar {
-    background: #f8f9fa;
-    border-radius: 8px;
-    padding: 2rem;
-    height: fit-content;
-}
-
-.contact-card h3 {
-    color: #212529;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.contact-card p {
-    color: #6c757d;
-    margin-bottom: 1rem;
-    font-size: 0.95rem;
-}
-
-.phone-link {
-    display: block;
-    color: #007bff;
-    text-decoration: none;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
-
-.phone-link:hover {
-    color: #0056b3;
-}
-
-/* CloudCannon editing indicators */
-[data-cms-editable] {
-    outline: 2px dashed transparent;
-    padding: 4px;
-    border-radius: 4px;
-    transition: all 0.2s ease;
-}
-
-[data-cms-editable]:hover {
-    outline-color: #ffc107;
-    background: rgba(255, 193, 7, 0.1);
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-    .content-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    @media (max-width: 768px) {
+        .service-hero h1 {
+            font-size: 2rem !important;
+        }
+        
+        .service-hero p {
+            font-size: 1.1rem !important;
+        }
+        
+        .service-hero div a {
+            display: block !important;
+            margin: 10px 0 !important;
+            text-align: center;
+        }
+        
+        section[style*="grid-template-columns"] {
+            grid-template-columns: 1fr !important;
+        }
     }
-    
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .btn {
-        width: 200px;
-        text-align: center;
-    }
-}
 </style> 

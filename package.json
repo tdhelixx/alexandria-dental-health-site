@@ -1,22 +1,21 @@
 {
-  "name": "alexandria-dental-health",
+  "name": "alexandria-dental-health-site",
   "version": "1.0.0",
   "description": "Alexandria Dental Health & Smile Studio website built with 11ty",
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "dev": "eleventy --serve",
-    "clean": "rm -rf _site",
-    "cloudcannon:build": "npm run build"
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
   },
   "keywords": [
-    "dental",
-    "healthcare",
     "11ty",
-    "cloudcannon",
-    "static-site"
+    "eleventy",
+    "dental",
+    "website"
   ],
-  "author": "Alexandria Dental Health",
+  "author": "Alexandria Dental Health & Smile Studio",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
@@ -41,5 +40,9 @@
     "lastSync": "2025-01-31T16:30:00Z",
     "note": "Force sync - service editing improvements deployed",
     "commit": "94642d3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tdhelixx/alexandria-dental-health-site.git"
   }
 } 

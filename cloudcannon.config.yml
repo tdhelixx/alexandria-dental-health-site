@@ -1,40 +1,68 @@
-# Simple CloudCannon Configuration
-source: src
-
-# Collections - Keep it simple
-collections_config:
-  services:
-    path: services
-    name: "Services" 
-    icon: medical_services
-  pages:
-    path: pages
-    name: "Pages"
-    icon: article
-  blog:
-    path: blog
-    name: "Blog"
-    icon: edit
-
-# Essential inputs only
+# CloudCannon Configuration
 _inputs:
   title:
-    type: text
-    label: "Page Title"
+    comment: The page title
   subtitle:
-    type: text
-    label: "Subtitle"
+    comment: A brief subtitle for the page
   description:
-    type: textarea
-    label: "Description"
+    comment: Meta description for SEO
+  category:
+    type: select
+    options:
+      values:
+        - Cosmetic
+        - Restorative
+        - Family
+        - General
+  heroImage:
+    type: image
+    comment: Main hero image for the page
+  benefits:
+    type: array
+    comment: List of treatment benefits
+  process_steps:
+    type: array
+    comment: Steps in the treatment process
+  related_services:
+    type: array
+    comment: Related dental services
 
-# Build settings
+# Collections
+collections_config:
+  services:
+    path: src/services
+    name: Services
+    description: Dental service pages
+    icon: medical
+    add_options:
+      - name: Add Service
+        schema: default
+        icon: add
+
+# Build configuration
 build:
-  install_command: "npm install"
-  build_command: "npm run build"
-  output_dir: "_site"
+  install_command: npm install
+  build_command: npm run build
+  output_dir: _site
+  environment_variables:
+    ELEVENTY_ENV: production
 
+# Source configuration  
+source:
+  input: src
+  output: _site
+
+# Paths
+paths:
+  data: src/_data
+  includes: src/_includes
+  layouts: src/_includes/layouts
+  
 # Generator
 generator:
   metadata:
-    eleventy: true 
+    eleventy: true
+    markdown: markdown-it
+
+# Data
+data_config: 

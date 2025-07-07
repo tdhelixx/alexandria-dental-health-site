@@ -3,190 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if title %}{{ title }} - {% endif %}Alexandria Dental Health | Dentist in Alexandria, VA</title>
+    <title>{% if title %}{{ title }} | {% endif %}Alexandria Dental Health & Smile Studio</title>
+    <meta name="description" content="{{ description or 'Expert dental care in Alexandria VA with Dr. Mojgan Mazhari. Comprehensive dental services including implants, cosmetic dentistry, and family care.' }}">
     
-    <!-- Meta Tags -->
-    <meta name="description" content="{{ description or 'Comprehensive dental care in Alexandria, VA. Dr. Mojgan Mazhari provides expert dental services including cosmetic dentistry, dental implants, Invisalign, and more.' }}">
-    <meta name="keywords" content="{{ keywords or 'dentist Alexandria VA, dental implants, Invisalign, cosmetic dentistry, teeth whitening, dental care' }}">
-    <meta name="author" content="Alexandria Dental Health">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="{% if title %}{{ title }} - {% endif %}Alexandria Dental Health">
-    <meta property="og:description" content="{{ description or 'Comprehensive dental care in Alexandria, VA' }}">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ page.url | url }}">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/webp" href="/wp-content/uploads/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Favicon.webp">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/alexandria-dental-enhanced-styles.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Additional CSS if needed -->
-    {% if page_css %}
-        <style>{{ page_css | safe }}</style>
-    {% endif %}
+    <!-- Professional dental practice styling -->
+    <style>
+        /* WordPress-inspired design */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Raleway', 'Nunito', Arial, sans-serif;
+            line-height: 1.6;
+            color: #424242;
+            background: #f2f2f2;
+        }
+        
+        /* Header matching WordPress design */
+        .site-header {
+            background: #32192f;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .practice-branding h1 {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .phone-number {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffae00;
+            text-decoration: none;
+        }
+        
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: #ffae00;
+            color: #0a0a0a;
+        }
+        
+        .btn-secondary {
+            background: #a27295;
+            color: white;
+        }
+        
+        /* Navigation */
+        .main-nav {
+            background: #32192f;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            padding: 15px 0;
+        }
+        
+        .nav-menu a {
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-menu a:hover {
+            color: #a27295;
+        }
+        
+        /* Main layout */
+        .site-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+        
+        .main-content {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Professional sidebar matching WordPress */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .sidebar-widget {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .practice-info h3 {
+            color: #32192f;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .practice-details {
+            margin-bottom: 20px;
+        }
+        
+        .practice-details strong {
+            color: #32192f;
+            display: block;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .office-hours h4 {
+            color: #a27295;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .hours-schedule {
+            text-align: left;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+        
+        .hours-day {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .hours-day strong {
+            color: #32192f;
+        }
+        
+        .special-offer {
+            background: linear-gradient(135deg, #a27295 0%, #32192f 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .special-offer img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .header-top {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .header-contact {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .site-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 20px;
+            }
+            
+            .main-content {
+                padding: 20px;
+            }
+            
+            .nav-menu {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Professional Header -->
     <header class="site-header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="/">
-                        <img src="/wp-content/uploads/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp" 
-                             alt="Alexandria Dental Health Logo" 
-                             width="200" 
-                             height="60">
-                    </a>
+        <div class="header-top">
+            <div class="practice-branding">
+                <h1>MOJGAN MAZHARI DDS</h1>
+                <p>Alexandria Dental Health & Smile Studio</p>
+            </div>
+            
+            <div class="header-contact">
+                <a href="tel:703-212-9622" class="phone-number">(703) 212-9622</a>
+                
+                <div class="header-buttons">
+                    <a href="/special/" class="btn btn-primary">Special Offers</a>
+                    <a href="/contact-us/" class="btn btn-secondary">Schedule Online</a>
                 </div>
-                
-                <nav class="main-navigation">
-                    <ul class="nav-menu">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about/">About</a></li>
-                        <li class="has-submenu">
-                            <a href="/services/">Services</a>
-                            <ul class="submenu">
-                                <li><a href="/dental-implants/">Dental Implants</a></li>
-                                <li><a href="/invisalign/">Invisalign</a></li>
-                                <li><a href="/cosmetic-dentistry/">Cosmetic Dentistry</a></li>
-                                <li><a href="/teeth-whitening/">Teeth Whitening</a></li>
-                                <li><a href="/dental-crowns/">Dental Crowns</a></li>
-                                <li><a href="/veneers/">Veneers</a></li>
-                                <li><a href="/root-canal-therapy/">Root Canal Therapy</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="/smile-gallery/">Smile Gallery</a></li>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/contact-us/">Contact</a></li>
-                    </ul>
-                    
-                    <div class="header-cta">
-                        <a href="tel:703-746-0077" class="phone-number">703-746-0077</a>
-                        <a href="/contact-us/" class="btn btn-primary">Schedule Appointment</a>
-                    </div>
-                </nav>
-                
-                <!-- Mobile Menu Toggle -->
-                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
             </div>
         </div>
+        
+        <nav class="main-nav">
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/smile-gallery/">Smile Gallery</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/contact-us/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <!-- Main Content -->
-    <main class="main-content">
-        {% if hero_section %}
-            <section class="hero-section">
-                {{ hero_section | safe }}
-            </section>
-        {% endif %}
+    <div class="site-content">
+        <main class="main-content">
+            {{ content | safe }}
+        </main>
         
-        {{ content | safe }}
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="/wp-content/uploads/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Footer-Logo.webp" 
-                             alt="Alexandria Dental Health" 
-                             width="180" 
-                             height="50">
+        <!-- Professional Sidebar -->
+        <aside class="sidebar">
+            <!-- Practice Information -->
+            <div class="sidebar-widget practice-info">
+                <h3>Alexandria Dental Health & Smile Studio</h3>
+                
+                <div class="practice-details">
+                    <strong>2847 Duke St</strong>
+                    <span>Alexandria VA 22314</span>
+                </div>
+                
+                <div class="practice-details">
+                    <strong><a href="tel:703-212-9622" style="color: #32192f;">(703) 212-9622</a></strong>
+                </div>
+                
+                <div class="office-hours">
+                    <h4>OFFICE HOURS</h4>
+                    <div class="hours-schedule">
+                        <div class="hours-day">
+                            <strong>Monday</strong>
+                            <span>10:00am - 6:00pm</span>
+                        </div>
+                        <div class="hours-day">
+                            <strong>Tuesday</strong>
+                            <span>10:00am - 6:00pm</span>
+                        </div>
+                        <div class="hours-day">
+                            <strong>Wednesday</strong>
+                            <span>10:00am - 6:00pm</span>
+                        </div>
+                        <div class="hours-day">
+                            <strong>Thursday</strong>
+                            <span>9:00am - 4:00pm</span>
+                        </div>
+                        <div class="hours-day">
+                            <strong>Friday</strong>
+                            <span>8:00am - 1:00pm</span>
+                        </div>
+                        <div class="hours-day">
+                            <strong>Weekends</strong>
+                            <span>Closed</span>
+                        </div>
                     </div>
-                    <p>Comprehensive dental care in Alexandria, VA. Dr. Mojgan Mazhari and our experienced team are dedicated to providing exceptional dental services in a comfortable, modern environment.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <ul class="contact-info">
-                        <li>
-                            <strong>Phone:</strong> 
-                            <a href="tel:703-746-0077">703-746-0077</a>
-                        </li>
-                        <li>
-                            <strong>Address:</strong><br>
-                            123 Dental Drive<br>
-                            Alexandria, VA 22314
-                        </li>
-                        <li>
-                            <strong>Email:</strong> 
-                            <a href="mailto:info@alexandriadentalhealth.com">info@alexandriadentalhealth.com</a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Office Hours</h3>
-                    <ul class="office-hours">
-                        <li>Monday: 8:00 AM - 6:00 PM</li>
-                        <li>Tuesday: 8:00 AM - 6:00 PM</li>
-                        <li>Wednesday: 8:00 AM - 6:00 PM</li>
-                        <li>Thursday: 8:00 AM - 6:00 PM</li>
-                        <li>Friday: 8:00 AM - 4:00 PM</li>
-                        <li>Saturday: 8:00 AM - 2:00 PM</li>
-                        <li>Sunday: Closed</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="/about/">About Us</a></li>
-                        <li><a href="/services/">Our Services</a></li>
-                        <li><a href="/patient-information/">Patient Information</a></li>
-                        <li><a href="/dental-insurance-accepted/">Insurance</a></li>
-                        <li><a href="/special/">Special Offers</a></li>
-                        <li><a href="/contact-us/">Contact Us</a></li>
-                    </ul>
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; {% year %} Alexandria Dental Health. All rights reserved.</p>
-                    <ul class="footer-legal">
-                        <li><a href="/privacy-policy/">Privacy Policy</a></li>
-                        <li><a href="/terms-service/">Terms of Service</a></li>
-                        <li><a href="/accessibility/">Accessibility</a></li>
-                    </ul>
+            <!-- Special Offers -->
+            <div class="sidebar-widget special-offer">
+                <a href="/special/">
+                    <img src="/images/special-offers-badge.webp" alt="View Our Special Offers" />
+                </a>
+            </div>
+            
+            <!-- Quick Contact -->
+            <div class="sidebar-widget">
+                <h3>Schedule Your Appointment</h3>
+                <p>Ready to get started? Contact us today to schedule your consultation.</p>
+                <div style="margin-top: 20px;">
+                    <a href="/contact-us/" class="btn btn-primary">Request Appointment</a>
                 </div>
             </div>
+        </aside>
+    </div>
+    
+    <!-- Footer -->
+    <footer style="background: #32192f; color: white; text-align: center; padding: 40px 20px;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <p>&copy; 2025 Alexandria Dental Health & Smile Studio. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="/privacy-policy/" style="color: #a27295;">Privacy Policy</a> | 
+                <a href="/accessibility/" style="color: #a27295;">Accessibility</a>
+            </p>
         </div>
     </footer>
-
-    <!-- JavaScript -->
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-            document.querySelector('.main-navigation').classList.toggle('mobile-open');
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
-    
-    {% if page_js %}
-        <script>{{ page_js | safe }}</script>
-    {% endif %}
 </body>
 </html> 
