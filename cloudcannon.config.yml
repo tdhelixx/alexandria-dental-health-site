@@ -1,8 +1,67 @@
 # CloudCannon Configuration for 11ty
-# https://cloudcannon.com/documentation/articles/setting-global-configuration/
+# Updated to match our actual file structure
+
+source: src
+paths:
+  uploads: /assets/uploads
+
+collections_config:
+  pages:
+    path: src/pages
+    name: Pages
+    icon: wysiwyg
+    description: "General pages like About, Contact, etc."
+    _enabled_editors:
+      - content
+      - data
+  blog:
+    path: src/blog
+    name: Blog
+    icon: post_add
+    description: "Dental health blog articles"
+    _enabled_editors:
+      - content
+      - data
+  services:
+    path: src/services
+    name: Services
+    icon: medical_services
+    description: "Dental service pages"
+    _enabled_editors:
+      - content
+      - data
+
+collection_groups:
+  - heading: Content
+    collections:
+      - pages
+      - services
+      - blog
+
+_enabled_editors:
+  - data
+  - content
+  - visual
+
+_inputs:
+  blog_tags:
+    type: multiselect
+    options:
+      values: _select_data.blog_topics
+
+_select_data:
+  blog_topics:
+    - Opinion
+    - Feature
+    - Resource
+
+_editables:
+  content:
+    bold: true
+    italics: true
+    underline: true
 
 # Build settings for 11ty
-source: "src"
 build:
   install_command: "npm install"
   build_command: "npm run build"
@@ -10,53 +69,19 @@ build:
   environment_variables:
     NODE_ENV: "production"
 
-# Collections for content management - 11ty style
-collections_config:
-  pages:
-    path: "src/pages"
-    name: "Pages"
-    description: "General pages like About, Contact, etc."
-    output: true
-    icon: "notes"
-    parser: "front-matter"
-    filter:
-      - "*.md"
-      - "*.njk"
-    create:
-      path: "src/pages/[slug].md"
-      publish_to: "src/pages"
-    
-  blog:
-    path: "src/blog"
-    name: "Blog Posts"  
-    description: "Dental health blog articles"
-    output: true
-    icon: "event"
-    sort_key: "date"
-    sort_order: "desc"
-    parser: "front-matter"
-    filter:
-      - "*.md"
-      - "*.njk"
-    create:
-      path: "src/blog/[slug].md"
-      publish_to: "src/blog"
-      schema:
-        path: "schemas/blog.md"
-    
-  services:
-    path: "src/services"
-    name: "Services"
-    description: "Dental service pages"
-    output: true
-    icon: "medical_services"
-    parser: "front-matter"
-    filter:
-      - "*.md"
-      - "*.njk"
-    create:
-      path: "src/services/[slug].md"
-      publish_to: "src/services"
+base_url: /
+timezone: Etc/UTC
+
+markdown:
+  engine: commonmark
+
+source_editor:
+  tab_size: 2
+  show_gutter: false
+  theme: pastel_on_dark
+
+commit_templates:
+  - template_string: '{message}'
 
 # 11ty specific settings
 generator:
