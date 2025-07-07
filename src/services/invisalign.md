@@ -6,7 +6,7 @@ description: Are you looking for Invisalign in Alexandria VA? Contact the team a
   Alexandria Dental Health & Smile Studio today.
 keywords: invisalign Alexandria VA, invisalign, clear braces, invisible aligners,
   orthodontics
-heroImage: /images/woman-hands-by-face-smiling.webp
+heroImage: /images/Woman-Hands-By-Face-Smiling-CS1.webp
 heroImageAlt: Invisalign Treatment at Alexandria Dental Health & Smile Studio
 permalink: /invisalign/
 ctaText: Schedule Invisalign Consultation
@@ -18,7 +18,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/woman-hands-by-face-smiling.webp
+social_image: /images/Woman-Hands-By-Face-Smiling-CS1.webp
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true

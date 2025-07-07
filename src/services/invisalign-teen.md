@@ -6,7 +6,7 @@ description: Is it time to consider orthodontic treatment for your teen? If your
   isn't excited about having traditional braces, consider Invisalign.
 keywords: invisalign teen® Alexandria VA, invisalign teen®, clear braces, invisible
   aligners, orthodontics
-heroImage: /images/woman-hands-by-face-smiling.webp
+heroImage: /images/Woman-Hands-By-Face-Smiling-CS1.webp
 heroImageAlt: Invisalign Teen® Treatment at Alexandria Dental Health & Smile Studio
 permalink: /invisalign-teen/
 ctaText: Schedule Invisalign Consultation
@@ -18,7 +18,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/woman-hands-by-face-smiling.webp
+social_image: /images/Woman-Hands-By-Face-Smiling-CS1.webp
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true

@@ -6,7 +6,7 @@ description: Looking for help with Teeth Whitening in Alexandria VA? Contact Ale
   Dental Health & Smile Studio today to find out your options.
 keywords: teeth whitening Alexandria VA, teeth whitening, professional whitening,
   Opalescence, smile brightening
-heroImage: /images/couple-younger-smiling.webp
+heroImage: /images/Couple-Younger-Head-On-Shoulder-Smiling-CS1.webp
 heroImageAlt: Teeth Whitening Treatment at Alexandria Dental Health & Smile Studio
 permalink: /teeth-whitening/
 ctaText: Schedule Whitening Consultation
@@ -18,7 +18,7 @@ editable_regions:
 - hero
 - content
 - sidebar
-social_image: /images/couple-younger-smiling.webp
+social_image: /images/Couple-Younger-Head-On-Shoulder-Smiling-CS1.webp
 og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
   Dr. Mazhari provides comprehensive care in Alexandria VA.
 show_hero: true
