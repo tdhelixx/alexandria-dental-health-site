@@ -1,16 +1,28 @@
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
-  // Copy static assets - NEW clean structure
-  eleventyConfig.addPassthroughCopy("src/images");
-  
-  // Copy static assets - OLD WordPress structure (backwards compatibility)
-  eleventyConfig.addPassthroughCopy("wp-content");
+  // Copy static assets - SIMPLIFIED single images directory
   eleventyConfig.addPassthroughCopy("images");
   
-  // Basic collections
+  // Collections for CloudCannon dashboard
   eleventyConfig.addCollection("services", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/services/**/*.md");
+  });
+  
+  eleventyConfig.addCollection("pages", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/pages/**/*.md");
+  });
+  
+  eleventyConfig.addCollection("blog", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/blog/**/*.md").sort((a, b) => {
+      return b.date - a.date; // Sort by date, newest first
+    });
+  });
+  
+  eleventyConfig.addCollection("gallery", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/gallery/**/*.md").sort((a, b) => {
+      return b.date - a.date; // Sort by date, newest first
+    });
   });
   
   // Simple date filter
@@ -24,7 +36,10 @@ module.exports = function(eleventyConfig) {
   
   // Layout aliases
   eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
+  eleventyConfig.addLayoutAlias("page", "layouts/page.njk");
+  eleventyConfig.addLayoutAlias("blog", "layouts/blog.njk");
   eleventyConfig.addLayoutAlias("service", "layouts/service.njk");
+  eleventyConfig.addLayoutAlias("gallery", "layouts/gallery.njk");
   
   return {
     dir: {

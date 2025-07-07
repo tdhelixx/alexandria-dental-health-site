@@ -1,13 +1,51 @@
-# CloudCannon Configuration - Minimal & Reliable
+# CloudCannon Configuration - Complete Collections
 
+# Collections for Dashboard
 collections_config:
   services:
     path: src/services
     name: Services
+    description: Dental service pages
+    icon: medical
+    add_options:
+      - name: Add Service
+        icon: add
+        
+  pages:
+    path: src/pages
+    name: Pages
+    description: General website pages
+    icon: article
+    add_options:
+      - name: Add Page
+        icon: add
+        
+  blog:
+    path: src/blog
+    name: Blog
+    description: Blog posts and articles
+    icon: rss_feed
+    add_options:
+      - name: Add Blog Post
+        icon: add
+        
+  gallery:
+    path: src/gallery
+    name: Gallery
+    description: Smile gallery and before/after photos
+    icon: photo_library
+    add_options:
+      - name: Add Gallery Item
+        icon: add
 
+# Enhanced inputs for all content types
 _inputs:
   title:
     comment: The page title
+  subtitle:
+    comment: Page subtitle or excerpt
+  description:
+    comment: Meta description for SEO
   category:
     type: select
     options:
@@ -16,6 +54,40 @@ _inputs:
         - Restorative  
         - Family
         - General
+        - Blog
+        - Page
+  heroImage:
+    type: image
+    comment: Hero/banner image for the page
+  galleryImages:
+    type: array
+    comment: Gallery images for before/after photos
+  beforeImage:
+    type: image
+    comment: Before treatment photo
+  afterImage:
+    type: image
+    comment: After treatment photo
+  author:
+    comment: Blog post author
+  date:
+    type: date
+    comment: Publication date
+  tags:
+    type: array
+    comment: Tags for organization
+
+# Layout configuration
+_structures:
+  gallery_item:
+    values:
+      - label: Before/After
+        icon: compare
+        value:
+          beforeImage: ""
+          afterImage: ""
+          title: ""
+          description: ""
 
 generator:
   metadata:

@@ -1,0 +1,198 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="gallery-page">
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="container">
+            <h1>{{ title }}</h1>
+            {% if subtitle %}
+                <p class="gallery-subtitle">{{ subtitle }}</p>
+            {% endif %}
+            {% if treatment %}
+                <span class="treatment-badge">{{ treatment }}</span>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- Before/After Comparison -->
+    <section class="before-after-section">
+        <div class="container">
+            <div class="before-after-grid">
+                {% if beforeImage %}
+                <div class="before-image">
+                    <img src="{{ beforeImage }}" alt="Before {{ treatment or 'treatment' }}" loading="lazy">
+                    <span class="image-label">Before</span>
+                </div>
+                {% endif %}
+                
+                {% if afterImage %}
+                <div class="after-image">
+                    <img src="{{ afterImage }}" alt="After {{ treatment or 'treatment' }}" loading="lazy">
+                    <span class="image-label">After</span>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Content -->
+    <section class="gallery-content">
+        <div class="container">
+            <div class="content-main">
+                {{ content | safe }}
+            </div>
+            
+            <!-- Gallery Sidebar -->
+            <aside class="gallery-sidebar">
+                {% if treatment %}
+                <div class="treatment-details">
+                    <h3>Treatment Details</h3>
+                    <p><strong>Procedure:</strong> {{ treatment }}</p>
+                    {% if date %}
+                        <p><strong>Date:</strong> {{ date | dateDisplay }}</p>
+                    {% endif %}
+                    {% if category %}
+                        <p><strong>Category:</strong> {{ category }}</p>
+                    {% endif %}
+                </div>
+                {% endif %}
+                
+                <div class="cta-box">
+                    <h3>Interested in Similar Results?</h3>
+                    <p>Schedule a consultation to discuss your smile goals.</p>
+                    <a href="/contact-us/" class="btn btn-primary">Schedule Consultation</a>
+                </div>
+            </aside>
+        </div>
+    </section>
+</div>
+
+<!-- Gallery-specific styling -->
+<style>
+    .gallery-hero {
+        background: linear-gradient(135deg, #a27295 0%, #32192f 100%);
+        color: white;
+        text-align: center;
+        padding: 60px 0;
+    }
+    
+    .gallery-hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .gallery-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        opacity: 0.9;
+    }
+    
+    .treatment-badge {
+        background: rgba(255,255,255,0.2);
+        padding: 0.5rem 1rem;
+        border-radius: 25px;
+        font-size: 0.9rem;
+    }
+    
+    .before-after-section {
+        padding: 60px 0;
+        background: #f8f9fa;
+    }
+    
+    .before-after-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .before-image, .after-image {
+        position: relative;
+        text-align: center;
+    }
+    
+    .before-image img, .after-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .image-label {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0,0,0,0.8);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+    
+    .gallery-content {
+        padding: 60px 0;
+    }
+    
+    .gallery-content .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+    }
+    
+    .treatment-details {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+    }
+    
+    .treatment-details h3 {
+        color: #32192f;
+        margin-bottom: 15px;
+    }
+    
+    .treatment-details p {
+        margin-bottom: 10px;
+    }
+    
+    .cta-box {
+        background: linear-gradient(135deg, #a27295 0%, #32192f 100%);
+        color: white;
+        padding: 30px;
+        border-radius: 12px;
+        text-align: center;
+    }
+    
+    .cta-box h3 {
+        margin-bottom: 15px;
+    }
+    
+    .cta-box .btn {
+        margin-top: 15px;
+        background: white;
+        color: #32192f;
+    }
+    
+    @media (max-width: 768px) {
+        .before-after-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        .gallery-content .container {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        .gallery-hero h1 {
+            font-size: 2rem;
+        }
+    }
+</style> 
