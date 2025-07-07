@@ -32,6 +32,11 @@ in_nav: true
 nav_order: 5
 page_type: service
 benefits:
+- "Bridge gaps between teeth to restore function and appearance"
+- "Prevent adjacent teeth from shifting or becoming misaligned" 
+- "Restore ability to chew and speak properly"
+- "Durable solution lasting 10-15 years with proper care"
+- "Custom-colored to match your natural teeth"
 - Patient Information
 - 'FAQs & Information
 
