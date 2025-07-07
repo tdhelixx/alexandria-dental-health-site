@@ -1,0 +1,147 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="service-page">
+    {% if hero_image or title %}
+    <section class="service-hero">
+        <div class="hero-background" {% if hero_image %}style="background-image: url('{{ hero_image }}')"{% endif %}>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="service-title">{{ title }}</h1>
+                    {% if subtitle %}
+                        <p class="service-subtitle">{{ subtitle }}</p>
+                    {% endif %}
+                    <div class="hero-cta">
+                        <a href="/contact-us/" class="btn btn-primary">Schedule Consultation</a>
+                        <a href="tel:703-746-0077" class="btn btn-secondary">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+    
+    <section class="service-content">
+        <div class="container">
+            <div class="service-layout">
+                <div class="service-main">
+                    {{ content | safe }}
+                    
+                    {% if benefits %}
+                    <div class="service-benefits">
+                        <h2>Benefits of {{ title }}</h2>
+                        <ul class="benefits-list">
+                            {% for benefit in benefits %}
+                                <li>{{ benefit }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                    
+                    {% if process_steps %}
+                    <div class="treatment-process">
+                        <h2>Treatment Process</h2>
+                        <div class="process-steps">
+                            {% for step in process_steps %}
+                                <div class="step">
+                                    <div class="step-number">{{ loop.index }}</div>
+                                    <div class="step-content">
+                                        <h3>{{ step.title }}</h3>
+                                        <p>{{ step.description }}</p>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                
+                <aside class="service-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Schedule Your Appointment</h3>
+                        <p>Ready to get started? Contact us today to schedule your consultation.</p>
+                        <div class="contact-options">
+                            <a href="tel:703-746-0077" class="contact-phone">
+                                <span class="icon">📞</span>
+                                703-746-0077
+                            </a>
+                            <a href="/contact-us/" class="btn btn-primary btn-block">Request Appointment</a>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Related Services</h3>
+                        <ul class="related-services">
+                            {% if related_services %}
+                                {% for service in related_services %}
+                                    <li><a href="{{ service.url }}">{{ service.title }}</a></li>
+                                {% endfor %}
+                            {% else %}
+                                <li><a href="/dental-implants/">Dental Implants</a></li>
+                                <li><a href="/invisalign/">Invisalign</a></li>
+                                <li><a href="/cosmetic-dentistry/">Cosmetic Dentistry</a></li>
+                                <li><a href="/teeth-whitening/">Teeth Whitening</a></li>
+                                <li><a href="/veneers/">Veneers</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    
+                    {% if credentials %}
+                    <div class="sidebar-widget">
+                        <h3>Our Credentials</h3>
+                        <div class="credentials">
+                            {% for credential in credentials %}
+                                <img src="{{ credential.image }}" alt="{{ credential.name }}" class="credential-logo">
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                </aside>
+            </div>
+        </div>
+    </section>
+    
+    {% if before_after_gallery %}
+    <section class="before-after-section">
+        <div class="container">
+            <h2>Before & After Gallery</h2>
+            <div class="gallery-grid">
+                {% for case in before_after_gallery %}
+                    <div class="gallery-item">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="{{ case.before }}" alt="Before {{ title }} treatment">
+                                <span class="label">Before</span>
+                            </div>
+                            <div class="after">
+                                <img src="{{ case.after }}" alt="After {{ title }} treatment">
+                                <span class="label">After</span>
+                            </div>
+                        </div>
+                        {% if case.description %}
+                            <p class="case-description">{{ case.description }}</p>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="gallery-cta">
+                <a href="/smile-gallery/" class="btn btn-outline">View More Cases</a>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+    
+    <section class="service-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Smile?</h2>
+                <p>Schedule a consultation with Dr. Mojgan Mazhari to learn more about {{ title }} and how it can benefit you.</p>
+                <div class="cta-buttons">
+                    <a href="/contact-us/" class="btn btn-primary">Schedule Consultation</a>
+                    <a href="tel:703-746-0077" class="btn btn-secondary">Call 703-746-0077</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div> 

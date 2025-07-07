@@ -1,22 +1,26 @@
-# Alexandria Dental Health - CloudCannon Site
+# Alexandria Dental Health - 11ty + CloudCannon Site
 
-This repository contains the CloudCannon-ready version of the Alexandria Dental Health website.
+This repository contains the 11ty-powered version of the Alexandria Dental Health website, optimized for CloudCannon CMS deployment.
 
 ## Overview
 
-This is a static HTML site optimized for CloudCannon CMS deployment. The site was originally a WordPress site that has been converted to static HTML pages for better performance and easier management through CloudCannon.
+This site is built with 11ty (Eleventy) static site generator and optimized for CloudCannon CMS deployment. The site was originally a WordPress site that has been converted to use 11ty for better performance, easier content management, and seamless integration with CloudCannon's visual editing features.
 
 ## Site Structure
 
 ```
 /
-├── index.html                 # Homepage
-├── about/                     # About pages
-├── blog/                      # Blog posts
-├── services/                  # Service pages (dental procedures)
-├── contact-us/               # Contact information
-├── smile-gallery/            # Before/after photos
-├── assets/                   # CSS, JS, images
+├── src/                       # 11ty source files
+│   ├── _includes/            # Templates and layouts
+│   │   └── layouts/          # Page layouts (base, page, service, blog)
+│   ├── _data/                # Site data files
+│   ├── blog/                 # Blog posts (Markdown)
+│   ├── services/             # Service pages (Markdown)
+│   ├── pages/                # Regular pages (Markdown)
+│   └── index.njk             # Homepage
+├── _site/                    # Generated site (build output)
+├── .eleventy.js              # 11ty configuration
+├── package.json              # Node.js dependencies
 ├── cloudcannon.config.yml    # CloudCannon configuration
 └── README-CLOUDCANNON.md     # This file
 ```

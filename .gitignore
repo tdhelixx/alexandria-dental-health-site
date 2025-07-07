@@ -1,8 +1,9 @@
-# CloudCannon and Jekyll
+# CloudCannon and 11ty
 _site/
 .jekyll-cache/
 .jekyll-metadata
 .sass-cache/
+.eleventy-cache/
 
 # Node modules and build files
 node_modules/

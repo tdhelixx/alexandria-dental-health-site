@@ -1,26 +1,33 @@
-# CloudCannon Configuration
+# CloudCannon Configuration for 11ty
 # https://cloudcannon.com/documentation/articles/setting-global-configuration/
+
+# Build settings for 11ty
+source: "src"
+build:
+  install_command: "npm install"
+  build_command: "npm run build"
+  output_directory: "_site"
+  environment_variables:
+    NODE_ENV: "production"
 
 collections_config:
   pages:
-    path: ""
+    path: "src/pages"
     filter: "strict"
     output: true
     icon: "wysiwyg"
     
   blog:
-    path: "blog"
+    path: "src/blog" 
     output: true
     icon: "event"
+    sort_key: "date"
+    sort_order: "desc"
     
   services:
-    path: "services"
+    path: "src/services"
     output: true
     icon: "medical_services"
-
-# Build settings
-source: "."
-destination: "_site"
 
 # Data files
 data_config:

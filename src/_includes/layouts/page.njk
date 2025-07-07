@@ -1,0 +1,58 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="page-content">
+    {% if hero_title or title %}
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="page-title">{{ hero_title or title }}</h1>
+                {% if hero_subtitle %}
+                    <p class="hero-subtitle">{{ hero_subtitle }}</p>
+                {% endif %}
+                {% if breadcrumbs %}
+                    <nav class="breadcrumbs">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            {% for crumb in breadcrumbs %}
+                                <li><a href="{{ crumb.url }}">{{ crumb.title }}</a></li>
+                            {% endfor %}
+                            <li>{{ title }}</li>
+                        </ul>
+                    </nav>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+    
+    <section class="content-section">
+        <div class="container">
+            <div class="content-wrapper">
+                {% if sidebar %}
+                    <div class="main-content-with-sidebar">
+                        <div class="page-main-content">
+                            {{ content | safe }}
+                        </div>
+                        <aside class="page-sidebar">
+                            {{ sidebar | safe }}
+                        </aside>
+                    </div>
+                {% else %}
+                    <div class="page-main-content">
+                        {{ content | safe }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+    
+    {% if cta_section %}
+    <section class="page-cta">
+        <div class="container">
+            {{ cta_section | safe }}
+        </div>
+    </section>
+    {% endif %}
+</div> 

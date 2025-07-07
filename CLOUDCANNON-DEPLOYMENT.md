@@ -11,8 +11,9 @@
 
 2. **Build Settings**
    - CloudCannon will automatically detect the configuration from `cloudcannon.config.yml`
-   - No additional build commands needed (static HTML site)
-   - Build output: Use root directory `/`
+   - Build command: `npm run build` (11ty build process)
+   - Build output: `_site/` directory
+   - Install command: `npm install`
 
 3. **Domain Setup**
    - Add your domain in CloudCannon Site Settings
@@ -21,15 +22,22 @@
 
 4. **Content Management**
    - Use CloudCannon's visual editor for page content
-   - Blog posts are in `/blog/` directory
-   - Service pages can be edited individually
+   - Blog posts are in `src/blog/` directory (Markdown files)
+   - Service pages in `src/services/` directory (Markdown files)
+   - Page templates in `src/_includes/layouts/` directory
+   - Homepage at `src/index.njk`
 
 ### Key Files
 
-- `cloudcannon.config.yml` - Main configuration
-- `index.html` - Homepage
-- `/blog/` - Blog posts directory
-- `/smile-gallery/` - Patient photos
+- `cloudcannon.config.yml` - CloudCannon configuration
+- `.eleventy.js` - 11ty configuration
+- `package.json` - Node.js dependencies and build scripts
+- `src/` - Source files directory
+  - `src/_includes/layouts/` - Page templates
+  - `src/blog/` - Blog posts (Markdown)
+  - `src/services/` - Service pages (Markdown)
+  - `src/pages/` - Regular pages (Markdown)
+  - `src/index.njk` - Homepage template
 - `alexandria-dental-enhanced-styles.css` - Main stylesheet
 
 ### Forms Configuration

@@ -1,0 +1,39 @@
+{
+  "name": "alexandria-dental-health",
+  "version": "1.0.0",
+  "description": "Alexandria Dental Health website built with 11ty for CloudCannon",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "debug": "eleventy --debug",
+    "clean": "rm -rf _site",
+    "cloudcannon:build": "npm run build"
+  },
+  "keywords": [
+    "dental",
+    "healthcare",
+    "11ty",
+    "cloudcannon",
+    "static-site"
+  ],
+  "author": "Alexandria Dental Health",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.8",
+    "@11ty/eleventy-navigation": "^0.3.5"
+  },
+  "dependencies": {
+    "markdown-it": "^13.0.2",
+    "markdown-it-attrs": "^4.1.6"
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+} 
