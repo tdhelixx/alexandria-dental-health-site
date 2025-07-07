@@ -53,6 +53,32 @@ module.exports = function(eleventyConfig) {
     });
   });
   
+  // Head filter - get first N items from array
+  eleventyConfig.addFilter("head", function(array, n) {
+    if (!Array.isArray(array)) return [];
+    return array.slice(0, n);
+  });
+  
+  // Exclude item filter
+  eleventyConfig.addFilter("excludeItem", function(array, item) {
+    if (!Array.isArray(array)) return [];
+    return array.filter(arrayItem => arrayItem.url !== item.url);
+  });
+  
+  // Get previous collection item
+  eleventyConfig.addFilter("getPreviousCollectionItem", function(collection, page) {
+    if (!Array.isArray(collection)) return null;
+    const index = collection.findIndex(item => item.url === page.url);
+    return index > 0 ? collection[index - 1] : null;
+  });
+  
+  // Get next collection item
+  eleventyConfig.addFilter("getNextCollectionItem", function(collection, page) {
+    if (!Array.isArray(collection)) return null;
+    const index = collection.findIndex(item => item.url === page.url);
+    return index < collection.length - 1 ? collection[index + 1] : null;
+  });
+  
   // Shortcodes
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   
