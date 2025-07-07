@@ -6,7 +6,7 @@ layout: layouts/base.njk
     <header class="post-header">
         <div class="container">
             <div class="post-meta">
-                <time datetime="{{ date | date('Y-m-d') }}">{{ date | dateDisplay }}</time>
+                <time datetime="{{ date }}">{{ date }}</time>
                 {% if tags %}
                     <div class="post-tags">
                         {% for tag in tags %}
@@ -91,7 +91,7 @@ layout: layouts/base.njk
                                 {% if post.url != page.url %}
                                     <li>
                                         <a href="{{ post.url }}">
-                                            <span class="post-date">{{ post.date | dateDisplay }}</span>
+                                            <span class="post-date">{{ post.date }}</span>
                                             <span class="post-title">{{ post.data.title }}</span>
                                         </a>
                                     </li>
@@ -143,7 +143,7 @@ layout: layouts/base.njk
                         </div>
                     {% endif %}
                     <div class="post-content">
-                        <time class="post-date">{{ post.date | dateDisplay }}</time>
+                        <time class="post-date">{{ post.date }}</time>
                         <h3 class="post-title">
                             <a href="{{ post.url }}">{{ post.data.title }}</a>
                         </h3>
