@@ -4,8 +4,8 @@ collections_config:
   services:
     path: services
     name: "Services"
-    description: "Dental service pages with visual editing"
-    icon: medical
+    description: "Dental service pages with enhanced visual editing"
+    icon: medical_services
     _enabled_editors:
       - visual
       - content
@@ -18,46 +18,219 @@ collections_config:
       default:
         path: schemas/service.md
     _inputs:
+      # === BASIC INFORMATION ===
       title:
         type: text
         label: "Service Title"
-        comment: "The main title for this service page"
+        comment: "The main title for this service page (e.g., 'Dental Implants in Alexandria VA')"
+        cascade: true
       description:
         type: textarea
         label: "Meta Description"
-        comment: "SEO description for search engines"
+        comment: "SEO description for search engines (keep under 160 characters)"
+        character_limit: 160
       image:
         type: image
         label: "Hero Image"
-        comment: "Main image for the service page"
+        comment: "Main image for the service page (1200x630px recommended)"
+        options:
+          width: 1200
+          height: 630
+          resize_style: "crop"
+          mime_type: "image/webp"
+          
+      # === SERVICE DETAILS ===  
       category:
         type: select
+        label: "Service Category"
+        comment: "Primary category for this dental service"
         options:
           - Cosmetic
           - Restorative
           - Preventive
           - Family
           - Emergency
+          - Orthodontic
       technology:
         type: text
-        label: "Technology Used"
-        comment: "e.g., CEREC®, Invisalign®"
+        label: "Technology/Brand"
+        comment: "Special technology or brand names (e.g., 'CEREC®', 'Invisalign®', 'Opalescence')"
       visit_duration:
         type: text
-        label: "Visit Duration"
-        comment: "e.g., Single visit (90 minutes)"
+        label: "Treatment Duration"
+        comment: "How long treatment takes (e.g., 'Single visit (90 minutes)', '2-3 visits over 4 weeks')"
+      cost_range:
+        type: text
+        label: "Investment Range"
+        comment: "Price range for the service (e.g., '$1,600 - $1,900 per tooth')"
+      lumineers_cost:
+        type: text
+        label: "Alternative Cost"
+        comment: "Alternative pricing option if applicable (e.g., Lumineers pricing)"
+        
+      # === TREATMENT INFORMATION ===
       conditions_treated:
         type: array
-        label: "Conditions Treated"
+        label: "Conditions We Treat"
         comment: "List of dental conditions this service addresses"
+        options:
+          allow_create: true
+          preview:
+            text: 
+              - key: value
+        _inputs:
+          $:
+            type: text
+            comment: "Add a condition this service treats"
       materials:
         type: array
         label: "Materials Used"
         comment: "Types of materials used in treatment"
-      related_services:
+        _inputs:
+          $:
+            type: text
+            comment: "Add a material used in this treatment"
+      benefits:
         type: array
+        label: "Treatment Benefits"
+        comment: "Key benefits patients receive from this treatment"
+        _inputs:
+          $:
+            type: text
+            comment: "Add a benefit of this treatment"
+            
+      # === PROCESS & WORKFLOW ===
+      process_steps:
+        type: array
+        label: "Treatment Process"
+        comment: "Step-by-step treatment workflow"
+        _inputs:
+          title:
+            type: text
+            label: "Step Title"
+            comment: "Name of this treatment step"
+          description:
+            type: textarea
+            label: "Step Description"  
+            comment: "Detailed description of what happens in this step"
+            
+      # === MEDIA & CONTENT ===
+      video_url:
+        type: url
+        label: "Educational Video"
+        comment: "YouTube or Vimeo URL for treatment explanation video"
+      before_after_gallery:
+        type: array
+        label: "Before & After Gallery"
+        comment: "Patient case studies showing treatment results"
+        _inputs:
+          before:
+            type: image
+            label: "Before Image"
+            comment: "Patient photo before treatment"
+          after:
+            type: image  
+            label: "After Image"
+            comment: "Patient photo after treatment"
+          description:
+            type: text
+            label: "Case Description"
+            comment: "Brief description of this case"
+            
+      # === RELATED CONTENT ===
+      related_services:
+        type: multiselect
         label: "Related Services"
-        comment: "Links to related service pages"
+        comment: "Other services that complement this treatment"
+        options:
+          values: "collections.services"
+          value_key: "slug"
+          preview:
+            text:
+              - key: "title"
+      related_pages:
+        type: array
+        label: "Additional Information Pages"
+        comment: "Links to FAQ, recovery, or information pages"
+        _inputs:
+          $:
+            type: text
+            comment: "Page slug (e.g., 'dental-crowns-faqs')"
+            
+      # === CALL TO ACTION ===
+      cta_text:
+        type: text
+        label: "Special Offer Text"
+        comment: "Text for special offer button (optional)"
+      cta_link:
+        type: url
+        label: "Special Offer Link"
+        comment: "URL for special offers page"
+        
+    # === VISUAL EDITOR GROUPS ===
+    _structures:
+      treatment_process:
+        values:
+          - label: "Consultation Step"
+            icon: "person"
+            value:
+              title: "Initial Consultation"
+              description: "Comprehensive examination and treatment planning"
+          - label: "Treatment Step"
+            icon: "medical_services"
+            value:
+              title: "Treatment Phase"
+              description: "Professional treatment delivery"
+          - label: "Follow-up Step"
+            icon: "schedule"
+            value:
+              title: "Follow-up Care"
+              description: "Post-treatment monitoring and care"
+              
+      case_study:
+        values:
+          - label: "Before/After Case"
+            icon: "compare"
+            value:
+              before: "/images/gallery/before-placeholder.webp"
+              after: "/images/gallery/after-placeholder.webp"
+              description: "Treatment case description"
+              
+    # === FIELD GROUPING ===
+    _groups:
+      - label: "Basic Information"
+        icon: "info"
+        inputs:
+          - title
+          - description
+          - image
+          - category
+      - label: "Treatment Details"
+        icon: "medical_services"
+        inputs:
+          - technology
+          - visit_duration
+          - cost_range
+          - lumineers_cost
+      - label: "Clinical Information"
+        icon: "list"
+        inputs:
+          - conditions_treated
+          - materials
+          - benefits
+          - process_steps
+      - label: "Media & Gallery"
+        icon: "photo_library"
+        inputs:
+          - video_url
+          - before_after_gallery
+      - label: "Related Content"
+        icon: "link"
+        inputs:
+          - related_services
+          - related_pages
+          - cta_text
+          - cta_link
         
   pages:
     path: pages
@@ -94,6 +267,7 @@ _inputs:
     type: textarea
     label: "Meta Description" 
     comment: "Description for search engines and social media"
+    character_limit: 160
   image:
     type: image
     label: "Featured Image"
@@ -129,6 +303,25 @@ data_config:
       children:
         type: array
         label: "Submenu Items"
+  site_settings:
+    path: src/_data/site_settings.json
+    _inputs:
+      practice_name:
+        type: text
+        label: "Practice Name"
+        comment: "Full name of the dental practice"
+      doctor_name:
+        type: text
+        label: "Doctor Name"
+        comment: "Full name of the primary dentist"
+      phone:
+        type: text
+        label: "Phone Number"
+        comment: "Main practice phone number"
+      email:
+        type: email
+        label: "Email Address"
+        comment: "Main practice email"
 
 # Editor configuration
 _editors:
