@@ -1,0 +1,614 @@
+{
+  "extraction_date": "2025-06-29T13:14:55.852669",
+  "total_pages": 112,
+  "total_posts": 9,
+  "pages": [
+    {
+      "title": "Schedule Appointment Today",
+      "slug": "home",
+      "content_length": 13603
+    },
+    {
+      "title": "About Alexandria VA",
+      "slug": "about",
+      "content_length": 2417
+    },
+    {
+      "title": "Dental Implants in Alexandria VA",
+      "slug": "about-dental-implants",
+      "content_length": 4318
+    },
+    {
+      "title": "Accessibility Policy for Alexandria VA",
+      "slug": "accessibility",
+      "content_length": 1162
+    },
+    {
+      "title": "Advanced Technology Alexandria VA",
+      "slug": "advanced-technology",
+      "content_length": 10170
+    },
+    {
+      "title": "Blog",
+      "slug": "blog",
+      "content_length": 5894
+    },
+    {
+      "title": "Chipped Tooth in Alexandria VA",
+      "slug": "chipped-tooth-repair",
+      "content_length": 1778
+    },
+    {
+      "title": "Dental Conditions Alexandria VA",
+      "slug": "concerns",
+      "content_length": 3565
+    },
+    {
+      "title": "Contact Us",
+      "slug": "contact-us",
+      "content_length": 382
+    },
+    {
+      "title": "Cosmetic Dentistry in Alexandria VA",
+      "slug": "cosmetic-dentistry",
+      "content_length": 2842
+    },
+    {
+      "title": "Cosmetic",
+      "slug": "cosmetic-restorative",
+      "content_length": 21007
+    },
+    {
+      "title": "Crooked Teeth Alexandria VA",
+      "slug": "crooked-teeth",
+      "content_length": 2800
+    },
+    {
+      "title": "Dental Anxiety Alexandria VA",
+      "slug": "dental-anxiety",
+      "content_length": 3224
+    },
+    {
+      "title": "Dental Bridge in Alexandria VA",
+      "slug": "dental-bridges",
+      "content_length": 3812
+    },
+    {
+      "title": "Tooth Decay and Cavities In Alexandria VA",
+      "slug": "dental-cavities-solutions",
+      "content_length": 8012
+    },
+    {
+      "title": "Expert Dental Cleanings Alexandria VA",
+      "slug": "dental-cleanings",
+      "content_length": 6054
+    },
+    {
+      "title": "Dental Crowns in Alexandria VA",
+      "slug": "dental-crowns",
+      "content_length": 5395
+    },
+    {
+      "title": "Dental Crowns FAQ's in Alexandria VA",
+      "slug": "dental-crowns-faqs",
+      "content_length": 3634
+    },
+    {
+      "title": "Comprehensive Dental Exams in Alexandria VA",
+      "slug": "dental-exams",
+      "content_length": 5723
+    },
+    {
+      "title": "Dental Fillings in Alexandria VA",
+      "slug": "dental-fillings",
+      "content_length": 3160
+    },
+    {
+      "title": "Gingivitis Symptoms In Alexandria VA",
+      "slug": "dental-gingivitis-prevention",
+      "content_length": 3098
+    },
+    {
+      "title": "Dental Implant Benefits in Alexandria VA",
+      "slug": "dental-implant-benefits",
+      "content_length": 4080
+    },
+    {
+      "title": "Dental Implants Alexandria VA",
+      "slug": "dental-implants",
+      "content_length": 21522
+    },
+    {
+      "title": "Dental Insurance in Alexandria VA",
+      "slug": "dental-insurance-accepted",
+      "content_length": 3317
+    },
+    {
+      "title": "Dentures Alexandria VA",
+      "slug": "dentures",
+      "content_length": 3597
+    },
+    {
+      "title": "Dentures Care and Cleaning in Alexandria VA",
+      "slug": "dentures-cleaning-and-care",
+      "content_length": 3770
+    },
+    {
+      "title": "Dental Emergency in Alexandria VA",
+      "slug": "emergency-dental-information",
+      "content_length": 4137
+    },
+    {
+      "title": "Emergency Dentistry in Alexandria VA",
+      "slug": "emergency-dentistry",
+      "content_length": 3871
+    },
+    {
+      "title": "Family Dentistry in Alexandria VA",
+      "slug": "family-dentist",
+      "content_length": 1528
+    },
+    {
+      "title": "Full Mouth Reconstruction Alexandria VA",
+      "slug": "full-mouth-reconstruction",
+      "content_length": 24998
+    },
+    {
+      "title": "Functional Orthodontics in Alexandria VA",
+      "slug": "functional-orthodontics",
+      "content_length": 2242
+    },
+    {
+      "title": "General Dentistry in Alexandria VA",
+      "slug": "general-dentistry-services",
+      "content_length": 2431
+    },
+    {
+      "title": "Getting Veneers in Alexandria VA",
+      "slug": "getting-veneers",
+      "content_length": 3620
+    },
+    {
+      "title": "Good Faith Estimate",
+      "slug": "good-faith-estimate",
+      "content_length": 584
+    },
+    {
+      "title": "Symptoms of Gum Disease",
+      "slug": "gum-disease-symptoms",
+      "content_length": 4574
+    },
+    {
+      "title": "Gum Disease Alexandria VA",
+      "slug": "gum-disease-treatment",
+      "content_length": 7903
+    },
+    {
+      "title": "Gum Lifts in Alexandria",
+      "slug": "gum-lifts",
+      "content_length": 3266
+    },
+    {
+      "title": "Headaches in Alexandria VA",
+      "slug": "headache-therapy",
+      "content_length": 2920
+    },
+    {
+      "title": "Website Healthcare Disclaimer",
+      "slug": "healthcare-disclaimer",
+      "content_length": 823
+    },
+    {
+      "title": "HIPAA Privacy Policy for Alexandria VA",
+      "slug": "hipaa-privacy-policy",
+      "content_length": 4309
+    },
+    {
+      "title": "How to Brush Your Teeth With Braces in Alexandria VA",
+      "slug": "how-to-brush-teeth-with-braces",
+      "content_length": 3574
+    },
+    {
+      "title": "How to Brush Your Teeth",
+      "slug": "how-to-brush-your-teeth",
+      "content_length": 3899
+    },
+    {
+      "title": "How to Floss Your Teeth",
+      "slug": "how-to-floss-your-teeth",
+      "content_length": 3428
+    },
+    {
+      "title": "Implant Supported Dentures Alexandria VA",
+      "slug": "implant-supported-dentures",
+      "content_length": 3948
+    },
+    {
+      "title": "Baby Teeth in Alexandria VA",
+      "slug": "importance-of-baby-teeth",
+      "content_length": 3758
+    },
+    {
+      "title": "Invisalign in Alexandria VA",
+      "slug": "invisalign",
+      "content_length": 16632
+    },
+    {
+      "title": "Invisalign Teen® in Alexandria VA",
+      "slug": "invisalign-teen",
+      "content_length": 7068
+    },
+    {
+      "title": "Jaw Pain in Alexandria VA",
+      "slug": "jaw-pain",
+      "content_length": 1010
+    },
+    {
+      "title": "Lumineers in Alexandria VA",
+      "slug": "lumineers",
+      "content_length": 5099
+    },
+    {
+      "title": "Missing Teeth in Alexandria VA",
+      "slug": "missing-teeth",
+      "content_length": 4488
+    },
+    {
+      "title": "Mouth Guards Alexandria VA",
+      "slug": "mouth-guards",
+      "content_length": 3381
+    },
+    {
+      "title": "Office Tour",
+      "slug": "office-tour",
+      "content_length": 147
+    },
+    {
+      "title": "Patient Information for Alexandria VA",
+      "slug": "patient-information",
+      "content_length": 7210
+    },
+    {
+      "title": "Periodontal Therapy in Alexandria VA",
+      "slug": "periodontal-therapy",
+      "content_length": 2962
+    },
+    {
+      "title": "Preventative Dentistry in Alexandria VA",
+      "slug": "preventative",
+      "content_length": 1941
+    },
+    {
+      "title": "Website Privacy Policy for Alexandria VA",
+      "slug": "privacy-policy",
+      "content_length": 4009
+    },
+    {
+      "title": "Removable Dental Appliances in Alexandria VA",
+      "slug": "removable-dental-appliances",
+      "content_length": 4927
+    },
+    {
+      "title": "Restorative Dentistry Alexandria VA",
+      "slug": "restorative",
+      "content_length": 9599
+    },
+    {
+      "title": "Root Canal Recovery",
+      "slug": "root-canal-recovery",
+      "content_length": 3818
+    },
+    {
+      "title": "Root Canal Symptoms in Alexandria VA",
+      "slug": "root-canal-symptoms",
+      "content_length": 4293
+    },
+    {
+      "title": "Root Canal Therapy in Alexandria VA",
+      "slug": "root-canal-therapy",
+      "content_length": 3146
+    },
+    {
+      "title": "Sedation Dentistry in Alexandria VA",
+      "slug": "sedation-dentistry",
+      "content_length": 3204
+    },
+    {
+      "title": "Dental Services in Alexandria VA",
+      "slug": "services",
+      "content_length": 599
+    },
+    {
+      "title": "Six Month Smiles® in Alexandria VA",
+      "slug": "six-month-smiles",
+      "content_length": 4020
+    },
+    {
+      "title": "Sleep Apnea Treatment in Alexandria VA",
+      "slug": "sleep-apnea",
+      "content_length": 8077
+    },
+    {
+      "title": "Smile Gallery",
+      "slug": "smile-gallery",
+      "content_length": 21492
+    },
+    {
+      "title": "Case 1",
+      "slug": "smile-gallery-case-1",
+      "content_length": 1130
+    },
+    {
+      "title": "Case 10",
+      "slug": "smile-gallery-case-10",
+      "content_length": 880
+    },
+    {
+      "title": "Case 11",
+      "slug": "smile-gallery-case-11",
+      "content_length": 880
+    },
+    {
+      "title": "Case 12",
+      "slug": "smile-gallery-case-12",
+      "content_length": 1346
+    },
+    {
+      "title": "Case 13",
+      "slug": "smile-gallery-case-13",
+      "content_length": 1170
+    },
+    {
+      "title": "Case 15",
+      "slug": "smile-gallery-case-15",
+      "content_length": 880
+    },
+    {
+      "title": "Case 16",
+      "slug": "smile-gallery-case-16",
+      "content_length": 1170
+    },
+    {
+      "title": "Case 17",
+      "slug": "smile-gallery-case-17",
+      "content_length": 2008
+    },
+    {
+      "title": "Case 18",
+      "slug": "smile-gallery-case-18",
+      "content_length": 1801
+    },
+    {
+      "title": "Case 19",
+      "slug": "smile-gallery-case-19",
+      "content_length": 1170
+    },
+    {
+      "title": "Case 2",
+      "slug": "smile-gallery-case-2",
+      "content_length": 1166
+    },
+    {
+      "title": "Case 20",
+      "slug": "smile-gallery-case-20",
+      "content_length": 1431
+    },
+    {
+      "title": "Case 21",
+      "slug": "smile-gallery-case-21",
+      "content_length": 4452
+    },
+    {
+      "title": "Case 22",
+      "slug": "smile-gallery-case-22",
+      "content_length": 913
+    },
+    {
+      "title": "Case 23",
+      "slug": "smile-gallery-case-23",
+      "content_length": 1479
+    },
+    {
+      "title": "Case 26",
+      "slug": "smile-gallery-case-26",
+      "content_length": 908
+    },
+    {
+      "title": "Case 27",
+      "slug": "smile-gallery-case-27",
+      "content_length": 913
+    },
+    {
+      "title": "Case 29",
+      "slug": "smile-gallery-case-29",
+      "content_length": 913
+    },
+    {
+      "title": "Case 3",
+      "slug": "smile-gallery-case-3",
+      "content_length": 1166
+    },
+    {
+      "title": "Case 30",
+      "slug": "smile-gallery-case-30",
+      "content_length": 1251
+    },
+    {
+      "title": "Case 31",
+      "slug": "smile-gallery-case-31",
+      "content_length": 913
+    },
+    {
+      "title": "Case 33",
+      "slug": "smile-gallery-case-33",
+      "content_length": 1453
+    },
+    {
+      "title": "Case 34",
+      "slug": "smile-gallery-case-34",
+      "content_length": 4620
+    },
+    {
+      "title": "Case 35",
+      "slug": "smile-gallery-case-35",
+      "content_length": 1173
+    },
+    {
+      "title": "Case 37",
+      "slug": "smile-gallery-case-37",
+      "content_length": 3013
+    },
+    {
+      "title": "Case 45",
+      "slug": "smile-gallery-case-45",
+      "content_length": 795
+    },
+    {
+      "title": "Case 47",
+      "slug": "smile-gallery-case-47",
+      "content_length": 3608
+    },
+    {
+      "title": "Case 48",
+      "slug": "smile-gallery-case-48",
+      "content_length": 2382
+    },
+    {
+      "title": "Case 49",
+      "slug": "smile-gallery-case-49",
+      "content_length": 1202
+    },
+    {
+      "title": "Case 5",
+      "slug": "smile-gallery-case-5",
+      "content_length": 1201
+    },
+    {
+      "title": "Case 06",
+      "slug": "smile-gallery-case-6",
+      "content_length": 1487
+    },
+    {
+      "title": "Case 7",
+      "slug": "smile-gallery-case-7",
+      "content_length": 4860
+    },
+    {
+      "title": "Case 8",
+      "slug": "smile-gallery-case-8",
+      "content_length": 904
+    },
+    {
+      "title": "Case 9",
+      "slug": "smile-gallery-case-9",
+      "content_length": 3281
+    },
+    {
+      "title": "Snap-On Smile® in Alexandria VA",
+      "slug": "snap-on-smile",
+      "content_length": 2213
+    },
+    {
+      "title": "Specials",
+      "slug": "special",
+      "content_length": 2469
+    },
+    {
+      "title": "Teeth Grinding Alexandria VA",
+      "slug": "teeth-grinding",
+      "content_length": 3690
+    },
+    {
+      "title": "Teeth Whitening in Alexandria VA",
+      "slug": "teeth-whitening",
+      "content_length": 5198
+    },
+    {
+      "title": "Website Terms of Service",
+      "slug": "terms-service",
+      "content_length": 902
+    },
+    {
+      "title": "Testimonials",
+      "slug": "testimonials",
+      "content_length": 20979
+    },
+    {
+      "title": "TMJ Treatment in Alexandria VA",
+      "slug": "tmj-treatment",
+      "content_length": 7749
+    },
+    {
+      "title": "Tooth Bonding Alexandria VA",
+      "slug": "tooth-bonding",
+      "content_length": 1829
+    },
+    {
+      "title": "Tooth Extractions in Alexandria VA",
+      "slug": "tooth-extractions",
+      "content_length": 2097
+    },
+    {
+      "title": "Tooth Pain Relief in Alexandria VA",
+      "slug": "tooth-pain",
+      "content_length": 863
+    },
+    {
+      "title": "About Us",
+      "slug": "us",
+      "content_length": 6554
+    },
+    {
+      "title": "Veneers in Alexandria VA",
+      "slug": "veneers",
+      "content_length": 9747
+    }
+  ],
+  "posts": [
+    {
+      "title": "Top Cosmetic Dentistry Services in Alexandria VA",
+      "slug": "blog-achieve-beautiful-smile-with-top-cosmetic-dentistry-services",
+      "content_length": 5732
+    },
+    {
+      "title": "Custom Dental Veneers in Alexandria VA",
+      "slug": "blog-boost-your-confidence-with-custom-dental-veneers-in-alexandria",
+      "content_length": 8200
+    },
+    {
+      "title": "Complete Smile Makeover in Alexandria VA",
+      "slug": "blog-complete-smile-makeovers-combining-veneers-whitening-and-more-to-achieve-your-dream-smile",
+      "content_length": 12752
+    },
+    {
+      "title": "Dental Bridges Near Me in Alexandria VA",
+      "slug": "blog-dental-bridges-near-me-alexandria-va",
+      "content_length": 8557
+    },
+    {
+      "title": "Finding Relief from Jaw Pain in Alexandria VA",
+      "slug": "blog-finding-relief-from-jaw-pain-with-effective-tmj-treatments",
+      "content_length": 8315
+    },
+    {
+      "title": "Root Canal Near Me in Alexandria VA",
+      "slug": "blog-root-canal-near-me-alexandria-va",
+      "content_length": 10804
+    },
+    {
+      "title": "Teeth Whitening Near Me in Alexandria VA",
+      "slug": "blog-teeth-whitening-near-me-alexandria-va",
+      "content_length": 16799
+    },
+    {
+      "title": "The Advantages of Invisalign® in Alexandria VA",
+      "slug": "blog-the-advantages-of-invisalign-for-a-discreet-and-confident-smile",
+      "content_length": 10016
+    },
+    {
+      "title": "The Role of Crowns in Alexandria VA",
+      "slug": "blog-the-role-of-crowns-in-cosmetic-and-restorative-dentistry",
+      "content_length": 12302
+    }
+  ]
+}

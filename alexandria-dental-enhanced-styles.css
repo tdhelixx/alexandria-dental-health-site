@@ -1,0 +1,904 @@
+/*
+Theme Name: Alexandria Dental Health
+Description: Custom WordPress theme for Alexandria Dental Health & Smile Studio - converted from scraped site
+Version: 1.0.0
+Author: Custom Conversion
+*/
+
+/* Reset and Base Styles */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #424242;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #424242;
+  margin-bottom: 20px;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.2em; }
+
+a {
+  color: #a27295;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #72b7bc;
+  text-decoration: none;
+}
+
+/* Layout Structure */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.col {
+  flex: 1;
+  padding: 0 10px;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: #333333;
+  color: #ededed;
+  padding: 10px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-logo img {
+  max-width: 230px;
+  height: auto;
+}
+
+/* Navigation Styles */
+.main-navigation {
+  background-color: #333333;
+}
+
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-navigation li {
+  position: relative;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 15px 20px;
+  color: #ededed;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #72b7bc;
+  border-bottom-color: #72b7bc;
+}
+
+/* Dropdown Menus */
+.main-navigation ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  flex-direction: column;
+}
+
+.main-navigation li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.main-navigation ul ul a {
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ededed;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Content Areas */
+.site-main {
+  padding: 40px 0;
+  min-height: 60vh;
+}
+
+.page-header {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #32192f;
+}
+
+.page-description {
+  font-size: 1.2em;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Blog Styles */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.post-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-title {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.post-title a {
+  color: #32192f;
+}
+
+.post-meta {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.post-excerpt {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #a27295;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #72b7bc;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: #ffae00;
+  color: #0a0a0a;
+}
+
+.btn-primary:hover {
+  background-color: #e69900;
+  color: #0a0a0a;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #32192f;
+  color: #fff;
+  padding: 40px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #ccc;
+  font-size: 13px;
+}
+
+.footer-section a:hover {
+  color: #72b7bc;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  text-align: center;
+  color: #ccc;
+  font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .header-content {
+      padding: 0 20px;
+  }
+  
+  .main-navigation ul {
+      flex-direction: column;
+  }
+  
+  .menu-toggle {
+      display: block;
+  }
+  
+  .main-navigation.toggled ul {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .main-navigation ul ul {
+      position: static;
+      box-shadow: none;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      background-color: rgba(0,0,0,0.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 0 15px;
+  }
+  
+  .page-header {
+      padding: 40px 0;
+  }
+  
+  .page-title {
+      font-size: 2em;
+  }
+  
+  .blog-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+  }
+  
+  .site-main {
+      padding: 20px 0;
+  }
+  
+  .main-navigation a {
+      padding: 12px 15px;
+  }
+  
+  .footer-content {
+      grid-template-columns: 1fr;
+      gap: 20px;
+  }
+}
+
+/* Custom Classes for Content */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+.mb-40 { margin-bottom: 40px; }
+
+.mt-0 { margin-top: 0; }
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+
+/* Dental-specific styling */
+.dental-hero {
+  background: linear-gradient(135deg, #32192f 0%, #a27295 100%);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.dental-hero h1 {
+  color: #fff;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.dental-hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.service-card {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  max-width: 80px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  color: #32192f;
+  margin-bottom: 15px;
+}
+
+/* Accessibility */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/* Print Styles */
+@media print {
+  .site-header, .site-footer, .main-navigation { display: none; }
+  body { font-size: 12pt; }
+  a { color: #000; }
+} 
+
+/* 
+Alexandria Dental Health - Enhanced Styling
+Recreates the original Beaver Builder design with proper colors and layouts
+*/
+
+/* ============================================
+ COLOR VARIABLES (Original Palette)
+============================================ */
+:root {
+--primary-purple: #a27295;
+--dark-purple: #32192f;
+--teal-accent: #72b7bc;
+--orange-accent: #ffae00;
+--dark-gray: #333333;
+--text-gray: #424242;
+--light-gray: #f2f2f2;
+--white: #ffffff;
+}
+
+/* ============================================
+ HERO SECTIONS & BACKGROUNDS
+============================================ */
+
+/* Hero section with purple background */
+.hero-section,
+.purple-bg-section,
+.fl-row-bg-color[style*="#32192f"],
+.wp-block-cover.has-background {
+background-color: var(--dark-purple) !important;
+color: white;
+padding: 60px 0;
+position: relative;
+}
+
+.hero-section h1,
+.hero-section h2,
+.purple-bg-section h1,
+.purple-bg-section h2 {
+color: white !important;
+font-size: 2.5rem;
+font-weight: 800;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.hero-section p,
+.purple-bg-section p {
+color: white;
+font-size: 1.2rem;
+text-align: center;
+margin-bottom: 30px;
+}
+
+/* ============================================
+ BUTTON STYLING
+============================================ */
+
+/* Primary purple buttons */
+.wp-block-button__link,
+.btn-primary,
+.button-primary,
+a.button,
+input[type="submit"],
+button[type="submit"] {
+background-color: var(--primary-purple) !important;
+color: white !important;
+border: 2px solid var(--primary-purple) !important;
+padding: 15px 30px !important;
+font-size: 16px !important;
+font-weight: 600 !important;
+text-decoration: none !important;
+border-radius: 5px !important;
+transition: all 0.3s ease !important;
+display: inline-block !important;
+}
+
+.wp-block-button__link:hover,
+.btn-primary:hover,
+.button-primary:hover,
+a.button:hover {
+background-color: var(--teal-accent) !important;
+border-color: var(--teal-accent) !important;
+transform: translateY(-2px) !important;
+}
+
+/* Orange accent buttons */
+.btn-secondary,
+.button-secondary,
+.wp-block-button.is-style-outline .wp-block-button__link,
+.cta-button {
+background-color: var(--orange-accent) !important;
+color: var(--dark-purple) !important;
+border: 2px solid var(--orange-accent) !important;
+font-weight: 700 !important;
+}
+
+.btn-secondary:hover,
+.button-secondary:hover,
+.cta-button:hover {
+background-color: var(--primary-purple) !important;
+color: white !important;
+border-color: var(--primary-purple) !important;
+}
+
+/* ============================================
+ CONTENT SECTIONS
+============================================ */
+
+/* Alternating background sections */
+.content-section-gray,
+.wp-block-group.has-background,
+.section-alt {
+background-color: var(--light-gray);
+padding: 60px 0;
+}
+
+.content-section-white {
+background-color: white;
+padding: 60px 0;
+}
+
+/* ============================================
+ TYPOGRAPHY
+============================================ */
+
+body {
+font-family: "Raleway", sans-serif;
+color: var(--text-gray);
+line-height: 1.6;
+background-color: var(--light-gray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+color: var(--text-gray);
+font-family: "Raleway", sans-serif;
+font-weight: 800;
+line-height: 1.4;
+}
+
+h1 {
+font-size: 2.5rem;
+color: var(--dark-purple);
+}
+
+h2 {
+font-size: 2rem;
+color: var(--primary-purple);
+}
+
+h3 {
+font-size: 1.5rem;
+}
+
+/* Links */
+a {
+color: var(--primary-purple);
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+a:hover {
+color: var(--teal-accent);
+text-decoration: none;
+}
+
+/* ============================================
+ LAYOUT & CONTAINERS
+============================================ */
+
+/* Content containers */
+.container,
+.wp-block-group__inner-container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+/* Flexbox columns */
+.wp-block-columns,
+.flex-container {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+align-items: center;
+}
+
+.wp-block-column {
+flex: 1;
+min-width: 300px;
+}
+
+/* ============================================
+ IMAGES & MEDIA
+============================================ */
+
+.wp-block-image img,
+.content-image {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+}
+
+.wp-block-image:hover img,
+.content-image:hover {
+transform: scale(1.05);
+}
+
+/* ============================================
+ NAVIGATION STYLING
+============================================ */
+
+.site-header,
+.main-navigation {
+background-color: var(--dark-gray);
+padding: 15px 0;
+}
+
+.main-navigation a {
+color: #ededed;
+font-weight: 600;
+padding: 10px 15px;
+}
+
+.main-navigation a:hover {
+color: var(--teal-accent);
+}
+
+/* ============================================
+ SPECIAL SECTIONS
+============================================ */
+
+/* Call-to-action sections */
+.cta-section {
+background-color: var(--dark-purple);
+color: white;
+text-align: center;
+padding: 80px 0;
+position: relative;
+}
+
+.cta-section h2 {
+color: white;
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
+
+.cta-section p {
+font-size: 1.3rem;
+margin-bottom: 30px;
+}
+
+/* Services grid */
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+padding: 60px 0;
+}
+
+.service-card {
+background: white;
+padding: 40px 30px;
+border-radius: 10px;
+box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+text-align: center;
+transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 12px 36px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+color: var(--primary-purple);
+margin-bottom: 15px;
+}
+
+/* ============================================
+ FOOTER STYLING
+============================================ */
+
+.site-footer {
+background-color: var(--dark-purple);
+color: white;
+padding: 60px 0 30px;
+}
+
+.footer-widgets {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 40px;
+margin-bottom: 40px;
+}
+
+.footer-widget h3 {
+color: white;
+margin-bottom: 20px;
+}
+
+.footer-widget a {
+color: #cccccc;
+}
+
+.footer-widget a:hover {
+color: var(--teal-accent);
+}
+
+/* ============================================
+ RESPONSIVE DESIGN
+============================================ */
+
+@media (max-width: 768px) {
+.hero-section h1,
+.hero-section h2 {
+  font-size: 2rem;
+}
+
+.hero-section {
+  padding: 40px 0;
+}
+
+.wp-block-columns {
+  flex-direction: column;
+}
+
+.wp-block-column {
+  min-width: 100%;
+}
+
+.services-grid {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.container {
+  padding: 0 15px;
+}
+}
+
+/* ============================================
+ GUTENBERG BLOCK ENHANCEMENTS
+============================================ */
+
+/* Make Gutenberg blocks look like the original design */
+.wp-block-group {
+margin: 40px 0;
+}
+
+.wp-block-heading {
+margin-bottom: 25px;
+}
+
+.wp-block-paragraph {
+margin-bottom: 20px;
+font-size: 1.1rem;
+line-height: 1.7;
+}
+
+/* Custom block styling for imported content */
+.content-block {
+padding: 40px 0;
+}
+
+.content-block.purple-bg {
+background-color: var(--dark-purple);
+color: white;
+padding: 60px 40px;
+margin: 40px 0;
+border-radius: 10px;
+}
+
+.content-block.purple-bg h1,
+.content-block.purple-bg h2,
+.content-block.purple-bg h3 {
+color: white;
+}
+
+/* ============================================
+ UTILITY CLASSES
+============================================ */
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-20 { margin-bottom: 20px; }
+.mb-40 { margin-bottom: 40px; }
+
+.mt-0 { margin-top: 0; }
+.mt-20 { margin-top: 20px; }
+.mt-40 { margin-top: 40px; }
+
+.purple-text { color: var(--primary-purple); }
+.teal-text { color: var(--teal-accent); }
+.orange-text { color: var(--orange-accent); }
+
+.purple-bg { background-color: var(--dark-purple); }
+.light-bg { background-color: var(--light-gray); }
+.white-bg { background-color: white; }
+
+/* ============================================
+ ANIMATION ENHANCEMENTS
+============================================ */
+
+.fade-in {
+opacity: 0;
+animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+to {
+  opacity: 1;
+}
+}
+
+.slide-up {
+transform: translateY(30px);
+opacity: 0;
+animation: slideUp 0.8s ease-out forwards;
+}
+
+@keyframes slideUp {
+to {
+  transform: translateY(0);
+  opacity: 1;
+}
+}
+
+/* ============================================
+ FINAL OVERRIDES
+============================================ */
+
+/* Ensure imported content displays properly */
+.fl-builder-content,
+.fl-row,
+.fl-col-group,
+.fl-col {
+display: block;
+width: 100%;
+}
+
+/* Hide Beaver Builder specific classes that might interfere */
+.fl-builder-content[data-type] {
+padding: 0;
+margin: 0;
+} 

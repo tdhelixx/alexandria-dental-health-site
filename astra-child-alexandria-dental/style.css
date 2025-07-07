@@ -1,0 +1,755 @@
+/*
+Theme Name: Astra Child - Alexandria Dental Health
+Description: Child theme of Astra for Alexandria Dental Health & Smile Studio
+Author: Alexandria Dental Health
+Template: astra
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child-alexandria-dental
+Tags: dental, medical, health, responsive, custom
+*/
+
+/* Import parent theme styles */
+@import url("../astra/style.css");
+
+/* Custom Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&family=Nunito:wght@400;600;700&display=swap');
+
+/* ==========================================================================
+   ALEXANDRIA DENTAL HEALTH CUSTOM STYLES
+   ========================================================================== */
+
+/* Root Variables */
+:root {
+    --primary-color: #32192f;
+    --secondary-color: #a27295;
+    --accent-color: #ffae00;
+    --hover-color: #72b7bc;
+    --text-color: #424242;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+/* Typography Override */
+body {
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+}
+
+h1 { 
+    font-size: 2.5em; 
+    font-weight: 800; 
+    line-height: 1.2;
+}
+
+h2 { 
+    font-size: 2.0em; 
+    font-weight: 700; 
+    line-height: 1.25;
+}
+
+h3 { 
+    font-size: 1.5em; 
+    font-weight: 700; 
+    line-height: 1.3;
+}
+
+h4 { 
+    font-size: 1.25em; 
+    font-weight: 600; 
+}
+
+h5 { 
+    font-size: 1.1em; 
+    font-weight: 600; 
+}
+
+h6 { 
+    font-size: 1em; 
+    font-weight: 600; 
+}
+
+/* Font weight variations for different contexts */
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.font-black { font-weight: 900; }
+
+/* Font family utilities */
+.font-raleway { font-family: "Raleway", Arial, sans-serif; }
+.font-nunito { font-family: "Nunito", Arial, sans-serif; }
+.font-inter { font-family: "Inter", Arial, sans-serif; }
+.font-oxygen { font-family: "Oxygen", Arial, sans-serif; }
+
+/* Professional typography for dental content */
+.dental-heading {
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.dental-subheading {
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.dental-body {
+    font-family: "Nunito", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.dental-caption {
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Button typography */
+.dental-btn,
+.wp-block-button__link {
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Links */
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+/* ==========================================================================
+   ASTRA THEME INTEGRATION
+   ========================================================================== */
+
+/* Work with Astra's header builder - no color overrides */
+/* Only typography and layout styles that enhance Astra's controls */
+
+/* Style the site logo sizing */
+.site-logo-img {
+    max-width: 250px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Style header HTML elements layout */
+.ast-header-html {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Typography for navigation - let Astra handle colors */
+.main-header-menu a,
+.ast-below-header-menu a,
+.ast-above-header-menu a {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Ensure our custom header displays */
+.dental-custom-header {
+    display: block;
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Override any Astra container styles */
+.dental-custom-header .ast-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Ensure proper spacing after header */
+#content {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* ==========================================================================
+   HEADER CUSTOMIZATIONS
+   ========================================================================== */
+
+/* ==========================================================================
+   TOP HEADER BAR (Dark Purple)
+   ========================================================================== */
+
+.dental-top-bar {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.dental-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.dental-top-logo {
+    flex: 0 0 auto;
+}
+
+.dental-logo-top {
+    max-width: 180px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.dental-top-tagline {
+    flex: 1;
+    text-align: center;
+    color: var(--white);
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+}
+
+.love-text {
+    font-weight: 800;
+    color: var(--accent-color);
+}
+
+.dental-top-cta {
+    flex: 0 0 auto;
+}
+
+.top-cta-btn {
+    background: var(--accent-color);
+    color: #000 !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    transition: var(--transition);
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.top-cta-btn:hover {
+    background: #e69900;
+    color: #000 !important;
+    transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   MAIN HEADER BAR (Light Gray)
+   ========================================================================== */
+
+.dental-main-header {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.dental-main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.dental-main-logo {
+    flex: 0 0 auto;
+}
+
+.dental-logo-main {
+    max-width: 250px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.dental-phone-section {
+    flex: 1;
+    text-align: center;
+}
+
+.dental-phone-link {
+    color: var(--primary-color) !important;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.dental-phone-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.dental-action-buttons {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 15px;
+}
+
+.dental-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 200px !important;
+    width: 200px !important;
+    height: 50px !important;
+    border-radius: 25px !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    transition: var(--transition) !important;
+    text-decoration: none !important;
+    font-family: "Raleway", sans-serif !important;
+    letter-spacing: 0.5px !important;
+    padding: 0 30px !important;
+    box-sizing: border-box !important;
+}
+
+.dental-btn-special {
+    background: var(--accent-color);
+    color: #000 !important;
+}
+
+.dental-btn-special:hover {
+    background: #e69900;
+    color: #000 !important;
+    transform: translateY(-2px);
+}
+
+.dental-btn-schedule {
+    background: var(--secondary-color);
+    color: var(--white) !important;
+}
+
+.dental-btn-schedule:hover {
+    background: #8a5f7e;
+    color: var(--white) !important;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   NAVIGATION TYPOGRAPHY (Colors handled by Astra)
+   ========================================================================== */
+
+/* Only typography styles - let Astra handle all colors and backgrounds */
+.main-header-menu a,
+.ast-below-header-menu a,
+.ast-above-header-menu a {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    /* All colors, backgrounds, and hover states controlled by Astra */
+}
+
+/* ==========================================================================
+   SIDEBAR CUSTOMIZATIONS
+   ========================================================================== */
+
+.dental-sidebar {
+    padding: 0;
+}
+
+/* Special Offer Circle Button */
+.dental-special-offer {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.dental-special-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color);
+    color: #000 !important;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(255, 174, 0, 0.3);
+}
+
+.dental-special-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(255, 174, 0, 0.4);
+    color: #000 !important;
+}
+
+.dental-special-top {
+    font-size: 14px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.dental-special-main {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.dental-special-cta {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Sidebar Cards */
+.dental-sidebar-card {
+    background: var(--light-bg);
+    padding: 1.5em;
+    border-radius: var(--border-radius);
+    margin-bottom: 2em;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.dental-sidebar-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+.dental-sidebar-card p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 14px;
+}
+
+.dental-sidebar-card strong {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* Google Maps */
+.dental-map iframe {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border-radius: 6px;
+    width: 100%;
+    height: 250px;
+    border: 0;
+}
+
+.dental-map iframe:hover {
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   CONTENT AREA CUSTOMIZATIONS
+   ========================================================================== */
+
+/* Banner Hero */
+.dental-banner-hero {
+    width: 100%;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dental-banner-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Content Improvements */
+.entry-content {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.entry-content p {
+    margin-bottom: 1.2em;
+}
+
+/* ==========================================================================
+   FOOTER CUSTOMIZATIONS
+   ========================================================================== */
+
+.site-footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+}
+
+.site-info {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-menu a {
+    color: #ccc;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.footer-menu a:hover {
+    color: var(--hover-color);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    /* Top Bar Responsive */
+    .dental-top-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .dental-top-logo,
+    .dental-top-tagline,
+    .dental-top-cta {
+        flex: none;
+    }
+    
+    .dental-logo-top {
+        max-width: 160px;
+        height: 45px;
+    }
+    
+    /* Main Header Responsive */
+    .dental-main-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .dental-main-logo,
+    .dental-phone-section,
+    .dental-action-buttons {
+        flex: none;
+        width: auto;
+    }
+    
+    .dental-logo-main {
+        max-width: 220px;
+        height: 55px;
+    }
+    
+    .dental-action-buttons {
+        justify-content: center;
+    }
+    
+    /* Navigation Responsive */
+    .main-header-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .main-header-menu li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .main-header-menu a {
+        padding: 12px 20px;
+        text-align: center;
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Top Bar Mobile */
+    .dental-top-bar {
+        padding: 8px 0;
+    }
+    
+    .dental-logo-top {
+        max-width: 140px;
+        height: 40px;
+    }
+    
+    .dental-top-tagline {
+        font-size: 14px;
+    }
+    
+    .top-cta-btn {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    
+    /* Main Header Mobile */
+    .dental-main-header {
+        padding: 12px 0;
+    }
+    
+    .dental-logo-main {
+        max-width: 200px;
+        height: 50px;
+    }
+    
+    .dental-phone-link {
+        font-size: 1.1em;
+    }
+    
+    .dental-action-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .dental-btn {
+        min-width: 200px !important;
+        width: 200px !important;
+        height: 50px !important;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    /* Navigation Mobile */
+    .main-header-menu a {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    
+    /* Sidebar Mobile */
+    .dental-special-link {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .dental-special-main {
+        font-size: 15px;
+    }
+    
+    .dental-sidebar-card {
+        padding: 1em;
+    }
+    
+    /* Footer Mobile */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .footer-menu {
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small screens */
+    .dental-top-content {
+        padding: 0 10px;
+    }
+    
+    .dental-main-content {
+        padding: 0 10px;
+    }
+    
+    .dental-logo-top {
+        max-width: 120px;
+        height: 35px;
+    }
+    
+    .dental-logo-main {
+        max-width: 180px;
+        height: 45px;
+    }
+    
+    .dental-phone-link {
+        font-size: 1em;
+    }
+    
+    .dental-btn {
+        min-width: 200px !important;
+        width: 200px !important;
+        height: 50px !important;
+        font-size: 14px !important;
+        padding: 0 25px !important;
+    }
+    
+    .main-header-menu a {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+}
+
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; } 

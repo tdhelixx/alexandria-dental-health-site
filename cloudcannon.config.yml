@@ -1,0 +1,75 @@
+# CloudCannon Configuration
+# https://cloudcannon.com/documentation/articles/setting-global-configuration/
+
+collections_config:
+  pages:
+    path: ""
+    filter: "strict"
+    output: true
+    icon: "wysiwyg"
+    
+  blog:
+    path: "blog"
+    output: true
+    icon: "event"
+    
+  services:
+    path: "services"
+    output: true
+    icon: "medical_services"
+
+# Build settings
+source: "."
+destination: "_site"
+
+# Data files
+data_config:
+  nav:
+    path: "_data/navigation.yml"
+  footer:
+    path: "_data/footer.yml"
+    
+# Editor settings
+_editors:
+  content:
+    bold: true
+    italic: true
+    link: true
+    bulletedlist: true
+    numberedlist: true
+    image: true
+    table: true
+    code: true
+    horizontalrule: true
+    removeformat: true
+    
+_inputs:
+  title:
+    type: text
+    label: "Page Title"
+  description:
+    type: textarea
+    label: "Meta Description"
+  keywords:
+    type: text
+    label: "Keywords"
+  layout:
+    type: select
+    options:
+      values:
+        - default
+        - page
+        - service
+        - blog-post
+        
+# Asset paths
+paths:
+  uploads: "assets/images"
+  
+# Site settings
+timezone: "America/New_York"
+
+# Metadata
+_metadata:
+  title: "Alexandria Dental Health"
+  description: "Comprehensive dental care in Alexandria, VA" 
