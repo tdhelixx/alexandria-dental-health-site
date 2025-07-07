@@ -1,68 +1,22 @@
-# CloudCannon Configuration
+# CloudCannon Configuration - Minimal & Reliable
+
+collections_config:
+  services:
+    path: src/services
+    name: Services
+
 _inputs:
   title:
     comment: The page title
-  subtitle:
-    comment: A brief subtitle for the page
-  description:
-    comment: Meta description for SEO
   category:
     type: select
     options:
       values:
         - Cosmetic
-        - Restorative
+        - Restorative  
         - Family
         - General
-  heroImage:
-    type: image
-    comment: Main hero image for the page
-  benefits:
-    type: array
-    comment: List of treatment benefits
-  process_steps:
-    type: array
-    comment: Steps in the treatment process
-  related_services:
-    type: array
-    comment: Related dental services
 
-# Collections
-collections_config:
-  services:
-    path: src/services
-    name: Services
-    description: Dental service pages
-    icon: medical
-    add_options:
-      - name: Add Service
-        schema: default
-        icon: add
-
-# Build configuration
-build:
-  install_command: npm install
-  build_command: npm run build
-  output_dir: _site
-  environment_variables:
-    ELEVENTY_ENV: production
-
-# Source configuration  
-source:
-  input: src
-  output: _site
-
-# Paths
-paths:
-  data: src/_data
-  includes: src/_includes
-  layouts: src/_includes/layouts
-  
-# Generator
 generator:
   metadata:
-    eleventy: true
-    markdown: markdown-it
-
-# Data
-data_config: 
+    eleventy: true 
