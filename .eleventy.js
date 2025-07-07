@@ -1,8 +1,11 @@
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
-  // Copy static assets
+  // Copy static assets - NEW clean structure
   eleventyConfig.addPassthroughCopy("src/images");
+  
+  // Copy static assets - OLD WordPress structure (backwards compatibility)
+  eleventyConfig.addPassthroughCopy("wp-content");
   eleventyConfig.addPassthroughCopy("images");
   
   // Basic collections
