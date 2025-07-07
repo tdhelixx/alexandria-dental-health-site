@@ -33,36 +33,12 @@ in_nav: true
 nav_order: 7
 page_type: service
 benefits:
-- Patient Information
-- 'FAQs & Information
-
-
-  Dental Crowns FAQ's
-
-  Dental Implant Benefits
-
-  Dentures Cleaning & Care
-
-  How to Brush Your Teeth
-
-  How to Brush Your Teeth with Braces
-
-  How to Floss Your Teeth
-
-  Importance of Baby Teeth
-
-  Root Canal Symptoms
-
-  Root Canal Recovery
-
-  Symptoms of Gum Disease
-
-  What is Cosmetic Dentistry?
-
-  What To Do in a Dental Emergency'
-- Dental Crowns FAQ's
-- Dental Implant Benefits
-- Dentures Cleaning & Care
+- Natural-looking replacement for missing teeth
+- Restored ability to eat and speak comfortably
+- Improved facial support and appearance
+- Affordable tooth replacement solution
+- Custom-fitted for optimal comfort
+- Options for partial or full dentures
 related_services:
 - title: Dental Implants
   url: /dental-implants/

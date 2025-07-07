@@ -33,42 +33,15 @@ in_nav: true
 nav_order: 4
 page_type: service
 benefits:
-- Patient Information
-- 'FAQs & Information
-
-
-  Dental Crowns FAQ's
-
-  Dental Implant Benefits
-
-  Dentures Cleaning & Care
-
-  How to Brush Your Teeth
-
-  How to Brush Your Teeth with Braces
-
-  How to Floss Your Teeth
-
-  Importance of Baby Teeth
-
-  Root Canal Symptoms
-
-  Root Canal Recovery
-
-  Symptoms of Gum Disease
-
-  What is Cosmetic Dentistry?
-
-  What To Do in a Dental Emergency'
-- Dental Crowns FAQ's
-- Dental Implant Benefits
-- Dentures Cleaning & Care
+- Same-day CEREC crown technology
+- Natural-looking and durable results
+- Preserves remaining tooth structure
+- Restores full function and strength
+- No temporary crowns needed
+- Long-lasting tooth protection
 process_steps:
-- title: What Can I Expect From the Dental Crowns Treatment Process in Alexandria
-    VA?
-  description: If you are receiving a ceramic crown, your procedure will begin with
-    easy and convenient digital impressions using our CEREC technology—no messy impression
-    trays and gooey putties necessary! Dr. Mazha...
+- title: "What Can I Expect From the Dental Crowns Treatment Process in Alexandria VA?"
+  description: "If you are receiving a ceramic crown, your procedure will begin with easy and convenient digital impressions using our CEREC technology—no messy impression trays and gooey putties necessary! Dr. Mazhari will use high-resolution digital images to design and fabricate your dental crown with the CEREC milling machine while you wait."
 related_services:
 - title: Dental Implants
   url: /dental-implants/

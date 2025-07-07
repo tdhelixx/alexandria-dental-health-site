@@ -33,36 +33,12 @@ in_nav: true
 nav_order: 99
 page_type: service
 benefits:
-- Patient Information
-- 'FAQs & Information
-
-
-  Dental Crowns FAQ's
-
-  Dental Implant Benefits
-
-  Dentures Cleaning & Care
-
-  How to Brush Your Teeth
-
-  How to Brush Your Teeth with Braces
-
-  How to Floss Your Teeth
-
-  Importance of Baby Teeth
-
-  Root Canal Symptoms
-
-  Root Canal Recovery
-
-  Symptoms of Gum Disease
-
-  What is Cosmetic Dentistry?
-
-  What To Do in a Dental Emergency'
-- Dental Crowns FAQ's
-- Dental Implant Benefits
-- Dentures Cleaning & Care
+- Complete recovery guidance
+- Pain management strategies
+- Proper healing instructions
+- Timeline expectations
+- Activity recommendations
+- Follow-up care scheduling
 process_steps:
 - title: Root Canal Procedure
   description: The actual root canal therapy procedure itself uses an anesthetic for

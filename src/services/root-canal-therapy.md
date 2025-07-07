@@ -33,36 +33,12 @@ in_nav: true
 nav_order: 8
 page_type: service
 benefits:
-- Patient Information
-- 'FAQs & Information
-
-
-  Dental Crowns FAQ's
-
-  Dental Implant Benefits
-
-  Dentures Cleaning & Care
-
-  How to Brush Your Teeth
-
-  How to Brush Your Teeth with Braces
-
-  How to Floss Your Teeth
-
-  Importance of Baby Teeth
-
-  Root Canal Symptoms
-
-  Root Canal Recovery
-
-  Symptoms of Gum Disease
-
-  What is Cosmetic Dentistry?
-
-  What To Do in a Dental Emergency'
-- Dental Crowns FAQ's
-- Dental Implant Benefits
-- Dentures Cleaning & Care
+- Saves natural tooth structure
+- Eliminates pain and infection
+- Prevents tooth extraction
+- Restores normal function
+- High success rate treatment
+- Long-lasting tooth preservation
 related_services:
 - title: Dental Implants
   url: /dental-implants/

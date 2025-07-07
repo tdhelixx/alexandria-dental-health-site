@@ -34,36 +34,12 @@ in_nav: true
 nav_order: 7
 page_type: service
 benefits:
-- Patient Information
-- 'FAQs & Information
-
-
-  Dental Crowns FAQ's
-
-  Dental Implant Benefits
-
-  Dentures Cleaning & Care
-
-  How to Brush Your Teeth
-
-  How to Brush Your Teeth with Braces
-
-  How to Floss Your Teeth
-
-  Importance of Baby Teeth
-
-  Root Canal Symptoms
-
-  Root Canal Recovery
-
-  Symptoms of Gum Disease
-
-  What is Cosmetic Dentistry?
-
-  What To Do in a Dental Emergency'
-- Dental Crowns FAQ's
-- Dental Implant Benefits
-- Dentures Cleaning & Care
+- Permanent All-on-Four solution
+- No slipping or adhesives needed
+- Enhanced chewing and speaking ability
+- Preserves jawbone health
+- Natural appearance and feel
+- Cost-effective implant option
 process_steps:
 - title: The All-on-Four® Process
   description: Like any dental implant procedure, the first step is an exam by Dr.

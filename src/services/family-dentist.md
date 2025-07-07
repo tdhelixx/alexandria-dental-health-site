@@ -33,36 +33,12 @@ in_nav: true
 nav_order: 9
 page_type: service
 benefits:
-- Patient Information
-- 'FAQs & Information
-
-
-  Dental Crowns FAQ's
-
-  Dental Implant Benefits
-
-  Dentures Cleaning & Care
-
-  How to Brush Your Teeth
-
-  How to Brush Your Teeth with Braces
-
-  How to Floss Your Teeth
-
-  Importance of Baby Teeth
-
-  Root Canal Symptoms
-
-  Root Canal Recovery
-
-  Symptoms of Gum Disease
-
-  What is Cosmetic Dentistry?
-
-  What To Do in a Dental Emergency'
-- Dental Crowns FAQ's
-- Dental Implant Benefits
-- Dentures Cleaning & Care
+- Comprehensive care for all family members
+- Child-friendly environment and approach
+- Preventive care education for children
+- Early detection of dental problems
+- Convenient scheduling for busy families
+- Building lifelong healthy dental habits
 related_services:
 - title: Dental Cleanings
   url: /dental-cleanings/
