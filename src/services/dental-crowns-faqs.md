@@ -1,20 +1,75 @@
 ---
-ctaLink: /contact-us/
-ctaText: Schedule Crown Consultation
+layout: layouts/service.njk
+title: Dental Crowns FAQ's
+subtitle: Same-Day CEREC Crowns for Immediate Restoration
 description: See how dental crowns in Alexandria VA can restore damaged or missing
   teeth. Schedule a consultation with Alexandria Dental Health & Smile Studio.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
-heroImageAlt: Dental Crowns FAQ's Treatment at Alexandria Dental Health & Smile Studio
 keywords: dental crowns faq's Alexandria VA, dental crowns faq's, CEREC crowns, same-day
-  crowns
-layout: layouts/service.njk
+  crowns, tooth restoration
+heroImage: /images/restorative/Dentist-Senior-Couple-Outside-Smiling-CS1.webp
+heroImageAlt: Dental Crowns FAQ's Treatment at Alexandria Dental Health & Smile Studio
 permalink: /dental-crowns-faqs/
-related_services: []
-subtitle: Professional Dental Crowns FAQ's in Alexandria VA
+ctaText: Schedule Crown Consultation
+ctaLink: /contact-us/
 tags:
 - services
 - restorative
-title: Dental Crowns FAQ's
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/restorative/Dentist-Senior-Couple-Outside-Smiling-CS1.webp
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 4
+page_type: service
+benefits:
+- Patient Information
+- 'FAQs & Information
+
+
+  Dental Crowns FAQ’s
+
+  Dental Implant Benefits
+
+  Dentures Cleaning & Care
+
+  How to Brush Your Teeth
+
+  How to Brush Your Teeth with Braces
+
+  How to Floss Your Teeth
+
+  Importance of Baby Teeth
+
+  Root Canal Symptoms
+
+  Root Canal Recovery
+
+  Symptoms of Gum Disease
+
+  What is Cosmetic Dentistry?
+
+  What To Do in a Dental Emergency'
+- Dental Crowns FAQ’s
+- Dental Implant Benefits
+- Dentures Cleaning & Care
+related_services:
+- title: Dental Implants
+  url: /dental-implants/
+- title: Dental Crowns
+  url: /dental-crowns/
+- title: Dental Bridges
+  url: /dental-bridges/
 ---
 
 # Dental Crowns & Bridges FAQ's in Alexandria VA
@@ -44,28 +99,3 @@ The dental bridge works by restoring a full, artificial tooth where there was no
 Yes, there are. One other option is known as a dental implant. This involves fixing a titanium screw into your gums and into the bone itself, then affixing an artificial tooth to that. This is a much more comprehensive and permanent solution to either the crown or bridge, but can also be significantly more expensive.
 
 Whether a dental crown, dental bridge, or dental implant is the right solution for your mouth is something you should always discuss with an experienced Alexandria VA dentist. Schedule a consultation with our Alexandria Dental Health & Smile Studio team today.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

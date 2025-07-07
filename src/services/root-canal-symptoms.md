@@ -1,20 +1,75 @@
 ---
-ctaLink: /contact-us/
-ctaText: Schedule Emergency Appointment
+layout: layouts/service.njk
+title: Root Canal Symptoms
+subtitle: Pain-Free Root Canal Treatment to Save Your Natural Teeth
 description: Are you suffering from tooth pain in Alexandria VA? Learn about root
   canal options from Alexandria Dental Health & Smile Studio.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
-heroImageAlt: Root Canal Symptoms Treatment at Alexandria Dental Health & Smile Studio
 keywords: root canal symptoms Alexandria VA, root canal symptoms, endodontic treatment,
-  tooth pain relief
-layout: layouts/service.njk
+  tooth pain relief, root canal therapy
+heroImage: /images/restorative/Dentist-Alexandria-VA-Root-Canal-Therapy.webp
+heroImageAlt: Root Canal Symptoms Treatment at Alexandria Dental Health & Smile Studio
 permalink: /root-canal-symptoms/
-related_services: []
-subtitle: Professional Root Canal Symptoms in Alexandria VA
+ctaText: Schedule Emergency Appointment
+ctaLink: /contact-us/
 tags:
 - services
 - restorative
-title: Root Canal Symptoms
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/restorative/Dentist-Alexandria-VA-Root-Canal-Therapy.webp
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 99
+page_type: service
+benefits:
+- Patient Information
+- 'FAQs & Information
+
+
+  Dental Crowns FAQ’s
+
+  Dental Implant Benefits
+
+  Dentures Cleaning & Care
+
+  How to Brush Your Teeth
+
+  How to Brush Your Teeth with Braces
+
+  How to Floss Your Teeth
+
+  Importance of Baby Teeth
+
+  Root Canal Symptoms
+
+  Root Canal Recovery
+
+  Symptoms of Gum Disease
+
+  What is Cosmetic Dentistry?
+
+  What To Do in a Dental Emergency'
+- Dental Crowns FAQ’s
+- Dental Implant Benefits
+- Dentures Cleaning & Care
+related_services:
+- title: Dental Implants
+  url: /dental-implants/
+- title: Dental Crowns
+  url: /dental-crowns/
+- title: Dental Bridges
+  url: /dental-bridges/
 ---
 
 # Root Canal Symptoms in Alexandria VA
@@ -48,28 +103,3 @@ If you inspect your teeth and notice that the tooth experiencing discomfort is a
 Swollen gums near the problem tooth are another sign. You may also experience extreme sensitivity in this area, resulting in pain and discomfort. If the infection is starting to affect the gums, you may even notice a “pimple” or similar growth appearing on your gums.
 
 If you experience any of these symptoms, you should contact our Alexandria VA dental team today and get an examination. Infected roots and/or pulp can be extremely painful and damaging if left untreated. A root canal can put a stop to the suffering. The team at Alexandria Dental Health & Smile Studio is here to help.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

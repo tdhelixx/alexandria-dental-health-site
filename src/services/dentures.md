@@ -1,21 +1,75 @@
 ---
-ctaLink: /contact-us/
-ctaText: Schedule Denture Consultation
+layout: layouts/service.njk
+title: Dentures
+subtitle: Restore Your Smile with Custom Full & Partial Dentures
 description: Looking for Dentures in Alexandria VA? Call Alexandria Dental Health
   & Smile Studio today for more information.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
-heroImageAlt: Dentures Alexandria VA Treatment at Alexandria Dental Health & Smile
-  Studio
-keywords: dentures alexandria va Alexandria VA, dentures alexandria va, partial dentures,
-  implant-supported dentures
-layout: layouts/service.njk
+keywords: dentures Alexandria VA, dentures, partial dentures, implant-supported dentures,
+  tooth replacement
+heroImage: /images/restorative/man-older-dentures-smiling-at-dentist.jpg
+heroImageAlt: Dentures Treatment at Alexandria Dental Health & Smile Studio
 permalink: /dentures/
-related_services: []
-subtitle: Restore Your Smile with Custom Full & Partial Dentures
+ctaText: Schedule Denture Consultation
+ctaLink: /contact-us/
 tags:
 - services
 - restorative
-title: Dentures Alexandria VA
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/restorative/man-older-dentures-smiling-at-dentist.jpg
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 7
+page_type: service
+benefits:
+- Patient Information
+- 'FAQs & Information
+
+
+  Dental Crowns FAQ’s
+
+  Dental Implant Benefits
+
+  Dentures Cleaning & Care
+
+  How to Brush Your Teeth
+
+  How to Brush Your Teeth with Braces
+
+  How to Floss Your Teeth
+
+  Importance of Baby Teeth
+
+  Root Canal Symptoms
+
+  Root Canal Recovery
+
+  Symptoms of Gum Disease
+
+  What is Cosmetic Dentistry?
+
+  What To Do in a Dental Emergency'
+- Dental Crowns FAQ’s
+- Dental Implant Benefits
+- Dentures Cleaning & Care
+related_services:
+- title: Dental Implants
+  url: /dental-implants/
+- title: Dental Crowns
+  url: /dental-crowns/
+- title: Dental Bridges
+  url: /dental-bridges/
 ---
 
 # Dentures & Partials in Alexandria VA
@@ -42,28 +96,3 @@ Dr. Mazhari will meet with you to evaluate your oral health and discuss your con
 Your procedure will be enhanced by the use of advanced digital technology and the highest quality materials for a final restoration that blends with your natural appearance and fits securely in your mouth. Whenever possible, Dr. Mazhari will recommend the use of an implant secured denture for the most stable result that does not require daily adhesives.
 
 Dr. Mazhari will explain how to care for your dentures to ensure that they will last and keep your smile healthy. If your dentures are removable, we will offer tips on how to keep them clean and when to come in for periodic adjustments so they remain comfortable and secure.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

@@ -1,29 +1,60 @@
 ---
-benefits:
-- Achieve a radiant, flawless smile you’ll be proud to share.
-- With proper care, veneers can last 10 to 15 years or more.
-- Veneers require minimal alteration of natural teeth.
-ctaLink: /contact-us/
-ctaText: Schedule Veneers Consultation
+layout: layouts/service.njk
+title: Getting Veneers
+subtitle: Transform Your Smile with Custom Ceramic Veneers
 description: Our practice specializes in advanced ceramic technologies that address
   structural compromise, color variations, and more.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
-heroImageAlt: Getting Veneers Treatment at Alexandria Dental Health & Smile Studio
 keywords: getting veneers Alexandria VA, getting veneers, cosmetic dentistry, smile
-  makeover
-layout: layouts/service.njk
+  makeover, porcelain veneers
+heroImage: /images/cosmetic/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
+heroImageAlt: Getting Veneers Treatment at Alexandria Dental Health & Smile Studio
 permalink: /getting-veneers/
-process_steps:
-- description: Our approach centers on evidence-based ceramic restoration techniques
-    that preserve natural tooth structure. We prioritize long-term functional success
-    through careful material selection and precise a...
-  title: Treatment Philosophy
-related_services: []
-subtitle: Transform Your Smile with Custom Ceramic Veneers
+ctaText: Schedule Veneers Consultation
+ctaLink: /contact-us/
 tags:
 - services
 - cosmetic
-title: Getting Veneers
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/cosmetic/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 2
+page_type: service
+benefits:
+- Dr. Mazhari has 15+ years of advanced cosmetic dentistry expertise, maintaining
+  LVI Fellowship certification with a specialized focus on minimally invasive ceramic
+  restoration protocols and comprehensive aesthetic rehabilitation procedures.
+- Our facility integrates current digital scanning technologies, including CEREC Primescan
+  and iTero systems, enabling precise three-dimensional capture of dental morphology
+  and margin definition for optimal restoration parameters.
+- We create personalized treatment plans based on individual needs, using advanced
+  materials and specific functional features to ensure the best appearance and durability.
+- We offer flexible payment options, accept PPO dental insurance, and provide third-party
+  financing, making it easy for everyone to access high-quality care.
+process_steps:
+- title: Treatment Philosophy
+  description: Our approach centers on evidence-based ceramic restoration techniques
+    that preserve natural tooth structure. We prioritize long-term functional success
+    through careful material selection and precise a...
+related_services:
+- title: Porcelain Veneers
+  url: /veneers/
+- title: Invisalign Clear Braces
+  url: /invisalign/
+- title: Professional Teeth Whitening
+  url: /teeth-whitening/
 ---
 
 # Getting Veneers at Alexandria Dental Health & Smile Studio
@@ -116,28 +147,3 @@ Alexandria Dental Health & Smile Studio maintains:
 ### Schedule Your Appointment Today
 
 Schedule your veneer consultation with Dr. Mazhari today. Our friendly team is here to guide you through every step of the process. Call us at (703) 212-9622 or use our online booking system.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

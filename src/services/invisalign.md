@@ -1,36 +1,60 @@
 ---
+layout: layouts/service.njk
+title: Invisalign
+subtitle: Clear Aligners for a Discreet, Confident Smile
+description: Are you looking for Invisalign in Alexandria VA? Contact the team at
+  Alexandria Dental Health & Smile Studio today.
+keywords: invisalign Alexandria VA, invisalign, clear braces, invisible aligners,
+  orthodontics
+heroImage: /images/services/woman-hands-by-face-smiling.webp
+heroImageAlt: Invisalign Treatment at Alexandria Dental Health & Smile Studio
+permalink: /invisalign/
+ctaText: Schedule Invisalign Consultation
+ctaLink: /contact-us/
+tags:
+- services
+- cosmetic
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/services/woman-hands-by-face-smiling.webp
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 1
+page_type: service
 benefits:
 - No dietary restrictions
 - Easy removal for cleaning and routine dental care
 - Discreet, nearly invisible treatment
 - No risk of tooth enamel staining from permanently attached brackets
-ctaLink: /contact-us/
-ctaText: Schedule Invisalign Consultation
-description: Are you looking for Invisalign in Alexandria VA? Contact the team at
-  Alexandria Dental Health & Smile Studio today.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
-heroImageAlt: Invisalign Treatment at Alexandria Dental Health & Smile Studio
-investment:
-  financing: Payment plans available
-  primary: $3,500 – $5,500
-keywords: invisalign Alexandria VA, invisalign, clear braces, invisible aligners
-layout: layouts/service.njk
-permalink: /invisalign/
 process_steps:
-- description: Should you decide that Invisalign is the right treatment option for
+- title: What Is the Invisalign Treatment Process Like?
+  description: Should you decide that Invisalign is the right treatment option for
     you, Dr. Mazhari will begin by taking digital impressions of your mouth in order
     to create high resolution, 3-D images of your teeth...
-  title: What Is the Invisalign Treatment Process Like?
-- description: These two cases show the progression of the treatment as the patients
+- title: Case Studies in Invisalign Treatment Progress
+  description: These two cases show the progression of the treatment as the patients
     used Invisalign aligners to move their teeth. Each patient suffered from severe
     crowding, narrow arches, misshapen teeth, and diff...
-  title: Case Studies in Invisalign Treatment Progress
-related_services: []
-subtitle: Clear Aligners for a Discreet, Confident Smile
-tags:
-- services
-- cosmetic
-title: Invisalign
+investment:
+  primary: $3,500 – $5,500
+  financing: Payment plans available
+  note: Prices may vary based on individual treatment needs
+related_services:
+- title: Porcelain Veneers
+  url: /veneers/
+- title: Professional Teeth Whitening
+  url: /teeth-whitening/
 ---
 
 # Invisalign® Clear Braces in Alexandria VA
@@ -58,10 +82,6 @@ Straightening your teeth can support long-term dental health, in addition to pro
 
 At Alexandria Dental Health & Smile Studio, we know deciding on the right form of treatment for your smile is important. If you’re considering Invisalign for either you or your teenager, you can actually preview your results with our in-office digital iTero® scanning technology. iTero is a digital scanner that receives images from a camera and then rapidly transfers the images onto a computer screen. This enables you to explore simulated images that showcase how Invisalign can impact your smile. Once you see how your teeth can look with our Invisalign outcome simulator through iTero technology, you can better decide if Invisalign is the right treatment option for you.
 
-BEFORE
-
-AFTER
-
 ### What Is the Invisalign Treatment Process Like?
 
 Should you decide that Invisalign is the right treatment option for you, Dr. Mazhari will begin by taking digital impressions of your mouth in order to create high resolution, 3-D images of your teeth. These will be used to accurately plan your treatment for optimal results. The impressions will be used to fabricate a series of clear aligners, each of which will be worn for specified increments of time—typically about two weeks before advancing to the next set of aligners in the series—in order to gently shift your teeth into the desired formation. Dr. Mazhari will provide you with detailed instructions regarding how to care for your aligners. For optimal results, patients should typically wear their aligners for 20-22 hours out of the day, removing them only during routine oral hygiene activities and mealtimes. The number of aligners and overall length of your Invisalign treatment will depend on the problem(s) being addressed and your desired result. Your final aligner will be a retainer, which should be worn as directed each day to keep in order to maintain your results and prevent your teeth from shifting out of formation.
@@ -84,17 +104,29 @@ Dr. Mazhari and all of us at Alexandria Dental Health & Smile Studio believe tha
 
 This testimonial is from a patient who’s almost 70 and is no longer experiencing headaches as a result of correcting her bite. Not only do her teeth line up beautifully now, but she is also free of the pain she was experiencing:
 
+> “Very happy with aligner progress, which is not only addressing the cosmetic aspect of straightening, but has completely alleviated my headaches from clenching/grinding! It is also a very caring environment, with questions patiently answered.”
+
 “Very happy with aligner progress, which is not only addressing the cosmetic aspect of straightening, but has completely alleviated my headaches from clenching/grinding! It is also a very caring environment, with questions patiently answered.”
 
 ### Additional Invisalign FAQs
 
+#### Can teenagers get Invisalign?
+
 One of the most frequent questions we get is whether or not teenagers can receive Invisalign treatment rather than traditional metal braces. Indeed, not only can teenagers get Invisalign, studies show that teens are twice as likely to have higher self-esteem with Invisalign (versus metal braces)! Invisalign essentially works for people at any age—as long as they have their permanent teeth. Once your child or teen has all of their permanent teeth in place, our dentist can meet with them to determine whether Invisalign teen is the right treatment for their orthodontic concerns.
+
+#### Is Invisalign more expensive than braces?
 
 Many people who are considering Invisalign worry that it will be much more expensive than traditional orthodontic treatments due to its more efficient and discreet system of tooth alignment. However, Invisalign treatments are actually very comparable in price to regular braces, especially considering how much more convenient and efficient Invisalign can be. As an added bonus, Dr. Mazhari and the team at Alexandria Health & Smile Studio often run specials for anyone starting Invisalign—visit our specials page to see what deals we currently have!
 
+#### Is Invisalign really invisible?
+
 Invisalign clear aligners are made from a transparent plastic material that is incredibly discreet. However, they are not entirely invisible. That said, they are custom-fitted and fabricated from specialized materials in order to be as minimally noticeable as possible, and most patients find that wearing the aligners has no significant negative impact on their appearance. Especially when compared to the more prominent wires and brackets of traditional braces, Invisalign is a much more discreet and barely—if at all—noticeable approach to orthodontics.
 
+#### Will Invisalign change the way I talk?
+
 Since Invisalign aligners are custom-fitted for both comfort and discretion, they should not have any significant impact on the way you speak. Some patients may experience a slight lisp when they first begin wearing the aligners, but this typically goes away relatively quickly once patients have adjusted to the feeling of wearing the appliance.
+
+#### Why should I get Invisalign?
 
 Most people opt for Invisalign to help improve the look of their smile. Within a year or so, your smile could be straighter, which can give you the confidence you’ve always wanted. If you’ve ever hidden your smile or felt self-conscious about it, this can be an excellent treatment to help you obtain the look you’ve wanted.
 
@@ -104,37 +136,22 @@ As an additional reason for getting Invisalign, proper teeth alignment can allev
 
 In terms of both aesthetic value and health benefits, Invisalign can be a fantastic opportunity to improve your smile in the long-term without compromising your appearance in the short-term. Dr. Mazhari and the team at Alexandria Dental Health & Smile Studio look forward to setting up a free consultation to see if Invisalign is a good treatment option for you. Get the smile you’ve always wanted with Invisalign, and visit Alexandria Dental Health & Smile Studio today!
 
+#### Will I need to wear a retainer after invisalign treatment?
+
 Yes, patients are often directed to wear a retainer after they are finished wearing their Invisalign aligners. Fortunately, this post-treatment appliance typically will only have to be worn at nighttime. The reasoning behind utilizing a retainer after Invisalign treatment is to complement the entire process and ensure the results produced from the aligners are kept. Patients who do not wear a retainer after their treatment may experience an orthodontic relapse where the teeth realign back to the original position before Invisalign. The use of a retainer can thwart this from happening and keep the teeth in their new position as intended.
+
+#### Does Invisalign hurt?
 
 Most patients report that their Invisalign aligners do not cause pain. However, there may be discomfort among those with Invisalign as they become accustomed to their aligner in the initial stages of their treatment. Patients are instructed to practice speaking with their aligners to reduce the length of this adjustment period.
 
+#### How do I clean my Invisalign aligners?
+
 Patients who receive Invisalign will be prescribed a specialized solution that the aligners are to sit in when not in use in order to clean and maintain them. Letting the aligners soak in the prescribed solution can help reduce the risk of them becoming yellow or drying out. Patients should also brush and floss their teeth before using their aligners. Rinsing out the aligners and scrubbing them with a soft bristle toothbrush is also recommended.
+
+#### Can I eat with Invisalign?
 
 Patients should remove their Invisalign aligners when they eat. Unlike traditional braces, there are no restrictions on one’s diet or limitations on what they can eat. Patients should, however, remove their aligners before eating and then properly clean their teeth before putting their aligners back on to avoid wedging food particles between their teeth and their dental appliance.
 
+#### Can you get Invisalign with crowns?
+
 Yes, patients who have previously received dental crowns should still be able to utilize the Invisalign treatment. The physical Invisalign aligners are custom-made to fit each patient’s mouth. If a patient has crowns, the aligners can be designed to cover them, as well, without any issues.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

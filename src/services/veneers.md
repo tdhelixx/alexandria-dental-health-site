@@ -1,28 +1,59 @@
 ---
-ctaLink: /contact-us/
-ctaText: Schedule Veneers Consultation
+layout: layouts/service.njk
+title: Veneers
+subtitle: Transform Your Smile with Custom Ceramic Veneers
 description: Interested in Porcelain Veneers in Alexandria VA? Call the experienced
   team at Alexandria Dental Health & Smile Studio today.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
+keywords: veneers Alexandria VA, veneers, cosmetic dentistry, smile makeover, porcelain
+  veneers
+heroImage: /images/cosmetic/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
 heroImageAlt: Veneers Treatment at Alexandria Dental Health & Smile Studio
-investment:
-  financing: Payment plans available
-  primary: $1,600
-  secondary: $1,900 per tooth
-keywords: veneers Alexandria VA, veneers, cosmetic dentistry, smile makeover
-layout: layouts/service.njk
 permalink: /veneers/
-process_steps:
-- description: The first step in the porcelain veneers process involves a consultation
-    with Dr. Mazhari to go over your aesthetic goals. From there, your oral health
-    will be evaluated and a treatment plan will be fo...
-  title: What Is the Porcelain Veneers Process Like?
-related_services: []
-subtitle: Transform Your Smile with Custom Ceramic Veneers
+ctaText: Schedule Veneers Consultation
+ctaLink: /contact-us/
 tags:
 - services
 - cosmetic
-title: Veneers
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/cosmetic/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 2
+page_type: service
+benefits:
+- Gaps or spaces between teeth
+- Chipped or broken teeth
+- Crooked or misshapen teeth
+- Asymmetrical or irregularly-sized teeth
+- Stained or discolored teeth
+- Worn or damaged teeth
+process_steps:
+- title: What Is the Porcelain Veneers Process Like?
+  description: The first step in the porcelain veneers process involves a consultation
+    with Dr. Mazhari to go over your aesthetic goals. From there, your oral health
+    will be evaluated and a treatment plan will be fo...
+investment:
+  primary: $1,600
+  secondary: $1,900 per tooth
+  financing: Payment plans available
+  note: Prices may vary based on individual treatment needs
+related_services:
+- title: Invisalign Clear Braces
+  url: /invisalign/
+- title: Professional Teeth Whitening
+  url: /teeth-whitening/
 ---
 
 # Porcelain Veneers in Alexandria VA
@@ -72,41 +103,24 @@ Dr. Mazhari believes that quality cosmetic dentistry should be available to all 
 
 ### Additional Porcelain Veneers Frequently Asked Questions:
 
+#### Are there alternatives to porcelain veneers?
+
 Depending on the specific concerns you are looking to address and your ultimate goals, there may be alternatives to porcelain veneers that can meet your expectations. Cosmetic dental bonding can treat many of the same concerns as porcelain veneers, including chips and gaps between the teeth. While the results of cosmetic bonding typically do not last as long when compared to veneers, the treatment can still produce excellent outcomes for ideal candidates. Teeth whitening can also serve as an alternative to porcelain veneers if brightening your smile is your primary goal; however, this treatment may not be recommended for patients who have teeth that suffer from particularly deep and dark stains. Porcelain veneers are usually better treatments in those cases.
 
 Our dentist can talk with you about all of your options once your teeth have been examined and determine whether porcelain veneers or an alternative treatment is best for your needs.
 
+#### Can you whiten porcelain veneers?
+
 Since porcelain veneers are designed to be stain-resistant, a teeth whitening treatment will have no effect on them. Veneers are color-corrected before being placed so they can provide a natural blend with the teeth that surround them. With this in mind, it is often recommended that patients have a teeth whitening treatment just before their porcelain veneers are created—this makes it possible to color-tint the veneers in a whiter, more refreshed-looking shade to match the surrounding teeth.
 
+#### Do porcelain veneers hurt?
+
 The porcelain veneer procedure should not cause discomfort since the treatment area will be numbed with a local anesthetic. Once in place, the treated teeth and the area around the veneers may feel a bit tender after the anesthetic wears off, but this effect should fade quickly and the veneers themselves should not cause any lingering discomfort. In fact, soon after treatment they should feel essentially no different than your natural teeth.
+
+#### Do porcelain veneers look natural?
 
 Porcelain veneers are precisely and meticulously designed to appear as natural as possible. The porcelain material is durable, natural-looking, and should function similarly to your regular teeth. The tone of the veneer can be adjusted to best-suit your overall smile aesthetic, as well. During your initial consultation, our team will be able to show you before-and-after photos of previous patients who have received veneers so you can see the results for yourself.
 
 ### Contact Us
 
 If you are interested in transforming your smile using porcelain veneers, please contact Alexandria Dental Health & Smile Studio today. We are happy to answer any questions you may have or we can assist you with scheduling a consultation.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

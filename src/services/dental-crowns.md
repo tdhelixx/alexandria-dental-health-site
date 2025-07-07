@@ -1,25 +1,79 @@
 ---
-ctaLink: /contact-us/
-ctaText: Schedule Crown Consultation
+layout: layouts/service.njk
+title: Dental Crowns
+subtitle: Same-Day CEREC Crowns for Immediate Restoration
 description: Restore your smile with durable, natural-looking dental crowns in Alexandria
   VA. Contact Alexandria Dental Health & Smile Studio today!
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
+keywords: dental crowns Alexandria VA, dental crowns, CEREC crowns, same-day crowns,
+  tooth restoration
+heroImage: /images/restorative/Dentist-Senior-Couple-Outside-Smiling-CS1.webp
 heroImageAlt: Dental Crowns Treatment at Alexandria Dental Health & Smile Studio
-keywords: dental crowns Alexandria VA, dental crowns, CEREC crowns, same-day crowns
-layout: layouts/service.njk
 permalink: /dental-crowns/
-process_steps:
-- description: If you are receiving a ceramic crown, your procedure will begin with
-    easy and convenient digital impressions using our CEREC technology—no messy impression
-    trays and gooey putties necessary! Dr. Mazha...
-  title: What Can I Expect From the Dental Crowns Treatment Process in Alexandria
-    VA?
-related_services: []
-subtitle: Professional Dental Crowns in Alexandria VA
+ctaText: Schedule Crown Consultation
+ctaLink: /contact-us/
 tags:
 - services
 - restorative
-title: Dental Crowns
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/restorative/Dentist-Senior-Couple-Outside-Smiling-CS1.webp
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 4
+page_type: service
+benefits:
+- Patient Information
+- 'FAQs & Information
+
+
+  Dental Crowns FAQ’s
+
+  Dental Implant Benefits
+
+  Dentures Cleaning & Care
+
+  How to Brush Your Teeth
+
+  How to Brush Your Teeth with Braces
+
+  How to Floss Your Teeth
+
+  Importance of Baby Teeth
+
+  Root Canal Symptoms
+
+  Root Canal Recovery
+
+  Symptoms of Gum Disease
+
+  What is Cosmetic Dentistry?
+
+  What To Do in a Dental Emergency'
+- Dental Crowns FAQ’s
+- Dental Implant Benefits
+- Dentures Cleaning & Care
+process_steps:
+- title: What Can I Expect From the Dental Crowns Treatment Process in Alexandria
+    VA?
+  description: If you are receiving a ceramic crown, your procedure will begin with
+    easy and convenient digital impressions using our CEREC technology—no messy impression
+    trays and gooey putties necessary! Dr. Mazha...
+related_services:
+- title: Dental Implants
+  url: /dental-implants/
+- title: Dental Bridges
+  url: /dental-bridges/
 ---
 
 # Dental Crowns in Alexandria VA
@@ -58,28 +112,3 @@ If you are receiving a ceramic crown, your procedure will begin with easy and co
 If you are receiving a dental crown made of a material other than ceramic, your dental crown process will begin with dental impressions to be used in the fabrication of a custom fit and, if necessary, a color-matched restoration. First, Dr. Mazhari will prepare the affected tooth by removing a minimal amount of structure to allow the crown to be securely attached and to fit comfortably. A temporary crown may be placed to allow normal function until your final restoration is ready. Once complete, your new dental crown will be permanently secured to your tooth, adjusted for fit, and then polished to blend with your natural teeth. The final result will support your overall dental health and last for many years with proper dental care and hygiene.
 
 If you have any remaining questions about our dental crown process, or if you would like to schedule an appointment with Dr. Mazhari, please contact us at Alexandria Dental Health & Smile Studio today.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

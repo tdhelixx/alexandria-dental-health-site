@@ -1,26 +1,81 @@
 ---
-ctaLink: /contact-us/
-ctaText: Schedule Denture Consultation
+layout: layouts/service.njk
+title: Implant Supported Dentures
+subtitle: All-on-Four® Fixed Denture Solutions
 description: If you’ve been told that you can’t get dental implants because you don’t
   have enough jaw bone to support them, Dr. Mojgan Mazhari can help.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
-heroImageAlt: Implant Supported Dentures Alexandria VA Treatment at Alexandria Dental
-  Health & Smile Studio
-keywords: implant supported dentures alexandria va Alexandria VA, implant supported
-  dentures alexandria va, partial dentures, implant-supported dentures
-layout: layouts/service.njk
+keywords: implant supported dentures Alexandria VA, implant supported dentures, partial
+  dentures, implant-supported dentures, tooth replacement
+heroImage: /images/restorative/man-older-dentures-smiling-at-dentist.jpg
+heroImageAlt: Implant Supported Dentures Treatment at Alexandria Dental Health & Smile
+  Studio
 permalink: /implant-supported-dentures/
-process_steps:
-- description: Like any dental implant procedure, the first step is an exam by Dr.
-    Mazhari and a consultation. If the decision is made to go ahead with All-on-Four®
-    implants, after the insertion of the implants, you...
-  title: The All-on-Four® Process
-related_services: []
-subtitle: Restore Your Smile with Custom Full & Partial Dentures
+ctaText: Schedule Denture Consultation
+ctaLink: /contact-us/
 tags:
 - services
 - restorative
-title: Implant Supported Dentures Alexandria VA
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/restorative/man-older-dentures-smiling-at-dentist.jpg
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 7
+page_type: service
+benefits:
+- Patient Information
+- 'FAQs & Information
+
+
+  Dental Crowns FAQ’s
+
+  Dental Implant Benefits
+
+  Dentures Cleaning & Care
+
+  How to Brush Your Teeth
+
+  How to Brush Your Teeth with Braces
+
+  How to Floss Your Teeth
+
+  Importance of Baby Teeth
+
+  Root Canal Symptoms
+
+  Root Canal Recovery
+
+  Symptoms of Gum Disease
+
+  What is Cosmetic Dentistry?
+
+  What To Do in a Dental Emergency'
+- Dental Crowns FAQ’s
+- Dental Implant Benefits
+- Dentures Cleaning & Care
+process_steps:
+- title: The All-on-Four® Process
+  description: Like any dental implant procedure, the first step is an exam by Dr.
+    Mazhari and a consultation. If the decision is made to go ahead with All-on-Four®
+    implants, after the insertion of the implants, you...
+related_services:
+- title: Dental Implants
+  url: /dental-implants/
+- title: Dental Crowns
+  url: /dental-crowns/
+- title: Dental Bridges
+  url: /dental-bridges/
 ---
 
 # Implant Supported Dentures in Alexandria VA
@@ -48,28 +103,3 @@ All-on-Four® implants are permanently fixed. You do not remove them for cleanin
 ### Contact Dr. Mazhari for Your Dental Implant Evaluation
 
 If you are interested in dental implants or have already been told that you are not a candidate for traditional implants due to jaw bone loss, contact Alexandria Dental Health & Smile Studio now. We can set up a consultation appointment for you with Dr. Mazhari at your convenience to find out if implant-supported All-on-Four® might be the solution you’ve been looking for.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

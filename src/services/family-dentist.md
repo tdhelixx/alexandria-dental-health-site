@@ -1,20 +1,75 @@
 ---
-ctaLink: /contact-us/
-ctaText: Schedule Family Appointment
+layout: layouts/service.njk
+title: Family Dentistry
+subtitle: Comprehensive Dental Care for the Whole Family
 description: Our child-friendly environment at Alexandria Dental Health & Smile Studio
   in Alexandria VA is great family dentistry. Contact us today.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
-heroImageAlt: Family Dentistry Treatment at Alexandria Dental Health & Smile Studio
 keywords: family dentistry Alexandria VA, family dentistry, pediatric dentist, children's
-  dental care
-layout: layouts/service.njk
+  dental care, family dental
+heroImage: /images/family/Family-Mom-Dad-Kids-Smiling-CS1.webp
+heroImageAlt: Family Dentistry Treatment at Alexandria Dental Health & Smile Studio
 permalink: /family-dentist/
-related_services: []
-subtitle: Professional Family Dentistry in Alexandria VA
+ctaText: Schedule Family Appointment
+ctaLink: /contact-us/
 tags:
 - services
 - family
-title: Family Dentistry
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/family/Family-Mom-Dad-Kids-Smiling-CS1.webp
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 9
+page_type: service
+benefits:
+- Patient Information
+- 'FAQs & Information
+
+
+  Dental Crowns FAQ’s
+
+  Dental Implant Benefits
+
+  Dentures Cleaning & Care
+
+  How to Brush Your Teeth
+
+  How to Brush Your Teeth with Braces
+
+  How to Floss Your Teeth
+
+  Importance of Baby Teeth
+
+  Root Canal Symptoms
+
+  Root Canal Recovery
+
+  Symptoms of Gum Disease
+
+  What is Cosmetic Dentistry?
+
+  What To Do in a Dental Emergency'
+- Dental Crowns FAQ’s
+- Dental Implant Benefits
+- Dentures Cleaning & Care
+related_services:
+- title: Dental Cleanings
+  url: /dental-cleanings/
+- title: Dental Exams
+  url: /dental-exams/
+- title: Cavity Treatment
+  url: /dental-cavities-solutions/
 ---
 
 # Family Dentistry in Alexandria VA
@@ -26,28 +81,3 @@ For many people, their first trip to the dentist can be intimidating. This can b
 A child's first visit to the dentist should be enjoyable. We want you and your child to feel at ease from the moment your family arrives at our office. The more you and your child know about the first visit, the better you will feel.
 
 Our team at Alexandria Dental Health & Smile Studio in Alexandria VA is dedicated to the unique needs of your entire family. Our pledge is to work with your family to establish a solid foundation for a lifetime of optimal dental health. We look forward to getting to know you and your family and are here to answer any questions you may have.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

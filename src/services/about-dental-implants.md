@@ -1,4 +1,37 @@
 ---
+layout: layouts/service.njk
+title: Dental Implants
+subtitle: Permanent, Natural-Looking Tooth Replacement
+description: At Alexandria Dental Health & Smile Studio in Alexandria, VA, we understand
+  the transformative power of a beautiful, functional smile.
+keywords: dental implants Alexandria VA, dental implants, tooth replacement, implant
+  dentist, permanent teeth
+heroImage: /images/services/dental-implants-hero.webp
+heroImageAlt: Dental Implants Treatment at Alexandria Dental Health & Smile Studio
+permalink: /about-dental-implants/
+ctaText: Schedule Implant Consultation
+ctaLink: /contact-us/
+tags:
+- services
+- restorative
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/services/dental-implants-hero.webp
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 6
+page_type: service
 benefits:
 - 'Natural Appearance: Dental implants look and feel like natural teeth, blending
   seamlessly with your smile.'
@@ -8,31 +41,22 @@ benefits:
   power, allowing you to eat your favorite foods without restriction.'
 - 'Bone Preservation: Implants help maintain bone density and prevent further bone
   loss, a common issue with missing teeth.'
-ctaLink: /contact-us/
-ctaText: Schedule Implant Consultation
-description: At Alexandria Dental Health & Smile Studio in Alexandria, VA, we understand
-  the transformative power of a beautiful, functional smile.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
-heroImageAlt: Dental Implants Treatment at Alexandria Dental Health & Smile Studio
-keywords: dental implants Alexandria VA, dental implants, tooth replacement, implant
-  dentist
-layout: layouts/service.njk
-permalink: /about-dental-implants/
 process_steps:
-- description: 'Crown or Prosthesis Placement: Once the implant has integrated with
+- title: Implant Process
+  description: 'Crown or Prosthesis Placement: Once the implant has integrated with
     the bone, a custom-made crown, bridge, or denture is placed on top, restoring
     your smile.'
-  title: Implant Process
-- description: If you’re ready to restore your smile with dental implants, consult
+- title: Schedule Your Consultation Today
+  description: If you’re ready to restore your smile with dental implants, consult
     Dr. Mazhari today. Our team is here to guide you through every step of the process.
     Call us at (703) 212-9622 or use our online book...
-  title: Schedule Your Consultation Today
-related_services: []
-subtitle: Professional Dental Implants in Alexandria VA
-tags:
-- services
-- restorative
-title: Dental Implants
+related_services:
+- title: Dental Implants
+  url: /dental-implants/
+- title: Dental Crowns
+  url: /dental-crowns/
+- title: Dental Bridges
+  url: /dental-bridges/
 ---
 
 # Dental Implants at Alexandria Dental Health & Smile Studio
@@ -78,11 +102,15 @@ This initial visit will help you feel informed and confident about the dental im
 
 Dental implants are an advanced treatment option for replacing missing teeth. Here’s a breakdown of the process and benefits of implants:
 
+#### What Are Dental Implants?
+
 Dental implants are titanium posts that are surgically placed into the jawbone to replace the root of a missing tooth. These implants provide a stable foundation for a crown, bridge, or denture and offer several advantages over traditional tooth replacement options.
 
 - Biocompatibility: Titanium is highly biocompatible, meaning it integrates well with bone tissue, offering stability and long-term success.
 - Durability: With proper care, dental implants can last many years, often a lifetime.
 - Functionality: Implants restore the ability to chew, speak, and smile naturally.
+
+#### Implant Process
 
 - Consultation and Evaluation: Dr. Mazhari will evaluate your oral health and ensure you are a good candidate for dental implants.
 - Implant Placement: The titanium post is placed into the jawbone during a minor surgical procedure.
@@ -121,28 +149,3 @@ We pride ourselves on offering an exceptional dental experience at our Smile Stu
 ### Schedule Your Consultation Today
 
 If you’re ready to restore your smile with dental implants, consult Dr. Mazhari today. Our team is here to guide you through every step of the process. Call us at (703) 212-9622 or use our online booking system.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

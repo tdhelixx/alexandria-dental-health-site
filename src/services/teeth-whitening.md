@@ -1,20 +1,73 @@
 ---
-ctaLink: /contact-us/
-ctaText: Schedule Whitening Consultation
+layout: layouts/service.njk
+title: Teeth Whitening
+subtitle: Professional Whitening for a Brighter, Confident Smile
 description: Looking for help with Teeth Whitening in Alexandria VA? Contact Alexandria
   Dental Health & Smile Studio today to find out your options.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
-heroImageAlt: Teeth Whitening Treatment at Alexandria Dental Health & Smile Studio
 keywords: teeth whitening Alexandria VA, teeth whitening, professional whitening,
-  Opalescence
-layout: layouts/service.njk
+  Opalescence, smile brightening
+heroImage: /images/services/couple-younger-smiling.webp
+heroImageAlt: Teeth Whitening Treatment at Alexandria Dental Health & Smile Studio
 permalink: /teeth-whitening/
-related_services: []
-subtitle: Professional Teeth Whitening in Alexandria VA
+ctaText: Schedule Whitening Consultation
+ctaLink: /contact-us/
 tags:
 - services
 - cosmetic
-title: Teeth Whitening
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/services/couple-younger-smiling.webp
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 3
+page_type: service
+benefits:
+- Patient Information
+- 'FAQs & Information
+
+
+  Dental Crowns FAQ’s
+
+  Dental Implant Benefits
+
+  Dentures Cleaning & Care
+
+  How to Brush Your Teeth
+
+  How to Brush Your Teeth with Braces
+
+  How to Floss Your Teeth
+
+  Importance of Baby Teeth
+
+  Root Canal Symptoms
+
+  Root Canal Recovery
+
+  Symptoms of Gum Disease
+
+  What is Cosmetic Dentistry?
+
+  What To Do in a Dental Emergency'
+- Dental Crowns FAQ’s
+- Dental Implant Benefits
+- Dentures Cleaning & Care
+related_services:
+- title: Porcelain Veneers
+  url: /veneers/
+- title: Invisalign Clear Braces
+  url: /invisalign/
 ---
 
 # Teeth Whitening in Alexandria VA
@@ -55,28 +108,3 @@ You will make a brief visit to our Northern Virginia dentist office for impressi
 The custom trays will ensure that the professional quality bleaching agent is distributed evenly on teeth surfaces while also reducing irritation and sensitivity.
 
 Your results will be revealed gradually over a couple of weeks, but will last for a year or more with good oral hygiene and routine dental care. Periodic touch-ups can help to prolong the appearance of your fresh, white smile.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

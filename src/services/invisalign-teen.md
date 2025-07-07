@@ -1,20 +1,75 @@
 ---
-ctaLink: /contact-us/
-ctaText: Schedule Invisalign Consultation
+layout: layouts/service.njk
+title: Invisalign Teen®
+subtitle: Clear Aligners for a Discreet, Confident Smile
 description: Is it time to consider orthodontic treatment for your teen? If your teen
   isn’t excited about having traditional braces, consider Invisalign.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
-heroImageAlt: Invisalign Teen® Treatment at Alexandria Dental Health & Smile Studio
 keywords: invisalign teen® Alexandria VA, invisalign teen®, clear braces, invisible
-  aligners
-layout: layouts/service.njk
+  aligners, orthodontics
+heroImage: /images/services/woman-hands-by-face-smiling.webp
+heroImageAlt: Invisalign Teen® Treatment at Alexandria Dental Health & Smile Studio
 permalink: /invisalign-teen/
-related_services: []
-subtitle: Clear Aligners for a Discreet, Confident Smile
+ctaText: Schedule Invisalign Consultation
+ctaLink: /contact-us/
 tags:
 - services
 - cosmetic
-title: Invisalign Teen®
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/services/woman-hands-by-face-smiling.webp
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 1
+page_type: service
+benefits:
+- Patient Information
+- 'FAQs & Information
+
+
+  Dental Crowns FAQ’s
+
+  Dental Implant Benefits
+
+  Dentures Cleaning & Care
+
+  How to Brush Your Teeth
+
+  How to Brush Your Teeth with Braces
+
+  How to Floss Your Teeth
+
+  Importance of Baby Teeth
+
+  Root Canal Symptoms
+
+  Root Canal Recovery
+
+  Symptoms of Gum Disease
+
+  What is Cosmetic Dentistry?
+
+  What To Do in a Dental Emergency'
+- Dental Crowns FAQ’s
+- Dental Implant Benefits
+- Dentures Cleaning & Care
+related_services:
+- title: Porcelain Veneers
+  url: /veneers/
+- title: Invisalign Clear Braces
+  url: /invisalign/
+- title: Professional Teeth Whitening
+  url: /teeth-whitening/
 ---
 
 # Invisalign Teen® in Alexandria VA
@@ -78,28 +133,3 @@ The digital impressions are used to design a series of clear aligners that will 
 Let’s talk about your teen’s oral health, cosmetic goals, and your budget to determine if Invisalign is the right fit for your teen. With free teeth whitening and interest-free payments, there’s no reason to put off investing in your child’s smile.
 
 Schedule a free consultation with Dr. Mazhari today to determine if Invisalign could change your teen’s smile for the better!
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

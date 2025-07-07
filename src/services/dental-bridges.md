@@ -1,19 +1,72 @@
 ---
-ctaLink: /contact-us/
-ctaText: Schedule Consultation
+layout: layouts/service.njk
+title: Dental Bridge
+subtitle: Professional Dental Bridge in Alexandria VA
 description: Discover dental bridges in Alexandria VA to restore your smile and improve
   oral health. Contact Alexandria Dental Health & Smile Studio.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
-heroImageAlt: Dental Bridge Treatment at Alexandria Dental Health & Smile Studio
 keywords: dental bridge Alexandria VA, dental bridge
-layout: layouts/service.njk
+heroImage: /images/cosmetic/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
+heroImageAlt: Dental Bridge Treatment at Alexandria Dental Health & Smile Studio
 permalink: /dental-bridges/
-related_services: []
-subtitle: Professional Dental Bridge in Alexandria VA
+ctaText: Schedule Consultation
+ctaLink: /contact-us/
 tags:
 - services
 - general
-title: Dental Bridge
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/cosmetic/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 5
+page_type: service
+benefits:
+- Patient Information
+- 'FAQs & Information
+
+
+  Dental Crowns FAQ’s
+
+  Dental Implant Benefits
+
+  Dentures Cleaning & Care
+
+  How to Brush Your Teeth
+
+  How to Brush Your Teeth with Braces
+
+  How to Floss Your Teeth
+
+  Importance of Baby Teeth
+
+  Root Canal Symptoms
+
+  Root Canal Recovery
+
+  Symptoms of Gum Disease
+
+  What is Cosmetic Dentistry?
+
+  What To Do in a Dental Emergency'
+- Dental Crowns FAQ’s
+- Dental Implant Benefits
+- Dentures Cleaning & Care
+related_services:
+- title: Dental Implants
+  url: /dental-implants/
+- title: Dental Crowns
+  url: /dental-crowns/
 ---
 
 # Dental Bridges in Alexandria VA
@@ -37,28 +90,3 @@ There is a variety of different dental bridge techniques designed to address dif
 Dental bridges are made in a variety of materials including porcelain, gold, and other alloys. They can be colored to match the color of your own teeth as closely as possible. Once affixed, they generally don’t require any more extra care of your mouth than normal brushing or flossing which is a part of good dental hygiene.
 
 If you have a problem with a missing tooth, it’s certainly not something that you have to live with forever. A dental bridge is an effective, permanent option that can take care of the problem once and for all. Talk to our top-rated dental team at Alexandria Dental Health & Smile Studio today for more information.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

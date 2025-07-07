@@ -1,25 +1,80 @@
 ---
-ctaLink: /contact-us/
-ctaText: Schedule Emergency Appointment
+layout: layouts/service.njk
+title: Root Canal Recovery
+subtitle: Pain-Free Root Canal Treatment to Save Your Natural Teeth
 description: Learn about the recovery process from a root canal. The team at Alexandria
   VA Alexandria Dental Health & Smile Studio is here to help.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
-heroImageAlt: Root Canal Recovery Treatment at Alexandria Dental Health & Smile Studio
 keywords: root canal recovery Alexandria VA, root canal recovery, endodontic treatment,
-  tooth pain relief
-layout: layouts/service.njk
+  tooth pain relief, root canal therapy
+heroImage: /images/restorative/Dentist-Alexandria-VA-Root-Canal-Therapy.webp
+heroImageAlt: Root Canal Recovery Treatment at Alexandria Dental Health & Smile Studio
 permalink: /root-canal-recovery/
-process_steps:
-- description: The actual root canal therapy procedure itself uses an anesthetic for
-    the patient, so there is no pain during the process. Where RCT usually gets its
-    reputation is in the discomfort that occurs after.
-  title: Root Canal Procedure
-related_services: []
-subtitle: Professional Root Canal Recovery in Alexandria VA
+ctaText: Schedule Emergency Appointment
+ctaLink: /contact-us/
 tags:
 - services
 - restorative
-title: Root Canal Recovery
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/restorative/Dentist-Alexandria-VA-Root-Canal-Therapy.webp
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 99
+page_type: service
+benefits:
+- Patient Information
+- 'FAQs & Information
+
+
+  Dental Crowns FAQ’s
+
+  Dental Implant Benefits
+
+  Dentures Cleaning & Care
+
+  How to Brush Your Teeth
+
+  How to Brush Your Teeth with Braces
+
+  How to Floss Your Teeth
+
+  Importance of Baby Teeth
+
+  Root Canal Symptoms
+
+  Root Canal Recovery
+
+  Symptoms of Gum Disease
+
+  What is Cosmetic Dentistry?
+
+  What To Do in a Dental Emergency'
+- Dental Crowns FAQ’s
+- Dental Implant Benefits
+- Dentures Cleaning & Care
+process_steps:
+- title: Root Canal Procedure
+  description: The actual root canal therapy procedure itself uses an anesthetic for
+    the patient, so there is no pain during the process. Where RCT usually gets its
+    reputation is in the discomfort that occurs after.
+related_services:
+- title: Dental Implants
+  url: /dental-implants/
+- title: Dental Crowns
+  url: /dental-crowns/
+- title: Dental Bridges
+  url: /dental-bridges/
 ---
 
 # Root Canal Recovery in Alexandria VA
@@ -45,28 +100,3 @@ You can expect your tooth to be sensitive for a few days after the RCT is comple
 In most cases, you may be prescribed a painkiller to help with the discomfort for the first few days. Follow the directions on the prescription carefully, and if the discomfort persists, see your dentist, or visit a doctor if the pain is severe.
 
 Getting root canal therapy in Alexandria VA is quite an intensive process, but ultimately, the discomfort will be worth it. In the days following the procedure, you will regain full comfort and control of your mouth. However, it will only stay healthy if you take the steps to maintain a good oral hygiene regimen. Contact our team at Alexandria Dental Health & Smile Studio today for more information.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

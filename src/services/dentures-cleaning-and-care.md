@@ -1,21 +1,76 @@
 ---
-ctaLink: /contact-us/
-ctaText: Schedule Denture Consultation
+layout: layouts/service.njk
+title: Dentures Care and Cleaning
+subtitle: Restore Your Smile with Custom Full & Partial Dentures
 description: Denture care is vital for oral health in Alexandria VA! Learn proper
   maintenance tips from Alexandria Dental Health & Smile Studio.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
+keywords: dentures care and cleaning Alexandria VA, dentures care and cleaning, partial
+  dentures, implant-supported dentures, tooth replacement
+heroImage: /images/restorative/man-older-dentures-smiling-at-dentist.jpg
 heroImageAlt: Dentures Care and Cleaning Treatment at Alexandria Dental Health & Smile
   Studio
-keywords: dentures care and cleaning Alexandria VA, dentures care and cleaning, partial
-  dentures, implant-supported dentures
-layout: layouts/service.njk
 permalink: /dentures-cleaning-and-care/
-related_services: []
-subtitle: Restore Your Smile with Custom Full & Partial Dentures
+ctaText: Schedule Denture Consultation
+ctaLink: /contact-us/
 tags:
 - services
 - restorative
-title: Dentures Care and Cleaning
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/restorative/man-older-dentures-smiling-at-dentist.jpg
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 7
+page_type: service
+benefits:
+- Patient Information
+- 'FAQs & Information
+
+
+  Dental Crowns FAQ’s
+
+  Dental Implant Benefits
+
+  Dentures Cleaning & Care
+
+  How to Brush Your Teeth
+
+  How to Brush Your Teeth with Braces
+
+  How to Floss Your Teeth
+
+  Importance of Baby Teeth
+
+  Root Canal Symptoms
+
+  Root Canal Recovery
+
+  Symptoms of Gum Disease
+
+  What is Cosmetic Dentistry?
+
+  What To Do in a Dental Emergency'
+- Dental Crowns FAQ’s
+- Dental Implant Benefits
+- Dentures Cleaning & Care
+related_services:
+- title: Dental Implants
+  url: /dental-implants/
+- title: Dental Crowns
+  url: /dental-crowns/
+- title: Dental Bridges
+  url: /dental-bridges/
 ---
 
 # Proper Dentures Cleaning & Care in Alexandria VA
@@ -45,28 +100,3 @@ It’s not a good idea to wear your dentures all the time. Your gums need rest. 
 ### See Your Dentist
 
 Just because you aren’t looking after a full set of teeth, doesn’t mean you can’t benefit from a visit to the dentist. Changes in your gums can be detected, and adjustments to your dentures can be made by a professional. Regular visits for checkups ensure both your gums and your dentures are in prime condition. Contact the team at Alexandria Dental Health & Smile Studio today.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed

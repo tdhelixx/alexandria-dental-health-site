@@ -1,4 +1,37 @@
 ---
+layout: layouts/service.njk
+title: Dental Implants
+subtitle: Permanent, Natural-Looking Tooth Replacement
+description: Restore your smile with dental implants in Alexandria VA. Our expert
+  team at Alexandria Dental Health & Smile Studio offers solutions.
+keywords: dental implants Alexandria VA, dental implants, tooth replacement, implant
+  dentist, permanent teeth
+heroImage: /images/services/dental-implants-hero.webp
+heroImageAlt: Dental Implants Treatment at Alexandria Dental Health & Smile Studio
+permalink: /dental-implants/
+ctaText: Schedule Implant Consultation
+ctaLink: /contact-us/
+tags:
+- services
+- restorative
+editable_regions:
+- hero
+- content
+- sidebar
+social_image: /images/services/dental-implants-hero.webp
+og_description: Expert dental services at Alexandria Dental Health & Smile Studio.
+  Dr. Mazhari provides comprehensive care in Alexandria VA.
+show_hero: true
+show_sidebar: true
+show_cta: true
+content_sections:
+- benefits
+- process
+- investment
+- faq
+in_nav: true
+nav_order: 6
+page_type: service
 benefits:
 - Reduced bone loss and shrinkage in the jaw
 - Lessened damage to adjacent natural teeth
@@ -6,36 +39,25 @@ benefits:
 - Continued ability to eat a varied, healthy diet and chew comfortably
 - Retained ability to speak normally
 - Unchanged daily maintenance and/or adhesives beyond basic hygiene
-ctaLink: /contact-us/
-ctaText: Schedule Implant Consultation
-description: Restore your smile with dental implants in Alexandria VA. Our expert
-  team at Alexandria Dental Health & Smile Studio offers solutions.
-heroImage: /images/2025/01/Dentist-Alexandria-VA-Alexandria-Dental-Health-Smile-Studio-Header-Logo.webp
-heroImageAlt: Dental Implants Alexandria VA Treatment at Alexandria Dental Health
-  & Smile Studio
-investment:
-  financing: Payment plans available
-  primary: $1,600
-  secondary: $2,600
-keywords: dental implants alexandria va Alexandria VA, dental implants alexandria
-  va, tooth replacement, implant dentist
-layout: layouts/service.njk
-permalink: /dental-implants/
 process_steps:
-- description: Using a titanium post that is carefully and strategically inserted
+- title: Precision Planning and Advanced Technology Procedure
+  description: Using a titanium post that is carefully and strategically inserted
     into the jawbone, a dental implant can replicate the function of a tooth root,
     and prevent misalignment (bite collapse), potential ja...
-  title: Precision Planning and Advanced Technology Procedure
-- description: We utilize CT scans, 3D treatment planning, and a surgical guide to
+- title: The Dental Implant Process
+  description: We utilize CT scans, 3D treatment planning, and a surgical guide to
     know the direction, size, and angulation of the implant. This helps us know the
     best way to treat your needs way in advance of the s...
-  title: The Dental Implant Process
-related_services: []
-subtitle: Professional Dental Implants Alexandria VA in Alexandria VA
-tags:
-- services
-- restorative
-title: Dental Implants Alexandria VA
+investment:
+  primary: $1,600
+  secondary: $2,600
+  financing: Payment plans available
+  note: Prices may vary based on individual treatment needs
+related_services:
+- title: Dental Crowns
+  url: /dental-crowns/
+- title: Dental Bridges
+  url: /dental-bridges/
 ---
 
 # What Are Dental Implants in Alexandria VA
@@ -94,6 +116,8 @@ Although dental implants typically require a greater commitment of both time and
 
 ### What Are the Different Types of Dental Implants?
 
+#### Single-Tooth Implants
+
 Single-tooth dental implants, or single implant-supported crowns, are designed to replace individual missing or damaged teeth. This form of restoration is the closest thing to a natural tooth, as it replaces every part of the tooth structure, including the root.
 
 To begin, a titanium post will be inserted into the jawbone, simulating a new “root.” Over a few months, the post and the bone should fuse together, creating a stable, permanent base for the customized dental crown restoration that will be placed on top of the post.
@@ -102,9 +126,13 @@ The titanium “root” of the implant has the added benefit of stimulating the 
 
 Implants are also quite durable, capable of lasting for decades with proper care and maintenance—most patients have reported their final crown feeling better than their own teeth.
 
+#### Implant Bridges
+
 In cases where a patient is missing multiple teeth in a row, an alternative form of implant restoration can be employed in which a few implant posts are used to support a series—or “bridge”—of crowns.
 
 Dr. Mazhari will carefully evaluate your oral health and the structure of your jawbone to best determine how many individual implants will be needed to adequately support the row(s) of custom crowns. Using our advanced imaging technology, she will then strategically place the implants for optimal security, comfort, function, and aesthetics.
+
+#### Implant-Supported Dentures
 
 If you are missing all or nearly all of your teeth on one or both dental arches, it may indeed be possible to restore your full smile with implant-supported dentures. Full-mouth cases usually require four to six titanium implants per arch, which are used to anchor a prosthetic denture.
 
@@ -116,11 +144,15 @@ Some types of implants are designed to work with less jawbone, and these methods
 
 ### FAQs about Dental Implants
 
+#### Am I a Candidate for Dental Implants?
+
 Candidates for dental implants are those who have one or more missing or severely damaged teeth in need of replacement. Dental implants are often considered the ideal tooth replacement option due to their ability to replicate the entirety of the tooth structure, including the root.
 
 However, there are a few circumstances that may impact your candidacy for a dental implant, including smoking, significant bone deterioration, and certain diseases like diabetes, which can adversely impact the immune system.
 
 During a consultation, Dr. Mazhari will examine your oral health, medical history, and lifestyle to determine your candidacy for dental implants. In some cases, she may recommend an additional procedure before the implant treatment, such as a bone graft, to increase the likelihood of success.
+
+#### What Does the Dental Implant Procedure Involve?
 
 While the precise details of the dental implant treatment process will vary for each patient, the timeline for completing the treatment is generally several months, spread over various stages.
 
@@ -150,9 +182,13 @@ About 4–6 months after the implant is placed, the final crown can be connected
 
 The above information assumes that only one dental implant is being placed. If the treatment plan calls for more than one implant to be placed during a single sitting, then each additional implant adds about 30 minutes to the total operating time.
 
+#### How Long Do Dental Implants Last?
+
 The physical titanium post that makes up the dental implant is likely to last for a lifetime, as it fuses with the surrounding bone within the jaw. While the dental appliance on the surface level (such as a dental crown) will likely need to be replaced over time, the actual dental implant should not endure the same wear and tear.
 
 Dental implants are used to secure dental restorations into place and can provide increased stability and functionality. Proper maintenance and oral care can also lend to the overall longevity of dental implants.
+
+#### What Are the Alternatives to Dental Implants?
 
 If dental implants are not right for you or you are not an ideal candidate, there are alternatives that can produce similar results.
 
@@ -160,13 +196,19 @@ Traditionally, dentures were the ideal solution for patients who needed to addre
 
 Dental bridges can also be a great alternative for those who are not suited for dental implants and only need to address one or a few missing teeth. Dental bridges fill the gap left by a missing tooth (or consecutive teeth) by attaching to the two surrounding teeth on either side.
 
+#### How Do I Care for My Dental Implants?
+
 Caring for your dental implants and the attached restorations is key to extending the longevity of your results and improving your oral hygiene. Dental implants are designed to feel and look natural while mimicking the function of regular teeth. Keeping up with brushing, flossing, and routine dental exams is crucial for the upkeep of your dental implants.
+
+#### What Is Recovery From Dental Implant Surgery Like?
 
 Because dental implant surgery will be different for each patient, the recovery will vary from person to person. The length of recovery will be impacted by the amount of implants patients receive, the type of implant, and the overall work needed to meet their needs.
 
 Patients typically experience some form of discomfort that may include swelling and bleeding, but this should subside over time. Furthermore, pain medication can typically aid in addressing any swelling and discomfort.
 
 Generally speaking, the recovery from dental implant surgery can last between 3 and 6 months. However, patients should be able to return to work within 1–2 days of surgery.
+
+#### How Much Do Dental Implants Cost?
 
 The total cost of dental implants can vary significantly depending on numerous factors, including the amount of preparation needed to prepare the implant site(s), the number of implants being placed, the type of restoration chosen, and whether or not bone grafting is necessary.
 
@@ -179,6 +221,8 @@ However, the lifetime value of dental implants can more than make up for this di
 Financing Options AvailableIn addition to the long-term financial benefits of implants, Alexandria Dental Health & Smile Studio also offers financing options to help make them more affordable in the short term. We partner with many trusted national healthcare lenders to make dental implants attainable for nearly any budget.
 
 Our financial partners can help qualified applicants set up a payment plan that suits their needs, ensuring that high-quality dental solutions are available to as many patients as possible.
+
+#### What Happens if My Dental Implants Need Repair?
 
 Dental implants are a wonderful way to restore your smile and improve your overall oral health. Just like any other procedure, however, dental implants require maintenance and regular care.
 
@@ -199,28 +243,3 @@ Dr. Mazhari has been working with dental implants for years, and she can often d
 It’s possible to have a new smile quickly and with high-quality results. We are here to assist you in making a decision that supports your cosmetic goals, your budget, and your oral health.
 
 Dr. Mazhari’s continued education in the field of implants, as well as our office’s cutting-edge technology, allow us to give you implants that are comfortable and efficient. To learn more about implants or to get started on your implant journey, contact us today for a consultation.
-
-Alexandria Dental Health & Smile Studio
-2847 Duke St
-Alexandria VA 22314
-(703) 212-9622
-
-OFFICE HOURS
-
-Monday
-10:00am - 6:00pm
-
-Tuesday
-10:00am - 6:00pm
-
-Wednesday
-10:00am - 6:00pm
-
-Thursday
-9:00am - 4:00pm
-
-Friday
-8:00am - 1:00pm
-
-Saturday & Sunday
-Closed
