@@ -2,32 +2,30 @@
 layout: layouts/base.njk
 ---
 
-<!-- Title (centered, in content container) -->
-<div style="max-width:1220px;margin:0 auto;padding:40px 20px 0 20px;">
+<!-- Title and Banner (inside container) -->
+<div class="container" style="max-width:1220px;margin:0 auto;padding:40px 20px 0 20px;">
   <h1 data-cms-editable="title" style="text-align:center;font-size:2.7rem;font-weight:700;color:#32192f;margin-bottom:0.3em;letter-spacing:-1px;">{{ title }}</h1>
   {% if subtitle %}
     <p data-cms-editable="subtitle" style="text-align:center;color:#888;font-size:1.1rem;margin-bottom:2.5em;">{{ subtitle }}</p>
   {% endif %}
+  {% if heroImage %}
+    <div style="width:100%;margin-bottom:40px;">
+      <img src="{{ heroImage }}" alt="{{ heroImageAlt or title }}" style="display:block;width:100%;height:300px;object-fit:cover;object-position:center;margin:0 auto;">
+    </div>
+  {% endif %}
 </div>
 
-<!-- Banner Image (full width, fixed height, object-fit:cover) -->
-{% if heroImage %}
-<div style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;margin-top:0;margin-bottom:40px;">
-  <img src="{{ heroImage }}" alt="{{ heroImageAlt or title }}" style="display:block;width:100%;max-width:1220px;height:300px;object-fit:cover;object-position:center;margin:0 auto;">
-</div>
-{% endif %}
-
-<!-- Main Content Area (1220px, 75/25 split) -->
-<div style="max-width:1220px;margin:0 auto 40px auto;padding:0 20px;">
-  <div style="display:grid;grid-template-columns:3fr 1fr;gap:48px;align-items:start;">
-    <!-- Left: Main Content -->
-    <div>
+<!-- Main Content Area (container, row, columns) -->
+<div class="container" style="max-width:1220px;margin:0 auto 40px auto;padding:0 20px;">
+  <div class="row" style="display:flex;flex-wrap:wrap;gap:40px;align-items:start;">
+    <!-- Main Content (col-md-8) -->
+    <div class="col-md-8" style="flex:0 0 66.666%;max-width:66.666%;min-width:300px;">
       <div data-cms-edit="content" style="line-height:1.7;font-size:1.08rem;color:#222;">
         {{ content | safe }}
       </div>
     </div>
-    <!-- Right: Sidebar (plain text, no background) -->
-    <aside style="font-size:1.02rem;color:#222;line-height:1.6;">
+    <!-- Sidebar (col-md-4) -->
+    <aside class="col-md-4" style="flex:0 0 33.333%;max-width:33.333%;min-width:250px;padding-left:24px;">
       <div style="margin-bottom:2em;">
         <strong>Alexandria Dental Health & Smile Studio</strong><br>
         2847 Duke St<br>
