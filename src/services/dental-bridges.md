@@ -1,5 +1,5 @@
 ---
-layout: layouts/service.njk
+layout: layouts/unified.njk
 title: Dental Bridges
 subtitle: Replace Missing Teeth with Permanent Fixed Bridges
 description: >-
