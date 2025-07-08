@@ -2,120 +2,84 @@
 layout: layouts/base.njk
 ---
 
-<!-- Service Hero Section - Editable -->
-{% if heroImage or title %}
-<section class="service-hero" data-cms-editable="hero" style="background: linear-gradient(rgba(50, 25, 47, 0.7), rgba(50, 25, 47, 0.7)){% if heroImage %}, url('{{ heroImage }}'){% endif %}; background-size: cover; background-position: center; padding: 60px 0; color: white; text-align: center; margin-bottom: 40px;">
-    <div style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
-        <h1 data-cms-editable="title" style="font-size: 3rem; margin-bottom: 1rem; font-weight: 300;">{{ title }}</h1>
-        {% if subtitle %}
-            <p data-cms-editable="subtitle" style="font-size: 1.3rem; margin-bottom: 2rem; opacity: 0.9;">{{ subtitle }}</p>
-        {% endif %}
-        {% if category %}
-            <span data-cms-editable="category" style="background: #a27295; color: white; padding: 0.5rem 1rem; border-radius: 25px; font-size: 0.9rem; display: inline-block; margin-bottom: 1.5rem;">{{ category }} Dentistry</span>
-        {% endif %}
-        <div style="margin-top: 2rem;">
-            <a href="{{ ctaLink or '/contact-us/' }}" data-cms-editable="ctaText" style="background: #ffae00; color: #0a0a0a; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; margin-right: 15px;">{{ ctaText or 'Schedule Consultation' }}</a>
-            <a href="tel:703-212-9622" style="background: transparent; color: white; border: 2px solid white; padding: 13px 30px; border-radius: 50px; text-decoration: none; font-weight: 600;">Call Now</a>
-        </div>
-    </div>
-</section>
-{% endif %}
+<!-- Header (handled by base.njk) -->
 
-<!-- Main Service Content - Editable -->
-<div class="service-content-wrapper" style="margin-bottom: 40px;">
-    <!-- Main Content Area - Full Visual Editing -->
-    <div data-cms-edit="content" style="background: #f8f9fa; border: 2px dashed #28a745; padding: 2rem; margin-bottom: 2rem; border-radius: 0.5rem; min-height: 300px; position: relative;">
-        {{ content | safe }}
-    </div>
-    
-    <!-- Treatment Benefits - Editable Array -->
-    {% if benefits %}
-    <section data-cms-editable="benefits" style="background: #f8f9fa; padding: 40px; border-radius: 12px; margin: 40px 0; border: 2px dashed #007bff;">
-        <h2 style="color: #32192f; text-align: center; margin-bottom: 30px; font-size: 2.2rem;">Treatment Benefits</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-            {% for benefit in benefits %}
-                <div style="background: white; padding: 25px; border-radius: 8px; border-left: 4px solid #a27295; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                        <span style="background: #a27295; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 12px; font-weight: bold;">✓</span>
-                        <p style="margin: 0; color: #424242; line-height: 1.6;">{{ benefit }}</p>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </section>
-    {% endif %}
-    
-    <!-- Process Steps - Editable Array -->
-    {% if process_steps %}
-    <section data-cms-editable="process_steps" style="margin: 40px 0; border: 2px dashed #6f42c1; padding: 20px; border-radius: 8px;">
-        <h2 style="color: #32192f; text-align: center; margin-bottom: 30px; font-size: 2.2rem;">Treatment Process</h2>
-        <div style="display: grid; gap: 30px;">
-            {% for step in process_steps %}
-                <div style="display: flex; align-items: flex-start; gap: 20px; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                    <div style="background: linear-gradient(135deg, #a27295 0%, #32192f 100%); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px; flex-shrink: 0;">{{ loop.index }}</div>
-                    <div>
-                        <h3 style="color: #32192f; margin-bottom: 10px; font-size: 1.3rem;">{{ step.title }}</h3>
-                        <p style="color: #666; line-height: 1.6; margin: 0;">{{ step.description }}</p>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </section>
-    {% endif %}
-    
-    <!-- Investment Information - Editable -->
-    {% if investment %}
-    <section data-cms-editable="investment" style="background: linear-gradient(135deg, #a27295 0%, #32192f 100%); color: white; padding: 40px; border-radius: 12px; margin: 40px 0; text-align: center; border: 2px dashed #ffc107;">
-        <h2 style="margin-bottom: 20px; font-size: 2.2rem;">Investment Information</h2>
-        {% if investment.primary %}
-            <div style="font-size: 1.5rem; margin-bottom: 15px;">
-                <strong>{{ investment.primary }}</strong>
-                {% if investment.secondary %} - <span>{{ investment.secondary }}</span>{% endif %}
-            </div>
-        {% endif %}
-        {% if investment.financing %}
-            <p style="font-size: 1.1rem; margin-bottom: 10px;">{{ investment.financing }}</p>
-        {% endif %}
-        {% if investment.note %}
-            <p style="font-size: 0.9rem; opacity: 0.9;">{{ investment.note }}</p>
-        {% endif %}
-        <div style="margin-top: 30px;">
-            <a href="/contact-us/" style="background: #ffae00; color: #0a0a0a; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: 600;">Get Pricing Information</a>
-        </div>
-    </section>
-    {% endif %}
-    
-    <!-- FAQ Section - Editable Array -->
-    {% if faq %}
-    <section data-cms-editable="faq" style="margin: 40px 0; border: 2px dashed #28a745; padding: 20px; border-radius: 8px;">
-        <h2 style="color: #32192f; text-align: center; margin-bottom: 30px; font-size: 2.2rem;">Frequently Asked Questions</h2>
-        <div style="max-width: 800px; margin: 0 auto;">
-            {% for item in faq %}
-                <div style="background: white; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
-                    <div style="background: #f8f9fa; padding: 20px; border-left: 4px solid #a27295;">
-                        <h3 style="color: #32192f; margin: 0; font-size: 1.1rem;">{{ item.question }}</h3>
-                    </div>
-                    <div style="padding: 20px;">
-                        <p style="margin: 0; color: #666; line-height: 1.6;">{{ item.answer }}</p>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </section>
-    {% endif %}
+<!-- Title (centered, in content container) -->
+<div class="service-title-wrap" style="max-width:1220px;margin:0 auto;padding:40px 20px 0 20px;">
+  <h1 data-cms-editable="title" style="text-align:center;font-size:2.5rem;color:#32192f;margin-bottom:0.5em;">{{ title }}</h1>
+  {% if subtitle %}
+    <p data-cms-editable="subtitle" style="text-align:center;color:#666;font-size:1.2rem;margin-top:0;">{{ subtitle }}</p>
+  {% endif %}
 </div>
 
-<!-- Final Call-to-Action - Editable -->
-<section data-cms-editable="final_cta" style="background: #f8f9fa; padding: 60px 0; text-align: center; border-radius: 12px; margin-top: 60px; border: 2px dashed #17a2b8;">
-    <div style="max-width: 600px; margin: 0 auto; padding: 0 20px;">
-        <h2 style="color: #32192f; font-size: 2.5rem; margin-bottom: 20px;">Ready to Transform Your Smile?</h2>
-        <p style="color: #666; font-size: 1.2rem; margin-bottom: 30px; line-height: 1.6;">Schedule a consultation with Dr. Mojgan Mazhari to learn more about {{ title }} and how it can benefit you.</p>
-        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-            <a href="/contact-us/" style="background: #ffae00; color: #0a0a0a; padding: 18px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Schedule Consultation</a>
-            <a href="tel:703-212-9622" style="background: #a27295; color: white; padding: 18px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">Call 703-212-9622</a>
-        </div>
+<!-- Banner Image (full width) -->
+{% if heroImage %}
+  <div class="service-banner" style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;">
+    <img src="{{ heroImage }}" alt="{{ heroImageAlt or title }}" style="width:100vw;height:340px;object-fit:cover;display:block;">
+  </div>
+{% endif %}
+
+<!-- Main Content Area (1220px, 75/25 split) -->
+<div class="service-main-content" style="max-width:1220px;margin:0 auto;padding:40px 20px 0 20px;">
+  <div class="service-content-layout" style="display:grid;grid-template-columns:3fr 1fr;gap:40px;align-items:start;">
+    <!-- Left: Main Content -->
+    <div class="service-content" data-cms-edit="content" style="line-height:1.7;">
+      {{ content | safe }}
     </div>
-</section>
+    <!-- Right: Sidebar (address/contact info) -->
+    <aside class="service-sidebar" style="background:#f8f9fa;padding:30px 24px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.04);font-size:1rem;">
+      <h3 style="color:#32192f;margin-top:0;">Contact & Location</h3>
+      <p style="margin:0 0 8px 0;font-weight:600;">Alexandria Dental Health & Smile Studio</p>
+      <p style="margin:0 0 8px 0;">2847 Duke St<br>Alexandria, VA 22314</p>
+      <p style="margin:0 0 8px 0;"><a href="tel:703-212-9622" style="color:#32192f;text-decoration:none;">(703) 212-9622</a></p>
+      <p style="margin:0 0 8px 0;"><a href="mailto:info@alexandriadentalhealth.com" style="color:#32192f;text-decoration:none;">info@alexandriadentalhealth.com</a></p>
+      <hr style="margin:18px 0;">
+      <h4 style="margin:0 0 8px 0;font-size:1.1rem;">Office Hours</h4>
+      <ul style="list-style:none;padding:0;margin:0 0 8px 0;color:#555;">
+        <li>Mon–Thu: 8:00am – 5:00pm</li>
+        <li>Fri: 8:00am – 1:00pm</li>
+        <li>Sat–Sun: Closed</li>
+      </ul>
+    </aside>
+  </div>
+</div>
+
+<!-- Above Footer: Google Map (full width) -->
+<div class="service-map" style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;margin-top:40px;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.013282019994!2d-77.0856346846486!3d38.8089649795826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b0c7e2e2e2e3%3A0x7e2e2e2e2e2e2e2e!2s2847%20Duke%20St%2C%20Alexandria%2C%20VA%2022314!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- Footer (full width, styled) -->
+<footer style="background:#32192f;color:white;padding:40px 0 0 0;margin-top:0;">
+  <div class="container" style="max-width:1220px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;">
+    <div>
+      <h4 style="color:white;margin-bottom:15px;">Alexandria Dental Health & Smile Studio</h4>
+      <p style="margin:5px 0;color:rgba(255,255,255,0.8);">2847 Duke St<br>Alexandria, VA 22314</p>
+      <p style="margin:10px 0;"><a href="tel:703-212-9622" style="color:#ffae00;text-decoration:none;">(703) 212-9622</a></p>
+    </div>
+    <div>
+      <h4 style="color:white;margin-bottom:15px;">Quick Links</h4>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li><a href="/about/" style="color:#ffae00;text-decoration:none;">About</a></li>
+        <li><a href="/services/" style="color:#ffae00;text-decoration:none;">Services</a></li>
+        <li><a href="/contact-us/" style="color:#ffae00;text-decoration:none;">Contact</a></li>
+        <li><a href="/privacy-policy/" style="color:#ffae00;text-decoration:none;">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 style="color:white;margin-bottom:15px;">Our Services</h4>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li><a href="/dental-implants/" style="color:#ffae00;text-decoration:none;">Dental Implants</a></li>
+        <li><a href="/dental-bridges/" style="color:#ffae00;text-decoration:none;">Dental Bridges</a></li>
+        <li><a href="/invisalign/" style="color:#ffae00;text-decoration:none;">Invisalign</a></li>
+        <li><a href="/teeth-whitening/" style="color:#ffae00;text-decoration:none;">Teeth Whitening</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="text-align:center;color:rgba(255,255,255,0.7);margin-top:30px;padding-bottom:20px;font-size:0.95rem;">
+    &copy; {{ "now" | date("%Y") }} Alexandria Dental Health & Smile Studio. All rights reserved.
+  </div>
+</footer>
 
 <!-- CloudCannon Visual Editing Styles -->
 <style>
