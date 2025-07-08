@@ -1,8 +1,10 @@
 ---
-layout: layouts/unified.njk
+layout: layouts/service.njk
 title: Dental Bridges
 subtitle: Replace Missing Teeth with Permanent Fixed Bridges
-description: Restore your smile with custom dental bridges in Alexandria VA. Dr. Mojgan Mazhari creates natural-looking bridges to replace missing teeth permanently.
+description: >-
+  Restore your smile with custom dental bridges in Alexandria VA. Dr. Mojgan
+  Mazhari creates natural-looking bridges to replace missing teeth permanently.
 category: Restorative
 heroImage: /images/Dentist-Woman-Close-Up-Of-Pretty-Smile-CS1.webp
 heroImageAlt: Dental Bridge Treatment at Alexandria Dental Health & Smile Studio
@@ -11,11 +13,9 @@ ctaLink: /contact-us/
 keywords: dental bridges Alexandria VA, tooth replacement, missing teeth, fixed bridge
 permalink: /dental-bridges/
 show_sidebar: true
-tags: 
+tags:
   - services
   - restorative
-
-# Treatment Benefits
 benefits:
   - Restores your natural smile and facial support
   - Prevents remaining teeth from shifting out of position
@@ -23,36 +23,49 @@ benefits:
   - Allows you to eat and speak with confidence
   - Provides a permanent, non-removable solution
   - Matches the color and shape of your natural teeth
-
-# Treatment Process
 process_steps:
   - title: Initial Consultation & Examination
-    description: Dr. Mazhari examines your teeth and takes digital impressions to plan your custom bridge design.
+    description: >-
+      Dr. Mazhari examines your teeth and takes digital impressions to plan your
+      custom bridge design.
   - title: Tooth Preparation
-    description: The adjacent teeth are carefully prepared to support the bridge, ensuring a proper fit and natural appearance.
+    description: >-
+      The adjacent teeth are carefully prepared to support the bridge, ensuring
+      a proper fit and natural appearance.
   - title: Temporary Bridge Placement
-    description: A temporary bridge protects your teeth while your permanent bridge is crafted in our dental lab.
+    description: >-
+      A temporary bridge protects your teeth while your permanent bridge is
+      crafted in our dental lab.
   - title: Final Bridge Placement
-    description: Your custom bridge is carefully fitted and bonded in place, restoring your complete smile.
-
-# Investment Information
+    description: >-
+      Your custom bridge is carefully fitted and bonded in place, restoring your
+      complete smile.
 investment:
   primary: $2,400 - $4,800
   financing: Payment plans available with approved credit
-  note: Final cost depends on the number of teeth being replaced and materials chosen
-
-# FAQ Section
+  note: >-
+    Final cost depends on the number of teeth being replaced and materials
+    chosen
 faq:
   - question: How long do dental bridges last?
-    answer: With proper care and regular dental visits, dental bridges typically last 10-15 years or longer. Good oral hygiene and avoiding hard foods help extend their lifespan.
+    answer: >-
+      With proper care and regular dental visits, dental bridges typically last
+      10-15 years or longer. Good oral hygiene and avoiding hard foods help
+      extend their lifespan.
   - question: Will my bridge look natural?
-    answer: Yes! Dr. Mazhari carefully matches the color, shape, and size of your bridge to blend seamlessly with your natural teeth for a beautiful, natural appearance.
+    answer: >-
+      Yes! Dr. Mazhari carefully matches the color, shape, and size of your
+      bridge to blend seamlessly with your natural teeth for a beautiful,
+      natural appearance.
   - question: How do I care for my dental bridge?
-    answer: Care for your bridge like your natural teeth with regular brushing and flossing. Special floss threaders help clean under the bridge. Regular dental checkups are essential.
+    answer: >-
+      Care for your bridge like your natural teeth with regular brushing and
+      flossing. Special floss threaders help clean under the bridge. Regular
+      dental checkups are essential.
   - question: Can I eat normally with a dental bridge?
-    answer: Absolutely! Once you adjust to your new bridge, you can eat most foods normally. Avoid very hard or sticky foods that could damage the bridge.
-
-# Related Services
+    answer: >-
+      Absolutely! Once you adjust to your new bridge, you can eat most foods
+      normally. Avoid very hard or sticky foods that could damage the bridge.
 related_services:
   - title: Dental Implants
     url: /dental-implants/
@@ -61,7 +74,6 @@ related_services:
   - title: Dentures
     url: /dentures/
 ---
-
 ## Professional Dental Bridge Treatment in Alexandria VA
 
 **Dental bridges** are an excellent solution for replacing one or more missing teeth, restoring both function and aesthetics to your smile. At Alexandria Dental Health & Smile Studio, Dr. Mojgan Mazhari creates custom dental bridges that look and feel completely natural.
@@ -88,10 +100,10 @@ Dental bridges offer numerous advantages over other tooth replacement options:
 
 At our practice, we use the latest technology to ensure your bridge fits perfectly:
 
-- **Digital Impressions:** Our iTero scanner creates precise digital impressions for optimal fit and comfort
-- **CEREC Technology:** Some bridges can be completed in a single visit using our in-office milling system
-- **High-Quality Materials:** We use durable porcelain and ceramic materials that resist staining and wear
-- **Custom Color Matching:** Each bridge is carefully crafted to match your natural tooth color perfectly
+* **Digital Impressions:** Our iTero scanner creates precise digital impressions for optimal fit and comfort
+* **CEREC Technology:** Some bridges can be completed in a single visit using our in-office milling system
+* **High-Quality Materials:** We use durable porcelain and ceramic materials that resist staining and wear
+* **Custom Color Matching:** Each bridge is carefully crafted to match your natural tooth color perfectly
 
 ---
 
@@ -124,11 +136,11 @@ Dr. Mazhari ensures every patient has a comfortable, positive experience:
 
 Proper care ensures your bridge lasts for many years:
 
-- Brush twice daily with fluoride toothpaste
-- Floss daily using special threaders to clean under the bridge
-- Avoid chewing hard foods like ice or hard candy
-- Visit us regularly for professional cleanings and examinations
-- Don't use your teeth as tools to open packages or bottles
+* Brush twice daily with fluoride toothpaste
+* Floss daily using special threaders to clean under the bridge
+* Avoid chewing hard foods like ice or hard candy
+* Visit us regularly for professional cleanings and examinations
+* Don't use your teeth as tools to open packages or bottles
 
 ## Schedule Your Consultation Today
 
