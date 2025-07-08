@@ -134,6 +134,23 @@ layout: layouts/base.njk
 
 <!-- Responsive Design -->
 <style>
+    /* 
+      CloudCannon Editor Enhancement:
+      When the body has the class 'cc-page-editor-open' (added by CloudCannon's editor script),
+      we automatically hide the website's content sidebar and expand the main content
+      area to full width. This provides a much better editing experience by removing
+      the "two sidebars" problem. The 'show_sidebar' front matter toggle will now
+      only affect the appearance on the live, published site.
+    */
+    body.cc-page-editor-open .content-layout {
+        grid-template-columns: 1fr; /* Force a single, full-width column */
+    }
+
+    body.cc-page-editor-open .sidebar {
+        display: none; /* Hide the website's sidebar completely */
+    }
+
+    /* Original styles remain unchanged below */
     .unified-page {
         font-family: 'Helvetica Neue', Arial, sans-serif;
         color: #333;
