@@ -14,20 +14,18 @@ body {
   padding: 0 20px;
 }
 
+/* --- Sidebar and Main Content Layout --- */
 .row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+  flex-wrap: nowrap;
   align-items: flex-start;
+  gap: 40px;
 }
-
 .main-content {
-  flex: 0 0 66.666%;
-  max-width: 66.666%;
+  flex: 0 0 70%;
+  max-width: 70%;
   min-width: 300px;
 }
-
-/* Sidebar styles */
 .sidebar {
   flex: 0 0 30%;
   max-width: 30%;
@@ -40,6 +38,21 @@ body {
   color: #222;
   font-size: 1.02rem;
   line-height: 1.6;
+}
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .main-content, .sidebar {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .sidebar {
+    margin-top: 40px;
+  }
 }
 
 .sidebar-contact {
@@ -105,7 +118,7 @@ body {
   margin: 0 auto;
 }
 
-/* Footer styles */
+/* --- Footer Styles --- */
 .footer {
   background: #32192f;
   color: #fff;
@@ -167,23 +180,6 @@ body {
   .footer-logo-col {
     justify-content: center;
     margin-bottom: 20px;
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 900px) {
-  .row {
-    flex-direction: column;
-    gap: 0;
-  }
-  .main-content, .sidebar {
-    max-width: 100%;
-    flex: 1 1 100%;
-    margin-left: 0;
-    padding-left: 0;
-  }
-  .sidebar {
-    margin-top: 40px;
   }
 }
 
