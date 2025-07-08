@@ -79,15 +79,15 @@ final_cta:
       style: "secondary"
 ---
 
-<!-- Hero Section -->
-<section class="hero-section" data-cms-bind="#hero">
+<!-- Hero Section - Visual Editing Enabled -->
+<section class="hero-section" data-cms-editable="hero">
   <div class="hero-banner">
     <div class="hero-content">
-      <h1 data-cms-bind="#hero.title">{{ hero.title }}</h1>
-      <p class="hero-subtitle" data-cms-bind="#hero.subtitle">{{ hero.subtitle }}</p>
+      <h1 class="editable" data-cms-editable="hero.title">{{ hero.title }}</h1>
+      <p class="hero-subtitle editable" data-cms-editable="hero.subtitle">{{ hero.subtitle }}</p>
       <div class="hero-buttons">
         {% for button in hero.buttons %}
-          <a href="{{ button.url }}" class="btn btn-{{ button.style }}" data-cms-bind="#hero.buttons[{{ loop.index0 }}]">{{ button.text }}</a>
+          <a href="{{ button.url }}" class="btn btn-{{ button.style }} editable" data-cms-editable="hero.buttons[{{ loop.index0 }}]">{{ button.text }}</a>
         {% endfor %}
       </div>
     </div>
@@ -97,24 +97,25 @@ final_cta:
            loading="eager"
            width="600" 
            height="500"
-           data-cms-bind="#hero.image">
+           class="editable"
+           data-cms-editable="hero.image">
     </div>
   </div>
 </section>
 
-<!-- About Section -->
-<section class="about-section" data-cms-bind="#about">
+<!-- About Section - Visual Editing Enabled -->
+<section class="about-section" data-cms-editable="about">
   <div class="container">
     <div class="about-content">
       <div class="about-text">
-        <h2 data-cms-bind="#about.title">{{ about.title }}</h2>
-        <p class="lead" data-cms-bind="#about.lead">{{ about.lead }}</p>
+        <h2 class="editable" data-cms-editable="about.title">{{ about.title }}</h2>
+        <p class="lead editable" data-cms-editable="about.lead">{{ about.lead }}</p>
         
-        <div class="about-highlights" data-cms-bind="#about.highlights">
+        <div class="about-highlights" data-cms-editable="about.highlights">
           {% for highlight in about.highlights %}
-          <div class="highlight" data-cms-bind="#about.highlights[{{ loop.index0 }}]">
-            <h3 data-cms-bind="#about.highlights[{{ loop.index0 }}].title">{{ highlight.title }}</h3>
-            <p data-cms-bind="#about.highlights[{{ loop.index0 }}].description">{{ highlight.description }}</p>
+          <div class="highlight editable" data-cms-editable="about.highlights[{{ loop.index0 }}]">
+            <h3 class="editable" data-cms-editable="about.highlights[{{ loop.index0 }}].title">{{ highlight.title }}</h3>
+            <p class="editable" data-cms-editable="about.highlights[{{ loop.index0 }}].description">{{ highlight.description }}</p>
           </div>
           {% endfor %}
         </div>
@@ -127,32 +128,34 @@ final_cta:
              loading="lazy"
              width="500" 
              height="400"
-             data-cms-bind="#about.image">
+             class="editable"
+             data-cms-editable="about.image">
       </div>
     </div>
   </div>
 </section>
 
-<!-- Services Section -->
-<section class="services-section" data-cms-bind="#services">
+<!-- Services Section - Visual Editing Enabled -->
+<section class="services-section" data-cms-editable="services">
   <div class="container">
     <div class="section-header">
-      <h2 data-cms-bind="#services.title">{{ services.title }}</h2>
-      <p data-cms-bind="#services.subtitle">{{ services.subtitle }}</p>
+      <h2 class="editable" data-cms-editable="services.title">{{ services.title }}</h2>
+      <p class="editable" data-cms-editable="services.subtitle">{{ services.subtitle }}</p>
     </div>
     
-    <div class="services-grid" data-cms-bind="#services.featured_services">
+    <div class="services-grid" data-cms-editable="services.featured_services">
       {% for service in services.featured_services %}
-      <div class="service-card" data-cms-bind="#services.featured_services[{{ loop.index0 }}]">
+      <div class="service-card editable" data-cms-editable="services.featured_services[{{ loop.index0 }}]">
         <div class="service-icon">
           <img src="{{ service.image }}" 
                alt="{{ service.title }}" 
                loading="lazy"
-               data-cms-bind="#services.featured_services[{{ loop.index0 }}].image">
+               class="editable"
+               data-cms-editable="services.featured_services[{{ loop.index0 }}].image">
         </div>
-        <h3 data-cms-bind="#services.featured_services[{{ loop.index0 }}].title">{{ service.title }}</h3>
-        <p data-cms-bind="#services.featured_services[{{ loop.index0 }}].description">{{ service.description }}</p>
-        <a href="{{ service.url }}" class="service-link" data-cms-bind="#services.featured_services[{{ loop.index0 }}].url">Learn More</a>
+        <h3 class="editable" data-cms-editable="services.featured_services[{{ loop.index0 }}].title">{{ service.title }}</h3>
+        <p class="editable" data-cms-editable="services.featured_services[{{ loop.index0 }}].description">{{ service.description }}</p>
+        <a href="{{ service.url }}" class="service-link editable" data-cms-editable="services.featured_services[{{ loop.index0 }}].url">Learn More</a>
       </div>
       {% endfor %}
     </div>
@@ -230,23 +233,23 @@ final_cta:
   </div>
 </section>
 
-<!-- Testimonials Section -->
-<section class="testimonials-section" data-cms-bind="#testimonials">
+<!-- Testimonials Section - Visual Editing Enabled -->
+<section class="testimonials-section" data-cms-editable="testimonials">
   <div class="container">
     <div class="section-header">
-      <h2 data-cms-bind="#testimonials.title">{{ testimonials.title }}</h2>
-      <p data-cms-bind="#testimonials.subtitle">{{ testimonials.subtitle }}</p>
+      <h2 class="editable" data-cms-editable="testimonials.title">{{ testimonials.title }}</h2>
+      <p class="editable" data-cms-editable="testimonials.subtitle">{{ testimonials.subtitle }}</p>
     </div>
     
-    <div class="testimonials-grid" data-cms-bind="#testimonials.reviews">
+    <div class="testimonials-grid" data-cms-editable="testimonials.reviews">
       {% for testimonial in testimonials.reviews %}
-      <div class="testimonial" data-cms-bind="#testimonials.reviews[{{ loop.index0 }}]">
+      <div class="testimonial editable" data-cms-editable="testimonials.reviews[{{ loop.index0 }}]">
         <div class="testimonial-content">
-          <p data-cms-bind="#testimonials.reviews[{{ loop.index0 }}].content">"{{ testimonial.content }}"</p>
+          <p class="editable" data-cms-editable="testimonials.reviews[{{ loop.index0 }}].content">"{{ testimonial.content }}"</p>
         </div>
         <div class="testimonial-author">
-          <strong data-cms-bind="#testimonials.reviews[{{ loop.index0 }}].author">{{ testimonial.author }}</strong>
-          <span data-cms-bind="#testimonials.reviews[{{ loop.index0 }}].treatment">{{ testimonial.treatment }}</span>
+          <strong class="editable" data-cms-editable="testimonials.reviews[{{ loop.index0 }}].author">{{ testimonial.author }}</strong>
+          <span class="editable" data-cms-editable="testimonials.reviews[{{ loop.index0 }}].treatment">{{ testimonial.treatment }}</span>
         </div>
       </div>
       {% endfor %}
@@ -258,17 +261,100 @@ final_cta:
   </div>
 </section>
 
-<!-- CTA Section -->
-<section class="cta-section" data-cms-bind="#final_cta">
+<!-- CTA Section - Visual Editing Enabled -->
+<section class="cta-section" data-cms-editable="final_cta">
   <div class="container">
     <div class="cta-content">
-      <h2 data-cms-bind="#final_cta.title">{{ final_cta.title }}</h2>
-      <p data-cms-bind="#final_cta.subtitle">{{ final_cta.subtitle }}</p>
+      <h2 class="editable" data-cms-editable="final_cta.title">{{ final_cta.title }}</h2>
+      <p class="editable" data-cms-editable="final_cta.subtitle">{{ final_cta.subtitle }}</p>
       <div class="cta-buttons">
         {% for button in final_cta.buttons %}
-          <a href="{{ button.url }}" class="btn btn-{{ button.style }}" data-cms-bind="#final_cta.buttons[{{ loop.index0 }}]">{{ button.text }}</a>
+          <a href="{{ button.url }}" class="btn btn-{{ button.style }} editable" data-cms-editable="final_cta.buttons[{{ loop.index0 }}]">{{ button.text }}</a>
         {% endfor %}
       </div>
     </div>
   </div>
-</section> 
+</section>
+
+<!-- CloudCannon Visual Editing Styles -->
+<style>
+    /* Visual editing indicators and styles for homepage */
+    .editable {
+        outline: 2px dashed transparent;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+    
+    .editable:hover {
+        outline-color: #ffc107;
+        outline-offset: 2px;
+        background: rgba(255, 193, 7, 0.1) !important;
+    }
+    
+    .editable:focus,
+    .editable.cms-selected {
+        outline-color: #28a745 !important;
+        outline-offset: 2px;
+        background: rgba(40, 167, 69, 0.1) !important;
+    }
+    
+    /* Section editing indicators */
+    [data-cms-editable] {
+        border: 2px dashed transparent;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+    
+    [data-cms-editable]:hover {
+        border-color: #007bff !important;
+        background: rgba(0, 123, 255, 0.05) !important;
+    }
+    
+    [data-cms-editable]::before {
+        content: "✏️ " attr(data-cms-editable);
+        position: absolute;
+        top: -25px;
+        left: 10px;
+        background: #007bff;
+        color: white;
+        padding: 2px 8px;
+        border-radius: 3px;
+        font-size: 0.75rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+        z-index: 1000;
+    }
+    
+    [data-cms-editable]:hover::before {
+        opacity: 1;
+    }
+    
+    /* Card and item hover states */
+    .service-card.editable:hover,
+    .testimonial.editable:hover,
+    .highlight.editable:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2) !important;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        [data-cms-editable]::before {
+            display: none;
+        }
+        
+        .editable:hover {
+            outline-offset: 1px;
+        }
+    }
+    
+    /* CloudCannon editor mode styles */
+    .cms-editor-active .editable {
+        outline-color: #ffc107 !important;
+    }
+    
+    .cms-editor-active [data-cms-editable] {
+        border-color: #007bff !important;
+    }
+</style> 

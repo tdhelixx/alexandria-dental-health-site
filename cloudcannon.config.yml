@@ -10,6 +10,14 @@ collections_config:
     add_options:
       - name: Add Service
         icon: add
+    # Enhanced editing configuration
+    _enabled_editors:
+      - visual
+      - content
+      - data
+    preview:
+      gallery:
+        fit: cover
         
   pages:
     path: src/pages
@@ -19,6 +27,10 @@ collections_config:
     add_options:
       - name: Add Page
         icon: add
+    _enabled_editors:
+      - visual
+      - content
+      - data
         
   blog:
     path: src/blog
@@ -28,6 +40,10 @@ collections_config:
     add_options:
       - name: Add Blog Post
         icon: add
+    _enabled_editors:
+      - visual
+      - content
+      - data
         
   gallery:
     path: src/gallery
@@ -37,17 +53,31 @@ collections_config:
     add_options:
       - name: Add Gallery Item
         icon: add
+    _enabled_editors:
+      - visual
+      - content
+      - data
 
 # Enhanced inputs for all content types
 _inputs:
   title:
     comment: The page title
+    type: text
+    options:
+      spellcheck: true
   subtitle:
     comment: Page subtitle or excerpt
+    type: textarea
+    options:
+      spellcheck: true
   description:
     comment: Meta description for SEO
+    type: textarea
+    options:
+      spellcheck: true
   category:
     type: select
+    comment: Service category for organization
     options:
       values:
         - Cosmetic
@@ -59,6 +89,13 @@ _inputs:
   heroImage:
     type: image
     comment: Hero/banner image for the page
+    options:
+      width: 1200
+      height: 600
+      resize_style: "fit"
+  heroImageAlt:
+    comment: Alt text for hero image (for accessibility)
+    type: text
   galleryImages:
     type: array
     comment: Gallery images for before/after photos
@@ -70,12 +107,92 @@ _inputs:
     comment: After treatment photo
   author:
     comment: Blog post author
+    type: text
   date:
     type: date
     comment: Publication date
   tags:
     type: array
     comment: Tags for organization
+    options:
+      allow_create: true
+  benefits:
+    type: array
+    comment: Treatment benefits (editable list)
+    options:
+      structures:
+        values:
+          - label: Benefit
+            value:
+              text: ""
+  process_steps:
+    type: array
+    comment: Treatment process steps
+    options:
+      structures:
+        values:
+          - label: Process Step
+            value:
+              title: ""
+              description: ""
+  faq:
+    type: array
+    comment: Frequently asked questions
+    options:
+      structures:
+        values:
+          - label: FAQ Item
+            value:
+              question: ""
+              answer: ""
+  related_services:
+    type: array
+    comment: Related services
+    options:
+      structures:
+        values:
+          - label: Service Link
+            value:
+              title: ""
+              url: ""
+  investment:
+    type: object
+    comment: Investment/pricing information
+    options:
+      structures:
+        values:
+          - label: Investment Info
+            value:
+              primary: ""
+              secondary: ""
+              financing: ""
+              note: ""
+  ctaText:
+    comment: Call-to-action button text
+    type: text
+  ctaLink:
+    comment: Call-to-action button link
+    type: url
+
+# Visual editor configuration
+_editables:
+  content:
+    bold: true
+    italic: true
+    link: true
+    bullet_list: true
+    numbered_list: true
+    heading: true
+    image: true
+    table: true
+    undo: true
+    redo: true
+    removeformat: true
+  text:
+    bold: true
+    italic: true
+    link: true
+    removeformat: true
 
 # Layout configuration
 _structures:
@@ -89,6 +206,65 @@ _structures:
           title: ""
           description: ""
 
+# Build and generator configuration
 generator:
   metadata:
-    eleventy: true 
+    eleventy: true
+    markdown: "markdown-it"
+    markdown-it:
+      html: true
+      linkify: true
+
+# Build settings
+build:
+  install_command: "npm install"
+  build_command: "npm run build"
+  output_dir: "_site"
+  environment_variables:
+    NODE_VERSION: 18
+    ELEVENTY_ENV: "production"
+
+# CloudCannon editing configuration
+_comments:
+  eleventyNavigation: 'Configure navigation for this page'
+  title: 'The main page title'
+  subtitle: 'Brief subtitle under the main title' 
+  category: 'Service category for organization'
+  benefits: 'Add, edit, or remove treatment benefits'
+  process_steps: 'Add, edit, or remove process steps'
+  faq: 'Add, edit, or remove FAQ items'
+  investment: 'Edit pricing and investment information'
+  related_services: 'Add links to related services'
+
+# Array structure templates
+_array_structures:
+  benefits:
+    values:
+      - label: "Treatment Benefit"
+        icon: "add_circle"
+        value: ""
+  process_steps:
+    values:
+      - label: "Process Step"
+        icon: "timeline"
+        value:
+          title: ""
+          description: ""
+  faq:
+    values:
+      - label: "FAQ Item"
+        icon: "help"
+        value:
+          question: ""
+          answer: ""
+  related_services:
+    values:
+      - label: "Related Service"
+        icon: "link"
+        value:
+          title: ""
+          url: ""
+
+# Visual editor settings
+editor:
+  default_path: "/src/" 
