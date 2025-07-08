@@ -15,6 +15,12 @@ collections_config:
       - visual
       - data
       - content
+    output: true
+    preview:
+      gallery:
+        fit: cover
+      metadata:
+        size: [1200, 630]
         
   pages:
     path: src/pages
@@ -203,14 +209,25 @@ generator:
       html: true
       linkify: true
 
-# Build settings
+# Build settings for CloudCannon + 11ty
 build:
   install_command: "npm install"
   build_command: "npm run build"
   output_dir: "_site"
+  preview_command: "npm run build"
   environment_variables:
     NODE_VERSION: 18
     ELEVENTY_ENV: "production"
+
+# CloudCannon preview configuration
+preview:
+  build: true
+  output_dir: "_site"
+  
+# Source and output paths
+paths:
+  source: "src"
+  output: "_site"
 
 # CloudCannon editing configuration (simplified comments)
 _comments:
