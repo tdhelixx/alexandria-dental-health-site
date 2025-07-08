@@ -10,6 +10,7 @@ ctaText: Schedule Bridge Consultation
 ctaLink: /contact-us/
 keywords: dental bridges Alexandria VA, tooth replacement, missing teeth, fixed bridge
 permalink: /dental-bridges/
+show_sidebar: true
 tags: 
   - services
   - restorative
