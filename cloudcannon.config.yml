@@ -1,4 +1,4 @@
-# CloudCannon Configuration - Complete Collections
+# CloudCannon Configuration - Simplified for Better UX
 
 # Collections for Dashboard
 collections_config:
@@ -10,14 +10,11 @@ collections_config:
     add_options:
       - name: Add Service
         icon: add
-    # Enhanced editing configuration
+    # Enhanced editing configuration - Visual first
     _enabled_editors:
       - visual
-      - content
       - data
-    preview:
-      gallery:
-        fit: cover
+      - content
         
   pages:
     path: src/pages
@@ -29,8 +26,8 @@ collections_config:
         icon: add
     _enabled_editors:
       - visual
-      - content
       - data
+      - content
         
   blog:
     path: src/blog
@@ -42,89 +39,59 @@ collections_config:
         icon: add
     _enabled_editors:
       - visual
-      - content
       - data
-        
-  gallery:
-    path: src/gallery
-    name: Gallery
-    description: Smile gallery and before/after photos
-    icon: photo_library
-    add_options:
-      - name: Add Gallery Item
-        icon: add
-    _enabled_editors:
-      - visual
       - content
-      - data
 
-# Enhanced inputs for all content types
+# Simplified inputs - organized and less overwhelming
 _inputs:
+  # Page Basics (always visible)
   title:
     comment: The page title
     type: text
     options:
       spellcheck: true
   subtitle:
-    comment: Page subtitle or excerpt
-    type: textarea
-    options:
-      spellcheck: true
-  description:
-    comment: Meta description for SEO
+    comment: Page subtitle or tagline
     type: textarea
     options:
       spellcheck: true
   category:
     type: select
-    comment: Service category for organization
+    comment: Service category
     options:
       values:
         - Cosmetic
         - Restorative  
         - Family
         - General
-        - Blog
-        - Page
+  
+  # Hero Section
   heroImage:
     type: image
-    comment: Hero/banner image for the page
+    comment: Main hero/banner image
     options:
       width: 1200
       height: 600
       resize_style: "fit"
   heroImageAlt:
-    comment: Alt text for hero image (for accessibility)
+    comment: Image description for accessibility
     type: text
-  galleryImages:
-    type: array
-    comment: Gallery images for before/after photos
-  beforeImage:
-    type: image
-    comment: Before treatment photo
-  afterImage:
-    type: image
-    comment: After treatment photo
-  author:
-    comment: Blog post author
+  ctaText:
+    comment: Call-to-action button text
     type: text
-  date:
-    type: date
-    comment: Publication date
-  tags:
-    type: array
-    comment: Tags for organization
     options:
-      allow_create: true
+      placeholder: "e.g., Schedule Consultation"
+  
+  # Content Arrays (simplified)
   benefits:
     type: array
-    comment: Treatment benefits (editable list)
+    comment: Treatment benefits - click + to add more
     options:
       structures:
         values:
           - label: Benefit
-            value:
-              text: ""
+            value: ""
+  
   process_steps:
     type: array
     comment: Treatment process steps
@@ -135,6 +102,7 @@ _inputs:
             value:
               title: ""
               description: ""
+  
   faq:
     type: array
     comment: Frequently asked questions
@@ -145,36 +113,72 @@ _inputs:
             value:
               question: ""
               answer: ""
-  related_services:
-    type: array
-    comment: Related services
+  
+  investment:
+    type: object
+    comment: Pricing information
     options:
       structures:
         values:
-          - label: Service Link
+          - label: Investment Details
+            value:
+              primary: ""
+              financing: ""
+              note: ""
+  
+  related_services:
+    type: array
+    comment: Related services (2-3 recommended)
+    options:
+      structures:
+        values:
+          - label: Related Service
             value:
               title: ""
               url: ""
-  investment:
-    type: object
-    comment: Investment/pricing information
+  
+  # SEO (collapsed by default)
+  description:
+    comment: SEO description (appears in search results)
+    type: textarea
     options:
-      structures:
-        values:
-          - label: Investment Info
-            value:
-              primary: ""
-              secondary: ""
-              financing: ""
-              note: ""
-  ctaText:
-    comment: Call-to-action button text
+      spellcheck: true
+  keywords:
+    comment: SEO keywords (comma separated)
     type: text
-  ctaLink:
-    comment: Call-to-action button link
-    type: url
+  tags:
+    type: array
+    comment: Page tags
+    options:
+      allow_create: true
 
-# Visual editor configuration
+# Hide technical fields from sidebar
+_inputs_excluded:
+  - editable_regions
+  - social_image
+  - og_description
+  - show_hero
+  - show_sidebar
+  - show_cta
+  - content_sections
+  - in_nav
+  - nav_order
+  - page_type
+  - cloudcannon_optimized
+  - visual_editing_enabled
+  - template_version
+  - eleventy
+  - build_optimization
+  - galleryImages
+  - beforeImage
+  - afterImage
+  - author
+  - date
+  - ctaLink
+  - layout
+  - permalink
+
+# Visual editor configuration (simplified)
 _editables:
   content:
     bold: true
@@ -184,27 +188,11 @@ _editables:
     numbered_list: true
     heading: true
     image: true
-    table: true
-    undo: true
-    redo: true
     removeformat: true
   text:
     bold: true
     italic: true
-    link: true
     removeformat: true
-
-# Layout configuration
-_structures:
-  gallery_item:
-    values:
-      - label: Before/After
-        icon: compare
-        value:
-          beforeImage: ""
-          afterImage: ""
-          title: ""
-          description: ""
 
 # Build and generator configuration
 generator:
@@ -224,47 +212,23 @@ build:
     NODE_VERSION: 18
     ELEVENTY_ENV: "production"
 
-# CloudCannon editing configuration
+# CloudCannon editing configuration (simplified comments)
 _comments:
-  eleventyNavigation: 'Configure navigation for this page'
-  title: 'The main page title'
-  subtitle: 'Brief subtitle under the main title' 
-  category: 'Service category for organization'
-  benefits: 'Add, edit, or remove treatment benefits'
-  process_steps: 'Add, edit, or remove process steps'
-  faq: 'Add, edit, or remove FAQ items'
-  investment: 'Edit pricing and investment information'
-  related_services: 'Add links to related services'
+  title: 'The main page title (H1)'
+  subtitle: 'Brief description under the title'
+  category: 'Choose the service category'
+  heroImage: 'Main banner image for the page'
+  benefits: 'Click + to add treatment benefits'
+  process_steps: 'Click + to add process steps'
+  faq: 'Click + to add FAQ items'
+  investment: 'Edit pricing information'
+  related_services: 'Add 2-3 related service links'
+  description: 'SEO description for search engines'
 
-# Array structure templates
-_array_structures:
-  benefits:
-    values:
-      - label: "Treatment Benefit"
-        icon: "add_circle"
-        value: ""
-  process_steps:
-    values:
-      - label: "Process Step"
-        icon: "timeline"
-        value:
-          title: ""
-          description: ""
-  faq:
-    values:
-      - label: "FAQ Item"
-        icon: "help"
-        value:
-          question: ""
-          answer: ""
-  related_services:
-    values:
-      - label: "Related Service"
-        icon: "link"
-        value:
-          title: ""
-          url: ""
-
-# Visual editor settings
+# Visual editor as default
 editor:
-  default_path: "/src/" 
+  default_path: "/src/"
+  
+# Default to visual editor for all collections
+_defaults:
+  _editor: visual 
