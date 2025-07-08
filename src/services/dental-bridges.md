@@ -1,5 +1,5 @@
 ---
-layout: layouts/service.njk
+layout: layouts/unified.njk
 title: Dental Bridges
 subtitle: Replace Missing Teeth with Permanent Fixed Bridges
 description: Restore your smile with custom dental bridges in Alexandria VA. Dr. Mojgan Mazhari creates natural-looking bridges to replace missing teeth permanently.

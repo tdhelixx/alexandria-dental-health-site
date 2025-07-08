@@ -88,6 +88,12 @@ _inputs:
     options:
       placeholder: "e.g., Schedule Consultation"
   
+  # Layout Controls
+  show_sidebar:
+    type: checkbox
+    comment: Show the sidebar with practice info and office hours
+    default: true
+  
   # Content Arrays (simplified)
   benefits:
     type: array
