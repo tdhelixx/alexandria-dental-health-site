@@ -2,78 +2,76 @@
 layout: layouts/base.njk
 ---
 
-<!-- Header (handled by base.njk) -->
-
 <!-- Title (centered, in content container) -->
-<div class="service-title-wrap" style="max-width:1220px;margin:0 auto;padding:40px 20px 0 20px;">
-  <h1 data-cms-editable="title" style="text-align:center;font-size:2.5rem;color:#32192f;margin-bottom:0.5em;">{{ title }}</h1>
+<div style="max-width:1220px;margin:0 auto;padding:40px 20px 0 20px;">
+  <h1 data-cms-editable="title" style="text-align:center;font-size:2.7rem;font-weight:700;color:#32192f;margin-bottom:0.3em;letter-spacing:-1px;">{{ title }}</h1>
   {% if subtitle %}
-    <p data-cms-editable="subtitle" style="text-align:center;color:#666;font-size:1.2rem;margin-top:0;">{{ subtitle }}</p>
+    <p data-cms-editable="subtitle" style="text-align:center;color:#888;font-size:1.1rem;margin-bottom:2.5em;">{{ subtitle }}</p>
   {% endif %}
 </div>
 
-<!-- Banner Image (full width) -->
+<!-- Banner Image (full width, fixed height, object-fit:cover) -->
 {% if heroImage %}
-  <div class="service-banner" style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;">
-    <img src="{{ heroImage }}" alt="{{ heroImageAlt or title }}" style="width:100vw;height:340px;object-fit:cover;display:block;">
-  </div>
+<div style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;margin-top:0;margin-bottom:40px;">
+  <img src="{{ heroImage }}" alt="{{ heroImageAlt or title }}" style="display:block;width:100%;max-width:1220px;height:300px;object-fit:cover;object-position:center;margin:0 auto;">
+</div>
 {% endif %}
 
 <!-- Main Content Area (1220px, 75/25 split) -->
-<div class="service-main-content" style="max-width:1220px;margin:0 auto;padding:40px 20px 0 20px;">
-  <div class="service-content-layout" style="display:grid;grid-template-columns:3fr 1fr;gap:40px;align-items:start;">
+<div style="max-width:1220px;margin:0 auto 40px auto;padding:0 20px;">
+  <div style="display:grid;grid-template-columns:3fr 1fr;gap:48px;align-items:start;">
     <!-- Left: Main Content -->
-    <div class="service-content" data-cms-edit="content" style="line-height:1.7;">
-      {{ content | safe }}
+    <div>
+      <div data-cms-edit="content" style="line-height:1.7;font-size:1.08rem;color:#222;">
+        {{ content | safe }}
+      </div>
     </div>
-    <!-- Right: Sidebar (address/contact info) -->
-    <aside class="service-sidebar" style="background:#f8f9fa;padding:30px 24px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.04);font-size:1rem;">
-      <h3 style="color:#32192f;margin-top:0;">Contact & Location</h3>
-      <p style="margin:0 0 8px 0;font-weight:600;">Alexandria Dental Health & Smile Studio</p>
-      <p style="margin:0 0 8px 0;">2847 Duke St<br>Alexandria, VA 22314</p>
-      <p style="margin:0 0 8px 0;"><a href="tel:703-212-9622" style="color:#32192f;text-decoration:none;">(703) 212-9622</a></p>
-      <p style="margin:0 0 8px 0;"><a href="mailto:info@alexandriadentalhealth.com" style="color:#32192f;text-decoration:none;">info@alexandriadentalhealth.com</a></p>
-      <hr style="margin:18px 0;">
-      <h4 style="margin:0 0 8px 0;font-size:1.1rem;">Office Hours</h4>
-      <ul style="list-style:none;padding:0;margin:0 0 8px 0;color:#555;">
-        <li>Mon–Thu: 8:00am – 5:00pm</li>
-        <li>Fri: 8:00am – 1:00pm</li>
-        <li>Sat–Sun: Closed</li>
-      </ul>
+    <!-- Right: Sidebar (plain text, no background) -->
+    <aside style="font-size:1.02rem;color:#222;line-height:1.6;">
+      <div style="margin-bottom:2em;">
+        <strong>Alexandria Dental Health & Smile Studio</strong><br>
+        2847 Duke St<br>
+        Alexandria, VA 22314<br>
+        <a href="tel:703-212-9622" style="color:#32192f;text-decoration:none;">(703) 212-9622</a>
+      </div>
+      <div>
+        <strong>Office Hours</strong><br>
+        Monday 10:00am - 6:00pm<br>
+        Tuesday 10:00am - 6:00pm<br>
+        Wednesday 10:00am - 6:00pm<br>
+        Thursday 9:00am - 4:00pm<br>
+        Friday 8:00am - 1:00pm<br>
+        <span style="color:#888;">Saturday & Sunday Closed</span>
+      </div>
     </aside>
   </div>
 </div>
 
-<!-- Above Footer: Google Map (full width) -->
-<div class="service-map" style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;margin-top:40px;">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.013282019994!2d-77.0856346846486!3d38.8089649795826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b0c7e2e2e2e3%3A0x7e2e2e2e2e2e2e2e!2s2847%20Duke%20St%2C%20Alexandria%2C%20VA%2022314!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- Map (full width, above footer) -->
+<div style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;margin-bottom:0;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.013234567!2d-77.085!3d38.808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b0c6b0b0b0b0%3A0x0!2sAlexandria%20Dental%20Health%20%26%20Smile%20Studio!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" width="100%" height="220" style="border:0;max-width:1220px;display:block;margin:0 auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
-<!-- Footer (full width, styled) -->
+<!-- Footer (full width, dark, columns) -->
 <footer style="background:#32192f;color:white;padding:40px 0 0 0;margin-top:0;">
-  <div class="container" style="max-width:1220px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;">
+  <div style="max-width:1220px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;">
     <div>
-      <h4 style="color:white;margin-bottom:15px;">Alexandria Dental Health & Smile Studio</h4>
+      <h4 style="color:white;margin-bottom:15px;font-size:1.1rem;">Alexandria Dental Health & Smile Studio</h4>
       <p style="margin:5px 0;color:rgba(255,255,255,0.8);">2847 Duke St<br>Alexandria, VA 22314</p>
       <p style="margin:10px 0;"><a href="tel:703-212-9622" style="color:#ffae00;text-decoration:none;">(703) 212-9622</a></p>
     </div>
     <div>
-      <h4 style="color:white;margin-bottom:15px;">Quick Links</h4>
-      <ul style="list-style:none;padding:0;margin:0;">
-        <li><a href="/about/" style="color:#ffae00;text-decoration:none;">About</a></li>
-        <li><a href="/services/" style="color:#ffae00;text-decoration:none;">Services</a></li>
-        <li><a href="/contact-us/" style="color:#ffae00;text-decoration:none;">Contact</a></li>
-        <li><a href="/privacy-policy/" style="color:#ffae00;text-decoration:none;">Privacy Policy</a></li>
-      </ul>
+      <h4 style="color:white;margin-bottom:15px;font-size:1.1rem;">Quick Links</h4>
+      <a href="/about/" style="color:#ffae00;text-decoration:none;display:block;margin-bottom:8px;">About</a>
+      <a href="/contact-us/" style="color:#ffae00;text-decoration:none;display:block;margin-bottom:8px;">Contact</a>
+      <a href="/privacy-policy/" style="color:#ffae00;text-decoration:none;display:block;margin-bottom:8px;">Privacy Policy</a>
     </div>
     <div>
-      <h4 style="color:white;margin-bottom:15px;">Our Services</h4>
-      <ul style="list-style:none;padding:0;margin:0;">
-        <li><a href="/dental-implants/" style="color:#ffae00;text-decoration:none;">Dental Implants</a></li>
-        <li><a href="/dental-bridges/" style="color:#ffae00;text-decoration:none;">Dental Bridges</a></li>
-        <li><a href="/invisalign/" style="color:#ffae00;text-decoration:none;">Invisalign</a></li>
-        <li><a href="/teeth-whitening/" style="color:#ffae00;text-decoration:none;">Teeth Whitening</a></li>
-      </ul>
+      <h4 style="color:white;margin-bottom:15px;font-size:1.1rem;">Our Services</h4>
+      <a href="/dental-implants/" style="color:#ffae00;text-decoration:none;display:block;margin-bottom:8px;">Dental Implants</a>
+      <a href="/dental-bridges/" style="color:#ffae00;text-decoration:none;display:block;margin-bottom:8px;">Dental Bridges</a>
+      <a href="/invisalign/" style="color:#ffae00;text-decoration:none;display:block;margin-bottom:8px;">Invisalign</a>
+      <a href="/teeth-whitening/" style="color:#ffae00;text-decoration:none;display:block;margin-bottom:8px;">Teeth Whitening</a>
     </div>
   </div>
   <div style="text-align:center;color:rgba(255,255,255,0.7);margin-top:30px;padding-bottom:20px;font-size:0.95rem;">
