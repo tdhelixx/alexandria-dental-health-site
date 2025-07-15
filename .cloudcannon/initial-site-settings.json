@@ -1,0 +1,21 @@
+{
+  "ssg": "eleventy",
+  "mode": "hosted",
+  "build": {
+    "hugoVersion": "0.128.1",
+    "rubyVersion": "2.7.3",
+    "nodeVersion": "18",
+    "denoVersion": "1.40.2",
+    "environment_variables": [
+      {
+        "key": "ELEVENTY_ENV",
+        "value": "production"
+      }
+    ],
+    "install_command": "",
+    "build_command": "npm run build",
+    "output_path": "_site",
+    "preserved_paths": ".cache",
+    "preserveOutput": true
+  }
+}
